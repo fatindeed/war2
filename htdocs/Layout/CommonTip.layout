@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Widget" skin="PanelEmpty" position="0 0 800 480" name="CommonTip_Window">
+        <Property key="zOrder" value="10"/>
+        <Property key="TouchOrder" value="0"/>
+        <Property key="TouchIntercept" value="true"/>
+		    <Widget type="ImageBox" skin="ImageBox" position="390 230 20 20" name="CommonTip_Mask">
+		        <Property key="ImageTexture" value="UIImage/logo_hd.png"/> 
+		    </Widget>		        
+		    <Widget type="ImageBox" skin="RotatingSkin" position="245 143 336 188" name="CommonTip_BG">
+					<Property key="ImageTexture" value="uibutton_beijing.png"/>
+					<Property key="bTextureSet" value="true"/>
+					<Property key="b9Patch" value="true"/>
+					<Property key="9PatchCapWidth" value="10"/>         
+          <Widget type="TextBox" skin="TextBox" position="15 30 300 80" name="CommonTip_Content">
+              <Property key="TextAlign" value="Center Top"/>
+              <Property key="FontHeight" value="20"/>
+              <Property key="TextColour" value="255 255 255"/> 
+          </Widget>   
+			    <Widget type="Button9Patch" skin="Button" position="26 124 116 42" name="CommonTip_Cancel_Button">
+			        <Property key="NormalImage" value="c_button.png"/>         
+							<Event name="Clicked" Function="CommonTip_Cancel_Click();"/>
+			        <Widget type="TextBox" skin="TextBox" position="20 5 80 34" name="CommonTip_Cancel_Button_Text">
+								<Property key="FontName" value="fonts/common.fnt"/>
+				        <Property key="TextType" value="3"/>
+			     		</Widget>  					  
+					</Widget>          
+			    <Widget type="Button9Patch" skin="Button" position="194 124 116 42" name="CommonTip_Confirm_Button">
+			        <Property key="NormalImage" value="c_button.png"/>      
+							<Event name="Clicked" Function="CommonTip_Confirm_Click();"/>
+			        <Widget type="TextBox" skin="TextBox" position="20 5 80 34" name="CommonTip_Confirm_Button_Text">
+		            <Property key="FontName" value="fonts/common.fnt"/>
+		            <Property key="TextType" value="3"/>
+			    		</Widget>  					  
+			    </Widget>	  
+					<Widget type="Button9Patch" skin="Button" position="194 124 116 42" name="CommonTip_ToBuild_Button">
+						<Property key="NormalImage" value="c_button.png"/>
+						<Property key="SelectedImage" value="c_button.png"/>
+						<Property key="DisabledImage" value="c_button.png"/>
+						<Property key="TouchIntercept" value="true"/>
+						<Property key="TouchOrder" value="0"/>
+						<Event name="Clicked" Function="CommonTip_ToBuildHouse();"/>					
+						<Widget type="TextBox" skin="TextBox" position="20 5 80 34" name="CommonTip_ToBuild_Button_Text">
+							<Property key="FontName" value="fonts/common.fnt"/>
+							<Property key="TextType" value="3"/>
+						</Widget>
+					</Widget>			      
+				</Widget>   
+    </Widget>
+</MyGUI>
+

@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Widget" skin="PanelEmpty" position="0 0 800 480" name="Produce_Window">
+        <Property key="TouchIntercept" value="true"/>
+        <Property key="TouchOrder" value="5"/>
+        <Property key="zOrder" value="4"/>
+        <Widget type="ImageBox" skin="ImageBox" position="97 55 607 387" name="Produce_Background">
+            <Property key="ImageTexture" value="c_di1.png"/>
+						<Property key="bTextureSet" value="true"/>
+            <Property key="b9Patch" value="true"/>
+            <Property key="9PatchCapWidth" value="30"/>            
+		        <Widget type="ImageBox" skin="ImageBox" position="6 10 20 20" name="Produce_People_Img">
+		            <Property key="ImageTexture" value="UIIcon/u_zymbrk.png"/>
+		        </Widget>
+		        <Widget type="TextBox" skin="TextBox" position="25 10 80 30" name="Produce_People">
+		            <Property key="FontHeight" value="18"/>
+		        </Widget>
+		        <Widget type="TextBox" skin="TextBox" position="252 2 130 35" name="Produce_Name">
+		            <Property key="FontHeight" value="24"/>
+            		<Property key="TextAlign" value="Center"/>		            
+		            <Property key="TextColour" value="125 250 255"/>
+		        </Widget>
+		        <Widget type="Button9Patch" skin="Button" position="564 3 38 38" name="Produce_Close">
+		            <Property key="DisabledImage" value="c_cbutton.png"/>
+		            <Property key="NormalImage" value="c_cbutton.png"/>
+		            <Property key="SelectedImage" value="c_cbutton.png"/>
+		        		<Property key="TouchIntercept" value="true"/>
+		        		<Property key="TouchOrder" value="4"/>            
+		            <Event name="Clicked" Function="Produce_Close();"/>
+		        </Widget>		  
+            <Widget type="ImageBox" skin="RotatingSkin" position="14 40 241 336" name="Produce_LeftPanel">
+		            <Property key="ImageTexture" value="c_di2.png"/>
+								<Property key="bTextureSet" value="true"/>
+		            <Property key="b9Patch" value="true"/>
+		            <Property key="9PatchCapWidth" value="6"/>            	
+            </Widget>  	
+		        <Widget type="ScrollView" skin="ScrollView" position="14 46 241 324" name="Produce_ScrollView">
+		            <Property key="VisibleVScroll" value="true"/>
+		            <Property key="TouchIntercept" value="true"/>
+		            <Property key="TouchOrder" value="4"/>
+		        </Widget>
+            <Widget type="ImageBox" skin="RotatingSkin" position="263 40 330 336" name="Produce_RightPanel">
+		            <Property key="ImageTexture" value="c_di2.png"/>
+								<Property key="bTextureSet" value="true"/>
+		            <Property key="b9Patch" value="true"/>
+		            <Property key="9PatchCapWidth" value="6"/>    
+		            <Widget type="ImageBox" skin="RotatingSkin" position="0 0 330 336" name="Produce_RightHighLight">
+				            <Property key="ImageTexture" value="c_ilight.png"/>
+										<Property key="bTextureSet" value="true"/>
+				            <Property key="b9Patch" value="true"/>          	
+		            </Widget>   
+		            <Widget type="ImageBox" skin="RotatingSkin" position="10 10 310 120" name="Produce_RightTopPanel">
+				            <Property key="ImageTexture" value="di_shadow.png"/>
+										<Property key="bTextureSet" value="true"/>
+				            <Property key="b9Patch" value="true"/>  
+				            <Widget type="TextBox" skin="TextBox" position="0 5 310 240" name="Produce_Cost_Text">
+						            <Property key="FontHeight" value="22"/>
+						            <Property key="TextAlign" value="Left Top"/>
+									<Property key="TextColour" value="125 250 255"/>
+						        </Widget>   
+				            <Widget type="ImageBox" skin="ImageBox" position="1148 52 40 40" name="Produce_CostGoldIcon_Img">
+				                <Property key="ImageTexture" value="UIIcon/t_zymbjq.png"/>
+				            </Widget>
+				            <Widget type="TextBox" skin="TextBox" position="11105 52 80 40" name="Produce_CostGold_Text">
+						            <Property key="FontHeight" value="18"/>
+						            <Property key="TextAlign" value="Left Center"/>			         
+						        </Widget> 
+						        <Widget type="TextBox" skin="TextBox" position="0 20 310 25" name="Produce_Work_Name">
+						            <Property key="FontHeight" value="18"/>
+						            <Property key="TextAlign" value="Center"/>		
+						        </Widget>
+						        <Widget type="TextBox" skin="TextBox" position="0 50 310 25" name="Produce_Time_Text">
+						            <Property key="FontHeight" value="18"/>
+						            <Property key="TextAlign" value="Center"/>
+						            <Widget type="Time" skin="Time" position="0 0 0 0" name="Produce_Time_Mich">
+						                <Event name="Update" Function="Produce_Time();"/>
+						            </Widget>
+						        </Widget>
+				          	<Widget type="ImageBox" skin="RotatingSkin" position="17 85 276 18" name="Produce_Exp_Bg">
+						   			    <Property key="ImageTexture" value="c_pdi.png"/>
+						            <Property key="bTextureSet"	value="true"/>
+						            <Property key="b9Patch" value="true"/>
+						 		    </Widget>
+								    <Widget type="ProgressBar" skin="ProgressBar" position="17 85 276 18" name="Produce_Exp_Bar">
+						  		      <Property key="Begin" value="0 0"/>
+								        <Property key="End" value="1 0"/>
+						  		      <Property key="ImageTexture" value="plan_ingman.png"/>
+						  		      <Property key="bTextureSet"	value="true"/>
+						  		  </Widget>
+						  		  <Widget type="ImageBox" skin="RotatingSkin" position="17 85 276 20" name="Produce_ExpBar_Frame">
+						       		  <Property key="ImageTexture" value="c_pkuang.png"/>
+						       		  <Property key="bTextureSet"	value="true"/>
+						       		  <Property key="b9Patch" value="true"/>
+						       		  <Property key="9PatchCapWidth" value="6"/>
+						    		</Widget>						        		
+  						        					        				            						         				            						             	
+		            </Widget>   
+		             
+		            <Widget type="ImageBox" skin="RotatingSkin" position="10 140 310 120" name="Produce_RightBottomPanel">
+				            <Property key="ImageTexture" value="di_shadow.png"/>
+										<Property key="bTextureSet" value="true"/>
+				            <Property key="b9Patch" value="true"/>     
+				            <Widget type="TextBox" skin="TextBox" position="0 20 310 25" name="Produce_Harvest_Text">
+						            <Property key="FontHeight" value="22"/>
+						            <Property key="TextAlign" value="Center"/>			         
+						        </Widget> 	
+				            <Widget type="ImageBox" skin="ImageBox" position="48 20 40 40" name="Produce_HarvestGoldIcon_Img">
+				                <Property key="ImageTexture" value="UIIcon/t_zymbjq.png"/>
+				            </Widget>
+				            <Widget type="TextBox" skin="TextBox" position="105 20 80 40" name="Produce_HarvestGold_Text">
+						            <Property key="FontHeight" value="18"/>
+						            <Property key="TextAlign" value="Left Center"/>			         
+						        </Widget> 
+				            <Widget type="ImageBox" skin="ImageBox" position="185 20 40 40" name="Produce_HarvestExpIcon_Img">
+				                <Property key="ImageTexture" value="UIIcon/t_zymbjyz.png"/>
+				            </Widget>
+				            <Widget type="TextBox" skin="TextBox" position="232 20 80 40" name="Produce_HarvestExp_Text">
+						            <Property key="FontHeight" value="18"/>
+						            <Property key="TextAlign" value="Left Center"/>			         
+						        </Widget> 
+							<Widget type="ImageBox" skin="ImageBox" position="115 62 40 40" name="Produce_CostTimeIcon_Img">
+				                <Property key="ImageTexture" value="UIIcon/t_zymbsj.png"/>
+				            </Widget>
+				            <Widget type="TextBox" skin="TextBox" position="162 62 80 40" name="Produce_CostTime_Text">
+						            <Property key="FontHeight" value="18"/>
+						            <Property key="TextAlign" value="Left Center"/>			         
+						        </Widget> 
+		            </Widget>		              
+		            <Widget type="Button9Patch" skin="Button" position="107 286 116 42" name="Produce_Button_Produce">
+		                <Property key="NormalImage" value="c_button.png"/>
+		                <Property key="TouchOrder" value="4"/>
+		                <Property key="TouchIntercept" value="true"/>
+		                <Event name="Clicked" Function="Produce_ClickProduce();"/>		                
+		                <Widget type="TextBox" skin="TextBox" position="20 5 80 34" name="Produce_Button_Produce_Text">
+		                    <Property key="FontName" value="fonts/common.fnt"/>
+		                    <Property key="TextType" value="3"/>
+		                </Widget>
+		            </Widget> 		 
+				        <Widget type="Button9Patch" skin="Button" position="104 276 102 48" name="Produce_Button_AddSpeed">						            
+				            <Property key="NormalImage" value="button_pay.png"/>
+				            <Property key="TouchOrder" value="4"/>
+				        		<Property key="TouchIntercept" value="true"/>      
+										<Event name="Clicked" Function="Produce_AddSpeedClick();"/>				
+		                <Widget type="TextBox" skin="TextBox" position="10 8 70 34" name="Produce_Button_AddSpeed_Text">
+		               			 <Property key="FontHeight" value="18"/>		      
+						             <Property key="TextAlign" value="Center"/>			               			              
+		                </Widget>										        		
+				        </Widget>
+				        <Widget type="Button9Patch" skin="Button" position="107 286 116 42" name="Produce_Recv_Button">
+				            <Event name="Clicked" Function="Produce_Recv_Click();"/>
+				            <Property key="NormalImage" value="c_button.png"/>
+				            <Property key="TouchOrder" value="4"/>
+				            <Property key="TouchIntercept" value="true"/>
+				            <Widget type="TextBox" skin="TextBox" position="20 5 80 34" name="Produce_Recv_Button_Text">
+				             	 <Property key="FontName" value="fonts/common.fnt"/>
+				             	 <Property key="TextType" value="3"/>
+				     	  		</Widget>  	            
+				        </Widget>				        		                             	
+            </Widget> 	                               	                    	              
+        </Widget>        
+    </Widget>
+</MyGUI>

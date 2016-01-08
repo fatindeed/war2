@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Widget" skin="PanelEmpty" position="0 0 800 480" name="Broadcast_Window">
+        <Property key="zOrder" value="4"/>
+        <Widget type="ImageBox" skin="RotatingSkin" position="150 100 500 30" name="Broadcast_BG">
+            <Property key="ImageTexture" value="di_news.png"/>
+						<Property key="bTextureSet" value="true"/>
+            <Property key="b9Patch" value="true"/>      
+            <Property key="9PatchCapWidth" value="2"/> 
+		        <Widget type="Marquee" skin="Marquee" position="0 0 500 26" name="Broadcast_Marquee_Text">
+		            <Property key="FontHeight" value="22"/>
+		            <Property key="TextColour" value="157 250 24"/>   	
+		            <Event name="TimeEnd" Function="Broadcast_Close()"/>
+		        </Widget>	                		             
+        </Widget>
+    </Widget>
+</MyGUI>

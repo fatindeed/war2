@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Widget" skin="PanelEmpty" position="475 415 380 65" name="MainMenu_Window">
+        <Property key="zOrder" value="3"/>  
+        <Widget type="Widget" skin="PanelEmpty" position="255 -355 60 315" name="MainMenu_TopWindow"> 
+		        <Widget type="Button9Patch" skin="Button" position="0 75 60 60" name="MainMenu_Help_Button">
+		            <Property key="TouchIntercept" value="true"/>
+		            <Property key="TouchOrder" value="6"/>
+		            <Property key="DisabledImage" value="menu_helpan.png"/>
+		            <Property key="NormalImage" value="menu_helpan.png"/>
+		            <Property key="SelectedImage" value="menu_helpan.png"/>
+		            <Property key="b9Patch" value="false"/>
+		            <Event name="Clicked" Function="MainMenu_OnHelpEvent()"/>
+		        </Widget>
+				<Widget type="Button9Patch" skin="Button" position="0 145 60 60" name="MainMenu_Settings_Button">
+		            <Property key="TouchIntercept" value="true"/>
+		            <Property key="TouchOrder" value="6"/>
+		            <Property key="DisabledImage" value="mm_shezhi.png"/>
+		            <Property key="NormalImage" value="mm_shezhi.png"/>
+		            <Property key="SelectedImage" value="mm_shezhi.png"/>
+		            <Property key="b9Patch" value="false"/>
+		            <Event name="Clicked" Function="MainMenu_System()"/>
+		        </Widget>  
+		        <Widget type="Button9Patch" skin="Button" position="0 215 60 60" name="MainMenu_Move_Button">
+		            <Property key="NormalImage" value="mm_yidong.png"/>
+		            <Property key="SelectedImage" value="mm_yidong.png"/>
+		            <Property key="DisabledImage" value="mm_yidong.png"/>
+		            <Property key="TouchIntercept" value="true"/>
+		            <Property key="TouchOrder" value="6"/>
+		            <Property key="b9Patch" value="false"/>
+		            <Event name="Clicked" Function="MainMenu_Move()"/>
+		        </Widget>
+				<Widget type="Button9Patch" skin="Button" position="0 285 60 60" name="MainMenu_Build_Button">
+		            <Property key="NormalImage" value="mm_jianzao.png"/>
+		            <Property key="SelectedImage" value="mm_jianzao.png"/>
+		            <Property key="DisabledImage" value="mm_jianzao.png"/>            
+		            <Property key="TouchIntercept" value="true"/>
+		            <Property key="TouchOrder" value="6"/>
+		            <Property key="b9Patch" value="false"/>
+		            <Event name="Clicked" Function="MainMenu_Build()"/>
+		        </Widget>
+        </Widget>
+        <Widget type="Widget" skin="PanelEmpty" position="0 0 105 65" name="MainMenu_LeftWindow"> 
+				<Widget type="Button9Patch" skin="Button" position="155 0 60 60" name="MainMenu_Arrmy_Button">
+		            <Property key="TouchIntercept" value="true"/>
+		            <Property key="TouchOrder" value="6"/>
+		            <Property key="DisabledImage" value="mm_bingzhong.png"/>
+		            <Property key="NormalImage" value="mm_bingzhong.png"/>
+		            <Property key="SelectedImage" value="mm_bingzhong.png"/>
+		            <Property key="b9Patch" value="false"/>
+		            <Event name="Clicked" Function="MainMenu_Arrmy();"/>
+		        </Widget>
+				<Widget type="Button9Patch" skin="Button" position="85 0 60 60" name="MainMenu_World_Button">
+		            <Property key="SelectedImage" value="mm_shijie.png"/>
+		            <Property key="NormalImage" value="mm_shijie.png"/>
+		            <Property key="DisabledImage" value="mm_shijie.png"/>
+		            <Property key="TouchIntercept" value="true"/>
+		            <Property key="TouchOrder" value="6"/>
+		            <Property key="b9Patch" value="false"/>
+		            <Event name="Clicked" Function="MainMenu_ClickWorld()"/>
+		   			</Widget>
+		        <Widget type="Button9Patch" skin="Button" position="15 0 60 60" name="MainMenu_Mission_Button">
+		            <Property key="DisabledImage" value="mm_guanka.png"/>
+		            <Property key="SelectedImage" value="mm_guanka.png"/>
+		            <Property key="NormalImage" value="mm_guanka.png"/>
+		            <Property key="TouchIntercept" value="true"/>
+		            <Property key="TouchOrder" value="6"/>
+		            <Property key="b9Patch" value="false"/>
+		            <Event name="Clicked" Function="MainMenu_Mission();"/>
+		        </Widget>
+		    </Widget>
+        <Widget type="Button9Patch" skin="Button" position="255 2 64 64" name="MainMenu_Switch_Button">
+            <Property key="DisabledImage" value="uiicon_out2.png"/>
+            <Property key="NormalImage" value="uiicon_out2.png"/>
+            <Property key="SelectedImage" value="uiicon_out2.png"/>
+            <Property key="TouchIntercept" value="true"/>
+            <Property key="TouchOrder" value="6"/>
+            <Property key="b9Patch" value="false"/>
+            <Event name="Clicked" Function="MainMenu_MoveMenu();"/>
+        </Widget>
+    </Widget>
+</MyGUI>

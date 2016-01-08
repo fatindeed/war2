@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+   		 <Widget type="Widget" skin="PanelEmpty" position="0 0 800 480" name="SceneSwitch_Skeleton_Window">
+		     <Property key="zOrder" value="9"/>
+		     <Widget type="SkeletonView" skin="RotatingSkin" position="400 -250 800 480" name="SceneSwitch_Skeleton_Close">
+                <Property key="SkeletonDataFile" value="UIImage/skeleton_effect/anime_qiehuan_close.json"/>
+                <Property key="AtlasFile" value="UIImage/skeleton_effect/anime_qiehuan.txt"/>
+				<Event name="TimeEnd" Function="SceneSwitch_Skeleton_Close_AnimationEnd()"/> 			
+             </Widget> 
+			 <Widget type="SkeletonView" skin="RotatingSkin" position="400 -250 800 480" name="SceneSwitch_Skeleton_Open">
+                <Property key="SkeletonDataFile" value="UIImage/skeleton_effect/anime_qiehuan_open.json"/>
+                <Property key="AtlasFile" value="UIImage/skeleton_effect/anime_qiehuan.txt"/>
+				<Event name="TimeEnd" Function="SceneSwitch_Skeleton_Open_AnimationEnd()"/>    
+            </Widget>
+
+         </Widget>
+       
+</MyGUI>

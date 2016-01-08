@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Widget" skin="PanelEmpty" position="0 100 80 300" name="TaskList_Window">
+        <Property key="zOrder" value="2"/>
+        <Property key="TouchIntercept" value="false"/>
+        <Property key="TouchOrder" value="9"/>
+        <Widget type="ScrollView" skin="ScrollView" position="0 0 80 300" name="Task_List">
+            <Property key="VisibleVScroll" value="true"/>
+            <Property key="TouchIntercept" value="true"/>
+            <Property key="TouchOrder" value="7"/>
+        </Widget>
+    </Widget>
+</MyGUI>

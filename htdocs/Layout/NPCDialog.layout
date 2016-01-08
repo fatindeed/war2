@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Widget" skin="PanelEmpty" position="0 0 800 480" name="NPCDialog_Window">
+        <Property key="zOrder" value="4"/>
+        <Property key="TouchIntercept" value="true"/>
+        <Property key="TouchOrder" value="5"/>
+        <Event name="Clicked" Function="NPCDialog_Close()"/>          
+        <Widget type="ImageBox" skin="ImageBox" position="390 230 20 20" name="NPCDialog_Background">
+            <Property key="ImageTexture" value="UIImage/logo_hd.png"/>
+        </Widget>
+        <Widget type="ImageBox" skin="ImageBox" position="144 339 656 141" name="NPCDialog_Left_Chat">
+            <Property key="ImageTexture" value="npc_dialog_content_bg.png"/>
+            <Property key="bTextureSet" value="true"/>
+		        <Widget type="TextBox" skin="TextBox" position="145 30 470 305" name="NPCDialog_Text_Left">
+		            <Property key="FontHeight" value="20"/>
+		        </Widget>            
+        </Widget>
+        <Widget type="ImageBox" skin="ImageBox" position="0 132 288 348" name="NPCDialog_Left_Img">
+            <Property key="ImageTexture" value="UIImage/npc_1.png"/>
+        </Widget>
+        <Widget type="TextBox" skin="TextBox" position="250 165 210 45" name="NPCDialog_Name_Left">
+            <Property key="FontHeight" value="18"/>
+            <Property key="TextColour" value="76 249 255"/>
+        </Widget>
+        <Widget type="ImageBox" skin="ImageBox" position="0 339 656 141" name="NPCDialog_Right_Chat">
+            <Property key="ImageTexture" value="npc_dialog_content_bg.png"/>
+ 						<Property key="bTextureSet" value="true"/>
+ 						<Property key="FlipX" value="true"/>
+		        <Widget type="TextBox" skin="TextBox" position="20 30 480 305" name="NPCDialog_Text_Right">
+		            <Property key="FontHeight" value="20"/>
+		        </Widget> 						
+        </Widget>        
+        <Widget type="ImageBox" skin="ImageBox" position="512 132 288 348" name="NPCDialog_Right_Img">
+            <Property key="ImageTexture" value="UIImage/npc_1.png"/>
+        </Widget>
+        <Widget type="TextBox" skin="TextBox" position="470 165 210 45" name="NPCDialog_Name_Right">
+            <Property key="FontHeight" value="18"/>
+            <Property key="TextAlign" value="Left Top"/>
+            <Property key="TextColour" value="76 249 255"/>
+        </Widget>
+    </Widget>
+</MyGUI>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Widget" skin="RotatingSkin" position="0 0 800 480" name="System_Window">
+        <Property key="TouchIntercept" value="true"/>
+        <Property key="zOrder" value="4"/>
+        <Property key="TouchOrder" value="5"/>
+		    <Widget type="ImageBox" skin="ImageBox" position="390 230 20 20" name="System_Mask">
+		        <Property key="ImageTexture" value="UIImage/logo_hd.png"/> 
+		    </Widget>      
+        <Widget type="ImageBox" skin="RotatingSkin" position="212 58 374 391" name="System_List_BG">
+            <Property key="ImageTexture" value="uidenglu_xuanfudikuang.png"/>
+            <Property key="bTextureSet" value="true"/>             
+           	<Widget type="Button9Patch" skin="Button" position="319 24 38 38" name="System_CloseWindow_Btn">
+								<Property key="NormalImage" value="uidenglu_tuichu.png"/>
+								<Property key="SelectedImage" value="uidenglu_tuichuanxia.png"/>
+								<Property key="DisabledImage" value="uidenglu_tuichuanxia.png"/>  
+                <Property key="TouchIntercept" value="true"/>
+                <Property key="TouchOrder" value="4"/>
+								<Event name="Clicked" Function="System_OnCloseEvent()"/>      								                    
+            </Widget>  
+		        <Widget type="TextBox" skin="TextBox" position="0 29 374 34" name="System_Title">
+			        <Property key="FontHeight" value="24"/>
+					<Property key="TextAlign" value="Center"/>	
+					<Property key="TextColour" value="150 255 0"/>
+		     	</Widget>			             		                         
+            <Widget type="ScrollView" skin="ScrollView" position="48 105 278 184" name="System_List">
+                <Property key="VisibleVScroll" value="true"/>
+                <Property key="TouchIntercept" value="true"/>
+                <Property key="TouchOrder" value="4"/>
+            </Widget>               
+        </Widget>                					
+		</Widget>
+</MyGUI>

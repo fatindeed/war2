@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Widget" skin="PanelEmpty" position="520 35 300 82" name="MainButton">
+    	<Property key="zOrder" value="3"/>
+    	<Widget type="ImageBox" skin="ImageBox" position="190 0 90 90" name="Main_Image">
+			<Property key="ImageTexture" value="uiicon_shoplight.png"/>
+			<Property key="bTextureSet"	value="true"/>
+		</Widget> 
+        <Widget type="Button9Patch" skin="Button" position="202 -20 91 91" name="Main_Shop">
+            <Property key="TouchIntercept" value="true"/>
+            <Property key="TouchOrder" value="7"/>
+            <Property key="DisabledImage" value="uiicon_shop.png"/>
+            <Property key="NormalImage" value="uiicon_shop.png"/>
+            <Property key="SelectedImage" value="uiicon_shop.png"/>
+            <Property key="b9Patch" value="false"/>
+            <Event name="Clicked" Function="MainButton_Shop_Click();"/>
+        </Widget>  
+		<Widget type="ImageBox" skin="ImageBox" position="100 -20 117 113" name="Main_HeavenLadderBGLight">
+			<Property key="ImageTexture" value="uitianti_icontexiao.png"/>
+			<Property key="bTextureSet" value="true"/>
+        </Widget>         
+		<Widget type="Button9Patch" skin="Button" position="100 0 97 79" name="Main_HeavenLadderMatch">
+			<Property key="TouchIntercept" value="true"/>
+			<Property key="TouchOrder" value="7"/>
+			<Property key="DisabledImage" value="uiicon_tiantisai.png"/>
+			<Property key="NormalImage" value="uiicon_tiantisai.png"/>
+			<Property key="SelectedImage" value="uiicon_tiantisai.png"/>
+			<Property key="b9Patch" value="false"/>
+			<Event name="Clicked" Function="MainButton_SportsMatch_Click()"/>
+			<Widget type="TextBox" skin="TextBox" position="24 53 54 26" name="Main_TianTiName">
+				<Property key="FontHeight" value="14"/>
+				<Property key="TextColour" value="241 255 85"/>						            		
+				<Property key="TextAlign" value="Center"/> 	
+			</Widget>
+		</Widget> 
+
+		<Widget type="Button9Patch" skin="Button" position="10 -8 91 91" name="Main_Game">
+            <Property key="TouchIntercept" value="true"/>
+            <Property key="TouchOrder" value="7"/>
+            <Property key="DisabledImage" value="main_shop.png"/>
+            <Property key="NormalImage" value="main_shop.png"/>
+            <Property key="SelectedImage" value="main_shop.png"/>
+            <Property key="b9Patch" value="false"/>
+            <Event name="Clicked" Function="MainButton_Guess_Click()"/>
+        </Widget>  
+			
+    </Widget>
+</MyGUI>

@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Widget" skin="PanelEmpty" position="0 0 800 480" name="CostLack_Window">
+        <Property key="zOrder" value="3"/>
+        <Property key="TouchOrder" value="5"/>
+        <Property key="TouchIntercept" value="true"/>
+        <Widget type="ImageBox" skin="RotatingSkin" position="190 80 420 321" name="CostLack_BG">
+            <Property key="ImageTexture" value="c_di1.png"/>
+						<Property key="bTextureSet" value="true"/>
+            <Property key="b9Patch" value="true"/>
+            <Property key="9PatchCapWidth" value="30"/>
+            <Widget type="TextBox" skin="TextBox" position="130 5 155 30" name="CostLack_Title">
+                <Property key="TextAlign" value="Center"/>
+                <Property key="FontHeight" value="24"/>
+                <Property key="TextColour" value="125 250 255"/>
+            </Widget>             
+       	    <Widget type="Button9Patch" skin="Button" position="378 3 38 38" name="CostLack_Close_Button">		        
+		            <Property key="DisabledImage" value="c_cbutton.png"/>
+		            <Property key="NormalImage" value="c_cbutton.png"/>
+		            <Property key="SelectedImage" value="c_cbutton.png"/>
+		            <Property key="TouchOrder" value="4"/>
+		            <Property key="TouchIntercept" value="true"/>
+								<Event name="Clicked" Function="CostLack_Close();"/>		            
+        		</Widget>              
+            <Widget type="ImageBox" skin="RotatingSkin" position="10 40 400 230" name="CostLack_SubPanel">
+		            <Property key="ImageTexture" value="di_up.png"/>
+								<Property key="bTextureSet" value="true"/>
+		            <Property key="b9Patch" value="true"/>
+		            <Property key="9PatchCapWidth" value="12"/>            	
+            </Widget>            							
+            <Widget type="ImageBox" skin="RotatingSkin" position="18 45 385 220" name="CostLack_HighLight">
+		            <Property key="ImageTexture" value="c_ilight.png"/>
+								<Property key="bTextureSet" value="true"/>
+		            <Property key="b9Patch" value="true"/>          	
+            </Widget>
+            <Widget type="ImageBox" skin="RotatingSkin" position="18 45 385 220" name="CostLack_TableLine">
+		            <Property key="ImageTexture" value="c_tskuangdi.png"/>
+								<Property key="bTextureSet" value="true"/>
+		            <Property key="b9Patch" value="true"/>          	
+            </Widget>  
+            <Widget type="ImageBox" skin="RotatingSkin" position="32 66 356 95" name="CostLack_IntroducePanel">
+		            <Property key="ImageTexture" value="di_ajieshao.png"/>
+								<Property key="bTextureSet" value="true"/>
+		            <Property key="b9Patch" value="true"/>
+        				<Property key="9PatchCapWidth" value="10"/> 			
+		            <Widget type="TextBox" skin="TextBox" position="0 0 356 95" name="CostLack_Content">
+		                <Property key="TextAlign" value="Center"/>
+		                <Property key="FontHeight" value="18"/>
+		                <Property key="TextColour" value="255 255 255"/> 
+		            </Widget>          							                      	
+            </Widget>                      
+            <Widget type="ImageBox" skin="ImageBox" position="34 195 40 40" name="CostLack_Gold_Img">
+                <Property key="ImageTexture" value="UIIcon/t_zymbjq.png"/>
+            </Widget> 
+            <Widget type="TextBox" skin="TextBox" position="85 204 125 30" name="CostLack_Gold_Text">
+                <Property key="FontHeight" value="18"/>
+            </Widget>
+            <Widget type="ImageBox" skin="ImageBox" position="170 195 40 40" name="CostLack_Iron_Img">
+                <Property key="ImageTexture" value="UIIcon/t_zymbt.png"/>
+            </Widget> 
+            <Widget type="TextBox" skin="TextBox" position="221 204 125 30" name="CostLack_Iron_Text">
+                <Property key="FontHeight" value="18"/>
+            </Widget> 
+            <Widget type="ImageBox" skin="ImageBox" position="285 195 40 40" name="CostLack_Oil_Img">
+                <Property key="ImageTexture" value="UIIcon/t_zymbsy.png"/>
+            </Widget> 
+            <Widget type="TextBox" skin="TextBox" position="336 204 125 30" name="CostLack_Oil_Text">
+                <Property key="FontHeight" value="18"/>
+            </Widget>                                  
+            <Widget type="TextBox" skin="TextBox" position="21 285 280 30" name="CostLack_PayButtonTip_Text">
+                <Property key="FontHeight" value="18"/>
+            </Widget>                              
+		        <Widget type="Button9Patch" skin="Button" position="305 271 102 48" name="CostLack_Pay_Button">
+		            <Property key="NormalImage" value="button_pay.png"/>         
+							  <Event name="Clicked" Function="CostLack_Pay_Click();"/>
+		            <Widget type="TextBox" skin="TextBox" position="0 5 70 48" name="CostLack_Pay_Button_Text">
+		             	 <Property key="FontHeight" value="18"/>
+		               <Property key="TextAlign" value="Center"/>
+		     	  		</Widget>  					  
+		        </Widget>		                                    
+        </Widget>   
+    </Widget>
+</MyGUI>
+

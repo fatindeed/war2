@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Widget" skin="PanelEmpty" position="0 0 800 480" name="ChatAlert_Window">
+        <Property key="zOrder" value="1"/>
+        <Property key="TouchIntercept" value="true"/>
+        <Property key="TouchOrder" value="5"/>
+		<Widget type="ImageBox" skin="ImageBox" position="0 0 800 480" name="ChatAlert_Down">
+			<Property key="ImageTexture" value="c_bluedi.png"/>
+      <Property key="bTextureSet"	value="true"/>
+			<Property key="b9Patch" value="true"/>
+			<Property key="9PatchCapWidth" value="10"/> 
+			<Widget type="ImageBox" skin="ImageBox" position="0 0 800 480" name="ChatAlert_DownDi">
+				<Property key="ImageTexture" value="c_di1.png"/>
+				<Property key="bTextureSet"	value="true"/>
+				<Property key="b9Patch" value="true"/>
+				<Property key="9PatchCapWidth" value="10"/>
+				<Widget type="ImageBox" skin="ImageBox" position="0 48 800 432" name="ChatAlert_Up1">
+					<Property key="ImageTexture" value="c_di2.png"/>
+					<Property key="bTextureSet"	value="true"/>
+					<Property key="b9Patch" value="true"/>
+					<Property key="9PatchCapWidth" value="10"/>
+				</Widget>
+				<Widget type="TextBox" skin="TextBox" position="350 9 100 30" name="ChatAlert_Text">
+					<Property key="FontHeight" value="24"/>
+					<Property key="TextAlign" value="Center"/>
+					<Property key="TextColour" value="10 250 230"/>
+				</Widget>
+				<Widget type="Button9Patch" skin="Button" position="757 5 38 38" name="ChatAlert_Close">
+					<Property key="NormalImage" value="c_cbutton.png"/>
+					<Property key="SelectedImage" value="c_cbutton.png"/>
+					<Property key="DisabledImage" value="c_cbutton.png"/>
+					<Event name="Clicked" Function="ChatAlert_Close();"/>
+					<Property key="TouchIntercept" value="true"/>
+					<Property key="TouchOrder" value="4"/>
+					<Property key="b9Patch" value="false"/> 
+				</Widget>
+			</Widget>
+			<Widget type="ImageBox" skin="RotatingSkin" position="0 48 800 432" name="ChatAlert_DownDiWenguang">
+				<Property key="ImageTexture" value="c_diilight.png"/>
+				<Property key="bTextureSet"	value="true"/>
+				<Property key="ScaleX" value="8"/>
+				<Property key="ScaleY" value="4.3"/>
+				<Widget type="ImageBox" skin="RotatingSkin" position="0 0 800 432" name="ChatAlert_DownDiWen">
+					<Property key="ImageTexture" value="custom_diwen.png"/>
+					<Property key="bTextureSet" value="true"/>
+					<Property key="b9Patch" value="true"/>  
+				</Widget>
+			</Widget>
+			<Widget type="Time" skin="Time" position="0 0 0 0" name="ChatAlert_Time_Mich">
+				<Event name="TimeEnd" Function="ChatAlert_SumbitLimit();"/>
+			</Widget>
+			<Widget type="ImageBox" skin="ImageBox" position="35 65 730 360" name="ChatAlert_FrontPanel">
+				<Property key="ImageTexture" value="di_fover.png"/>
+				<Property key="bTextureSet"	value="true"/>
+				<Property key="b9Patch" value="true"/>
+        		<Property key="9PatchCapWidth" value="30"/> 
+            </Widget>
+			<Widget type="ScrollView" skin="ScrollView" position="90 90 670 300" name="ChatAlert_ScrollView">
+                   <Property key="VisibleVScroll1" value="true"/>
+                   <Property key="TouchIntercept" value="true"/>
+                   <Property key="TouchOrder" value="3"/>
+                </Widget>
+                <Widget type="TextBox" skin="TextBox" position="15 290 660 0" name="ChatAlert_TextBox_ListHistory">
+                   <Property key="TextType" value="2"/>
+                   <Property key="AnchorPoint" value="0 1"/>
+                   <Property key="FontHeight" value="20"/>
+                <Property key="TextColour" value="7 186 189"/>
+            </Widget>
+			<Widget type="ImageBox" skin="RotatingSkin" position="137 423 526 49" name="ChatAlert_Input_Box">
+                <Property key="ImageTexture" value="UIImage/lt_wzsrk.png"/>
+                <Widget type="EditBox" skin="EditBox" position="2 4 490 40" name="ChatAlert_Input_Box_Text">
+                    <Property key="FontName" value="arial"/>
+                    <Property key="FontHeight" value="26"/>
+                    <Property key="MaxTextLength" value="500"/>
+                </Widget>
+            </Widget>
+            <Widget type="Button9Patch" skin="Button" position="40 423 92 51" name="ChatAlert_World_chating">
+                <Property key="NormalImage" value="lt_worldl.png"/>
+                <Property key="SelectedImage" value="lt_worldl.png"/>
+                <Property key="DisabledImage" value="lt_worldl.png"/>
+                <Property key="b9Patch" value="false"/>
+                <Event name="Clicked" Function="ChatAlert_World();"/>
+            </Widget>
+            <Widget type="Button9Patch" skin="Button" position="670 423 92 51" name="ChatAlert_Enter">
+                <Property key="NormalImage" value="lt_enterl.png"/>
+                <Property key="DisabledImage" value="lt_enterl.png"/>
+                <Property key="SelectedImage" value="lt_enterl.png"/>
+                <Property key="b9Patch" value="false"/>
+                <Event name="Clicked" Function="ChatAlert_OnEnter();"/>
+            </Widget>
+		</Widget>
+    </Widget>
+</MyGUI>

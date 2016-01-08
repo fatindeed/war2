@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Widget" skin="PanelEmpty" position="0 0 800 480" name="WorldPlayer_Window">
+        <Property key="zOrder" value="4"/>
+        <Property key="TouchIntercept" value="true"/>
+        <Property key="TouchOrder" value="5"/>
+        <Widget type="ImageBox" skin="RotatingSkin" position="0 0 800 480" name="WorldPlayer_BG">
+            <Property key="ImageTexture" value="UIImage/uishijie_beijing.jpg"/>                                 
+        </Widget>
+		
+        <Widget type="ImageBox" skin="RotatingSkin" position="0 0 400 66" name="WorldPlayer_LeftTitleBG">
+            <Property key="ImageTexture" value="uishijie_titlediban.png"/>      
+						<Property key="bTextureSet" value="true"/>                                       
+        </Widget>
+        <Widget type="ImageBox" skin="RotatingSkin" position="400 0 400 66" name="WorldPlayer_RightTitleBG">
+            <Property key="ImageTexture" value="uishijie_titlediban.png"/>   
+        		<Property key="bTextureSet" value="true"/>   
+        		<Property key="FlipX" value="true"/>                              
+        </Widget> 
+		<Widget type="TextBox" skin="TextBox" position="279 8 242 40" name="WorldPlayer_PlanetCount">
+            		<Property key="FontHeight" value="24"/>
+    				<Property key="TextColour" value="0 255 255"/>						            		
+					<Property key="TextAlign" value="Center"/> 
+					<Property key="Caption" value="Loading..."/>				
+        </Widget>      
+		<Widget type="ImageBox" skin="RotatingSkin" position="747 1 54 60" name="WorldPlayer_Close_BG">
+            <Property key="ImageTexture" value="uishijie_guanbidikuang.png"/>   
+        	<Property key="bTextureSet" value="true"/>                      
+        </Widget>  
+		<Widget type="Button9Patch" skin="Button9Patch" position="750 3 52 52" name="WorldPlayer_Close">
+						<Property key="NormalImage" value="uitianti_close.png"/>
+						<Property key="SelectedImage" value="uitianti_close.png"/>
+						<Property key="DisabledImage" value="uitianti_close.png"/>
+						<Property key="TouchIntercept" value="true"/>
+						<Property key="TouchOrder" value="4"/>
+						<Event name="Clicked" Function="WorldPlayer_Close()"/>		
+        </Widget>                	
+        <Widget type="ImageBox" skin="RotatingSkin" position="65 60 150 150" name="WorldPlayer_Planet1">
+				<Property key="ImageTexture" value="uishijie_xingqiu5.png"/>
+        		<Property key="bTextureSet" value="true"/>  						
+						<Property key="Scale" value="1.O"/>			
+						<Property key="TouchIntercept" value="true"/>
+						<Property key="TouchOrder" value="4"/>				
+				<Event name="Clicked" Function="WorldPlayer_OnPlanetDetailEvent()"/>
+        </Widget>
+		<Widget type="ImageBox" skin="RotatingSkin" position="95 181 92 28" name="WorldPlayer_Planet1_ImageBox_BG">
+               <Property key="ImageTexture" value="uishijie_wanjiaxingming.png"/>   
+        	   <Property key="bTextureSet" value="true"/>                      
+        </Widget>
+		<Widget type="TextBox" skin="TextBox" position="95 181 92 28" name="WorldPlayer_Planet1_TextBox">
+            	<Property key="FontHeight" value="20"/>
+    			<Property key="TextColour" value="0 255 255"/>						            		
+				<Property key="TextAlign" value="Center"/> 			
+        </Widget>   
+		
+		
+		<Widget type="ImageBox" skin="RotatingSkin" position="615 90 150 150" name="WorldPlayer_Planet2">
+				<Property key="ImageTexture" value="uishijie_xingqiu1.png"/>
+        		<Property key="bTextureSet" value="true"/>  						
+						<Property key="Scale" value="1.O"/>			
+						<Property key="TouchIntercept" value="true"/>
+						<Property key="TouchOrder" value="4"/>					
+				<Event name="Clicked" Function="WorldPlayer_OnPlanetDetailEvent()"/>						
+        </Widget>
+		<Widget type="ImageBox" skin="RotatingSkin" position="643 214 92 28" name="WorldPlayer_Planet2_ImageBox_BG">
+               <Property key="ImageTexture" value="uishijie_wanjiaxingming.png"/>   
+        	   <Property key="bTextureSet" value="true"/>                      
+        </Widget>
+		<Widget type="TextBox" skin="TextBox" position="643 214 92 28" name="WorldPlayer_Planet2_TextBox">
+            	<Property key="FontHeight" value="20"/>
+    			<Property key="TextColour" value="0 255 255"/>						            		
+				<Property key="TextAlign" value="Center"/> 		
+        </Widget>
+		
+		
+			<Widget type="ImageBox" skin="RotatingSkin" position="142 312 120 120" name="WorldPlayer_Planet3">
+				<Property key="ImageTexture" value="uishijie_xingqiu3.png"/>
+        		<Property key="bTextureSet" value="true"/>  						
+						<Property key="Scale" value="0.8"/>		
+						<Property key="TouchIntercept" value="true"/>
+						<Property key="TouchOrder" value="4"/>		
+				<Event name="Clicked" Function="WorldPlayer_OnPlanetDetailEvent()"/>						
+         </Widget>
+		<Widget type="ImageBox" skin="RotatingSkin" position="159 388 92 28" name="WorldPlayer_Planet3_ImageBox_BG">
+               <Property key="ImageTexture" value="uishijie_wanjiaxingming.png"/>   
+        	   <Property key="bTextureSet" value="true"/>                      
+        </Widget>
+		<Widget type="TextBox" skin="TextBox" position="159 388 92 28" name="WorldPlayer_Planet3_TextBox">
+            	<Property key="FontHeight" value="20"/>
+    			<Property key="TextColour" value="0 255 255"/>						            		
+				<Property key="TextAlign" value="Center"/> 			
+        </Widget>
+		
+		
+			<Widget type="ImageBox" skin="RotatingSkin" position="620 329 120 120" name="WorldPlayer_Planet4">
+				<Property key="ImageTexture" value="uishijie_xingqiu2.png"/>
+        		<Property key="bTextureSet" value="true"/>  						
+				<Property key="Scale" value="0.8"/>		
+						<Property key="TouchIntercept" value="true"/>
+						<Property key="TouchOrder" value="4"/>				
+				<Event name="Clicked" Function="WorldPlayer_OnPlanetDetailEvent()"/>								
+         </Widget>
+		<Widget type="ImageBox" skin="RotatingSkin" position="632 404 92 28" name="WorldPlayer_Planet4_ImageBox_BG">
+               <Property key="ImageTexture" value="uishijie_wanjiaxingming.png"/>   
+        	   <Property key="bTextureSet" value="true"/>                      
+        </Widget>
+		<Widget type="TextBox" skin="TextBox" position="632 404 92 28" name="WorldPlayer_Planet4_TextBox">
+            	<Property key="FontHeight" value="20"/>
+    			<Property key="TextColour" value="0 255 255"/>						            		
+				<Property key="TextAlign" value="Center"/> 				
+        </Widget>
+			
+			
+				<Widget type="ImageBox" skin="RotatingSkin" position="469 160 105 105" name="WorldPlayer_Planet5">
+				<Property key="ImageTexture" value="uishijie_xingqiu4.png"/>
+        		<Property key="bTextureSet" value="true"/>  						
+				<Property key="Scale" value="0.7"/>			
+						<Property key="TouchIntercept" value="true"/>
+						<Property key="TouchOrder" value="4"/>							
+				<Event name="Clicked" Function="WorldPlayer_OnPlanetDetailEvent()"/>				
+        </Widget>
+		<Widget type="ImageBox" skin="RotatingSkin" position="475 234 92 28" name="WorldPlayer_Planet5_ImageBox_BG">
+               <Property key="ImageTexture" value="uishijie_wanjiaxingming.png"/>   
+        	   <Property key="bTextureSet" value="true"/>                      
+        </Widget>
+		<Widget type="TextBox" skin="TextBox" position="475 234 92 28" name="WorldPlayer_Planet5_TextBox">
+            	<Property key="FontHeight" value="20"/>
+    			<Property key="TextColour" value="0 255 255"/>						            		
+				<Property key="TextAlign" value="Center"/> 			
+        </Widget>
+		
+		
+			<Widget type="ImageBox" skin="RotatingSkin" position="257 168 90 90" name="WorldPlayer_Planet6">
+				<Property key="ImageTexture" value="uishijie_xingqiu8.png"/>
+        		<Property key="bTextureSet" value="true"/>  						
+				<Property key="Scale" value="0.6"/>			
+						<Property key="TouchIntercept" value="true"/>
+						<Property key="TouchOrder" value="4"/>				
+				<Event name="Clicked" Function="WorldPlayer_OnPlanetDetailEvent()"/>							
+        </Widget>
+		<Widget type="ImageBox" skin="RotatingSkin" position="258 236 92 28" name="WorldPlayer_Planet6_ImageBox_BG">
+               <Property key="ImageTexture" value="uishijie_wanjiaxingming.png"/>   
+        	   <Property key="bTextureSet" value="true"/>                      
+        </Widget>
+		<Widget type="TextBox" skin="TextBox" position="258 236 92 28" name="WorldPlayer_Planet6_TextBox">
+            	<Property key="FontHeight" value="20"/>
+    			<Property key="TextColour" value="0 255 255"/>						            		
+				<Property key="TextAlign" value="Center"/> 			
+        </Widget>
+		
+		
+			<Widget type="ImageBox" skin="RotatingSkin" position="401 287 75 75" name="WorldPlayer_Planet7">
+				<Property key="ImageTexture" value="uishijie_xingqiu7.png"/>
+        		<Property key="bTextureSet" value="true"/>  						
+				<Property key="Scale" value="0.5"/>			
+					<Property key="TouchIntercept" value="true"/>
+					<Property key="TouchOrder" value="4"/>
+				<Event name="Clicked" Function="WorldPlayer_OnPlanetDetailEvent()"/>							
+        </Widget>
+		<Widget type="ImageBox" skin="RotatingSkin" position="392 345 92 28" name="WorldPlayer_Planet7_ImageBox_BG">
+               <Property key="ImageTexture" value="uishijie_wanjiaxingming.png"/>   
+        	   <Property key="bTextureSet" value="true"/>                      
+        </Widget>
+		<Widget type="TextBox" skin="TextBox" position="392 345 92 28" name="WorldPlayer_Planet7_TextBox">
+            	<Property key="FontHeight" value="20"/>
+    			<Property key="TextColour" value="0 255 255"/>						            		
+				<Property key="TextAlign" value="Center"/> 			
+        </Widget>
+		
+		
+			<Widget type="ImageBox" skin="RotatingSkin" position="346 91 45 45" name="WorldPlayer_Planet8">
+				<Property key="ImageTexture" value="uishijie_xingqiu6.png"/>
+        		<Property key="bTextureSet" value="true"/>  						
+				<Property key="Scale" value="0.3"/>		
+						<Property key="TouchIntercept" value="true"/>
+						<Property key="TouchOrder" value="4"/>						
+				<Event name="Clicked" Function="WorldPlayer_OnPlanetDetailEvent()"/>						
+        </Widget>
+		<Widget type="ImageBox" skin="RotatingSkin" position="327 121 92 28" name="WorldPlayer_Planet8_ImageBox_BG">
+               <Property key="ImageTexture" value="uishijie_wanjiaxingming.png"/>   
+        	   <Property key="bTextureSet" value="true"/>                      
+        </Widget>
+		<Widget type="TextBox" skin="TextBox" position="324 121 92 28" name="WorldPlayer_Planet8_TextBox">
+            	<Property key="FontHeight" value="20"/>
+    			<Property key="TextColour" value="0 255 255"/>						            		
+				<Property key="TextAlign" value="Center"/> 			
+        </Widget>
+		
+		<Widget type="Time" skin="Time" position="0 0 0 0" name="WorldPlayer_Search_Timer">		
+			<Event name="TimeEnd" Function="WorldPlayer_Search_EndTimeEvent()"/>	
+        </Widget> 		
+		<Widget type="Button9Patch" skin="Button9Patch" position="310 412 184 63" name="WorldPlayer_Search">
+						<Property key="NormalImage" value="uishijie_anniuchangtai.png"/>
+						<Property key="SelectedImage" value="uishijie_anxiaanniu.png"/>
+						<Property key="DisabledImage" value="uishijie_anxiaanniu.png"/>
+						<Property key="TouchIntercept" value="true"/>
+						<Property key="TouchOrder" value="4"/>
+						<Event name="Clicked" Function="WorldPlayer_Search_Click()"/>		
+        </Widget> 
+		<Widget type="ImageBox" skin="RotatingSkin" position="325 426 103 29" name="WorldPlayer_Search_Text">
+               <Property key="ImageTexture" value="uishjie_jixutansuo.png"/>   
+        	   <Property key="bTextureSet" value="true"/>                      
+        </Widget>
+		<Widget type="ImageBox" skin="RotatingSkin" position="431 420 47 47" name="WorldPlayer_Search_Wait">
+               <Property key="ImageTexture" value="uishijie_shuaxintubiao.png"/>   
+        	   <Property key="bTextureSet" value="true"/>                      
+        </Widget>
+		 <!---->
+		<Widget type="ImageBox" skin="RotatingSkin" position="0 0 800 480" name="WorldPlayer_Player1">
+            <Property key="ImageTexture" value="UIImage/Player1.png"/>                                 
+        </Widget>
+		<Widget type="ImageBox" skin="RotatingSkin" position="0 0 800 480" name="WorldPlayer_Player2">
+            <Property key="ImageTexture" value="UIImage/Player2.png"/>                                 
+        </Widget>
+		<Widget type="ImageBox" skin="RotatingSkin" position="0 0 800 480" name="WorldPlayer_Player3">
+            <Property key="ImageTexture" value="UIImage/Player3.png"/>                                 
+        </Widget>
+		<Widget type="ImageBox" skin="RotatingSkin" position="0 0 800 480" name="WorldPlayer_Player4">
+            <Property key="ImageTexture" value="UIImage/Player4.png"/>                                 
+        </Widget>
+		
+		<Widget type="Button9Patch" skin="Button9Patch" position="750 3 52 52" name="WorldPlayer_GoHome">
+				<Property key="NormalImage" value="uishijie_anniuchangtai.png"/>
+				<Property key="SelectedImage" value="uishijie_anxiaanniu.png"/>
+				<Property key="DisabledImage" value="uishijie_anxiaanniu.png"/>
+				<Property key="TouchIntercept" value="true"/>
+				<Property key="TouchOrder" value="4"/>
+				<Event name="Clicked" Function="WorldPlayer_Close()"/>		
+        </Widget> 
+		
+		<!---->       
+    </Widget>
+</MyGUI>
+

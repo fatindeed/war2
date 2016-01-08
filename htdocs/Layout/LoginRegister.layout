@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Widget" skin="PanelEmpty" position="0 0 800 480" name="LoginRegister_Window">
+        <Property key="TouchIntercept" value="true"/>
+        <Property key="TouchOrder" value="9"/>
+        <Widget type="ImageBox" skin="RotatingSkin" position="0 0 800 480" name="LoginRegister_BG_Image">
+            <Property key="ImageTexture" value="UIImage/theme_cover.png"/>
+			
+            <Widget type="ImageBox" skin="RotatingSkin" position="100 0 606 202" name="LoginRegister_Title_Image">
+                <Property key="ImageTexture" value="UIImage/uiimage_logo.png"/>
+            </Widget>
+		
+			 <Widget type="ImageBox" skin="RotatingSkin" position="147 195 510 252" name="LoginRegister_Register_Login_BG_Image">
+                <Property key="ImageTexture" value="uidenglu_zhucediban.png"/>
+				<Property key="bTextureSet" value="true"/>  
+            </Widget>
+			
+			<Widget type="Button9Patch" skin="RotatingSkin" position="593 214 37 37" name="LoginRegister_Register_Login_Close_Image">
+			    <Property key="NormalImage" value="uidenglu_tuichu.png"/>
+				<Property key="SelectedImage" value="uidenglu_tuichuanxia.png"/>
+				<Property key="DisabledImage" value="uidenglu_tuichu.png"/> 
+				<Event 		name="Clicked" Function="LoginRegister_OnClick_Login_Close()"/>
+            </Widget>
+			
+			<Widget type="Button9Patch" skin="RotatingSkin" position="593 214 37 37" name="LoginRegister_Register_Register_Close_Image">
+			    <Property key="NormalImage" value="uidenglu_tuichu.png"/>
+				<Property key="SelectedImage" value="uidenglu_tuichuanxia.png"/>
+				<Property key="DisabledImage" value="uidenglu_tuichu.png"/> 
+				<Event 		name="Clicked" Function="LoginRegister_OnClick_Register_Close()"/>
+            </Widget>
+
+            
+			<Widget type="TextBox" skin="TextBox" position="0 209 800 36" name="LoginRegister_TextBox_Login_Title">
+		                <Property key="TextColour" value="225 255 255"/>
+		                <Property key="FontHeight" value="32"/>
+		                <Property key="TextAlign" value="Center"/>
+		    </Widget> 
+			
+			<Widget type="TextBox" skin="TextBox" position="0 209 800 36" name="LoginRegister_TextBox_Register_Title">
+		                <Property key="TextColour" value="225 255 255"/>
+		                <Property key="FontHeight" value="32"/>
+		                <Property key="TextAlign" value="Center"/>
+		    </Widget> 
+
+            <Widget type="ImageBox" skin="RotatingSkin" position="263 263 276 32" name="LoginRegister_IDarea_Image">
+                <Property key="ImageTexture" value="uiimage_shuru.png"/>
+                <Property key="bTextureSet" value="true"/>       
+                <Property key="b9Patch" value="true"/>       
+                <Property key="9PatchCapWidth" value="4"/>
+		            <Widget type="TextBox" skin="TextBox" position="10 0 130 32" name="LoginRegister_TextBox_User">
+		                <Property key="TextColour" value="225 255 255"/>
+		                <Property key="FontHeight" value="24"/>
+		                <Property key="TextAlign" value="Left Center"/>
+		       		  </Widget> 
+		            <Widget type="EditBox" skin="EditBox" position="100 0 246 32" name="LoginRegister_IDarea_Text">
+		             		<Property key="Caption" value="#{UIDL_1000_043}"/>		               
+		                <Property key="FontHeight" value="20"/>
+		                <Property key="TextColour" value="255 255 255"/>
+		                <Property key="MaxTextLength" value="172"/>
+		                <Property key="TouchIntercept" value="true"/>
+		                <Property key="TouchOrder" value="8"/>
+		            </Widget>		       		                                                       
+            </Widget>
+            <Widget type="ImageBox" skin="RotatingSkin" position="263 319 276 32" name="LoginRegister_Passwordarea_Image">
+                <Property key="ImageTexture" value="uiimage_shuru.png"/>
+                <Property key="bTextureSet" value="true"/>
+                <Property key="b9Patch" value="true"/>       
+								<Property key="9PatchCapWidth" value="4"/>      
+		            <Widget type="TextBox" skin="TextBox" position="10 0 130 32" name="LoginRegister_TextBox_Password">
+		                <Property key="TextColour" value="225 255 255"/>
+		                <Property key="FontHeight" value="24"/>
+		                <Property key="TextAlign" value="Left Center"/>
+		       		  </Widget>   		
+		            <Widget type="EditBox" skin="EditBox" position="100 0 246 32" name="LoginRegister_Passwordarea_Text">
+		             		<Property key="Caption" value="#{UIDL_1000_044}"/>			               
+		                <Property key="FontHeight" value="20"/>
+		                <Property key="TextColour" value="255 255 255"/>
+		                <Property key="Password" value="true"/>
+		                <Property key="MaxTextLength" value="172"/>
+		                <Property key="TouchIntercept" value="true"/>
+		                <Property key="TouchOrder" value="8"/>
+		            </Widget>		       		  						                        
+            </Widget>      
+            <Widget type="Button9Patch" skin="Button" position="197 374 108 33" name="LoginRegister_OneKey_Register_Button">				
+            		            <Property key="NormalImage" value="uidenglu_zhuce.png"/>
+								<Property key="SelectedImage" value="uidenglu_zhuceanxia.png"/>
+								<Property key="DisabledImage" value="uidenglu_zhuce.png"/>                    
+                <Property key="TouchIntercept" value="true"/>
+                <Property key="TouchOrder" value="8"/>                
+                <Event 		name="Clicked" Function="LoginRegister_OnClick_OneKey_Register()"/>
+				        <Widget type="TextBox" skin="TextBox" position="0 0 108 33" name="LoginRegister_OneKey_Register_Text">
+				            	 <Property key="TextColour" value="225 255 255"/>
+		                         <Property key="FontHeight" value="24"/>
+		                         <Property key="TextAlign" value="Center"/>
+								 <Property key="TextType" value="0"/>
+				     	</Widget>                 
+           	 </Widget>            
+           	 <Widget type="Button9Patch" skin="Button" position="497 376 108 33" name="LoginRegister_Login_Button">
+            	       <Property key="NormalImage" value="uidenglu_zhuce.png"/>
+								<Property key="SelectedImage" value="uidenglu_zhuceanxia.png"/>
+								<Property key="DisabledImage" value="uidenglu_zhuce.png"/>   
+                <Property key="TouchIntercept" value="true"/>
+                <Property key="TouchOrder" value="8"/>
+							<Event name="Clicked" Function="LoginRegister_OnClick_Login()"/>    
+				            <Widget type="TextBox" skin="TextBox" position="0 0 108 33" name="LoginRegister_Login_Text">
+				            	 <Property key="TextColour" value="225 255 255"/>
+		                         <Property key="FontHeight" value="24"/>
+		                         <Property key="TextAlign" value="Center"/>
+								 <Property key="TextType" value="0"/>
+				     		</Widget>  								                    
+            </Widget>
+			
+         	  <Widget type="Button9Patch" skin="Button" position="347 376 108 33" name="LoginRegister_AtOnce_Button">
+            		<Property key="NormalImage" value="uidenglu_zhuce.png"/>
+								<Property key="SelectedImage" value="uidenglu_zhuceanxia.png"/>
+								<Property key="DisabledImage" value="uidenglu_zhuce.png"/>   
+                <Property key="TouchIntercept" value="true"/>
+                <Property key="TouchOrder" value="8"/>
+								<Event name="Clicked" Function="LoginRegister_AtOnceReg()"/>    
+				        <Widget type="TextBox" skin="TextBox" position="0 0 108 33" name="LoginRegister_AtOnce_Text">
+					          <Property key="TextColour" value="225 255 255"/>
+					          <Property key="FontHeight" value="24"/>
+										<Property key="TextAlign" value="Center"/>							          
+				     		</Widget>  								                    
+          	 </Widget> 				
+			
+			
+            <Widget type="ImageBox" skin="RotatingSkin" position="260 254 276 32" name="LoginRegister_IDarea_Register_Image">
+                <Property key="ImageTexture" value="uiimage_shuru.png"/>
+                <Property key="bTextureSet" value="true"/>       
+                <Property key="b9Patch" value="true"/>       
+                <Property key="9PatchCapWidth" value="4"/>
+		            <Widget type="TextBox" skin="TextBox" position="10 0 130 32" name="LoginRegister_TextBox_Register_User">
+		                <Property key="TextColour" value="225 255 255"/>
+		                <Property key="FontHeight" value="24"/>
+		                <Property key="TextAlign" value="Left Center"/>
+		       		  </Widget> 
+		            <Widget type="EditBox" skin="EditBox" position="100 0 246 28" name="LoginRegister_IDarea_Register_Text">
+		             		<Property key="Caption" value="#{UIDL_1000_043}"/>
+		                <Property key="FontHeight" value="20"/>
+		                <Property key="MaxTextLength" value="151"/>
+		                <Property key="TouchIntercept" value="true"/>
+		                <Property key="TouchOrder" value="8"/>
+		            </Widget>		       		                                                       
+            </Widget>
+            <Widget type="ImageBox" skin="RotatingSkin" position="260 304 276 32" name="LoginRegister_Passwordarea_Register_Image">
+                <Property key="ImageTexture" value="uiimage_shuru.png"/>
+                <Property key="bTextureSet" value="true"/>
+                <Property key="b9Patch" value="true"/>       
+								<Property key="9PatchCapWidth" value="4"/>      
+		            <Widget type="TextBox" skin="TextBox" position="10 0 130 32" name="LoginRegister_TextBox_Register_Password">
+		                <Property key="TextColour" value="225 255 255"/>
+		                <Property key="FontHeight" value="24"/>
+		                <Property key="TextAlign" value="Left Center"/>
+		       		  </Widget>   		
+		            <Widget type="EditBox" skin="EditBox" position="100 0 246 28" name="LoginRegister_Passwordarea_Register_Text">
+		                <Property key="Caption" value="#{UIDL_1000_044}"/>
+		                <Property key="FontHeight" value="20"/>
+		                <Property key="Password" value="true"/>
+		                <Property key="MaxTextLength" value="151"/>
+		                <Property key="TouchIntercept" value="true"/>
+		                <Property key="TouchOrder" value="8"/>
+		            </Widget>		       		  						                        
+            </Widget>
+			
+		    <Widget type="ImageBox" skin="RotatingSkin" position="260 350 276 32" name="LoginRegister_Passwordarea_Register_Confirm_Image">
+                <Property key="ImageTexture" value="uiimage_shuru.png"/>
+                <Property key="bTextureSet" value="true"/>
+                <Property key="b9Patch" value="true"/>       
+				<Property key="9PatchCapWidth" value="4"/>      
+		            <Widget type="TextBox" skin="TextBox" position="10 0 130 32" name="LoginRegister_TextBox_Register_Confirm_Password">
+		                <Property key="TextColour" value="225 255 255"/>
+		                <Property key="FontHeight" value="24"/>
+		                <Property key="TextAlign" value="Left Center"/>
+		       		  </Widget>   		
+		            <Widget type="EditBox" skin="EditBox" position="126 0 246 32" name="LoginRegister_Passwordarea_Confirm_Register_Text">
+		                <Property key="FontHeight" value="24"/>
+		                <Property key="TextColour" value="255 255 255"/>
+		                <Property key="Password" value="true"/>
+		                <Property key="MaxTextLength" value="151"/>
+		                <Property key="TouchIntercept" value="true"/>
+		                <Property key="TouchOrder" value="8"/>
+		            </Widget>		       		  						                        
+            </Widget>
+      
+            <Widget type="Button9Patch" skin="Button" position="346 395 108 33" name="LoginRegister_Register_Finish_Button">				
+            	       <Property key="NormalImage" value="uidenglu_zhuce.png"/>
+					   <Property key="SelectedImage" value="uidenglu_zhuceanxia.png"/>
+					   <Property key="DisabledImage" value="uidenglu_zhuce.png"/>                    
+                <Property key="TouchIntercept" value="true"/>
+                <Property key="TouchOrder" value="8"/>                
+                <Event 		name="Clicked" Function="LoginRegister_OnClick_FinishRegister()"/>
+				<Widget type="TextBox" skin="TextBox" position="0 0 108 33" name="LoginRegister_Register_Finish_Text">
+					<Property key="TextColour" value="225 255 255"/>
+					<Property key="FontHeight" value="24"/>
+					<Property key="TextAlign" value="Center"/>
+					<Property key="TextType" value="0"/>
+				</Widget>                 
+           	 </Widget>	
+			 
+			 	
+            <Widget type="Button" skin="Button" position="550 400 60 18" name="LoginRegister_UserAgreement_Btn">				
+            	  <Property key="NormalImage" value="UIImage/uidenglu_yonghuxieyi_link.png"/>
+								<Property key="SelectedImage" value="UIImage/uidenglu_yonghuxieyi_link.png"/>
+								<Property key="DisabledImage" value="UIImage/uidenglu_yonghuxieyi_link.png"/>                    
+                <Property key="TouchIntercept" value="true"/>
+                <Property key="TouchOrder" value="8"/>                
+                <Event 		name="Clicked" Function="LoginRegister_OnClick_UserAgreement()"/>                
+           	 </Widget>	
+        </Widget>
+        <Widget type="ImageBox" skin="RotatingSkin" position="212 58 374 391" name="LoginRegister_UserAgreement_BG">
+            <Property key="ImageTexture" value="uidenglu_xuanfudikuang.png"/>
+            <Property key="bTextureSet" value="true"/>             
+           	<Widget type="Button9Patch" skin="Button" position="319 24 38 38" name="LoginRegister_UserAgreement_CloseBtn">
+								<Property key="NormalImage" value="uidenglu_tuichu.png"/>
+								<Property key="SelectedImage" value="uidenglu_tuichuanxia.png"/>
+								<Property key="DisabledImage" value="uidenglu_tuichuanxia.png"/>  
+                <Property key="TouchIntercept" value="true"/>
+                <Property key="TouchOrder" value="8"/>
+								<Event name="Clicked" Function="LoginRegister_OnCloseUserAgreementEvent()"/>      								                    
+            </Widget> 
+						<Widget type="TextBox" skin="TextBox" position="0 26 374 30" name="LoginRegister_UserAgreementTitle_Desc">
+								<Property key="TextColour" value="0 255 11"/>
+								<Property key="FontHeight" value="24"/>
+								<Property key="TextAlign" value="Center"/>
+						</Widget>      
+            <Widget type="ScrollView" skin="ScrollView" position="18 65 340 290" name="LoginRegister_UserAgreementInfo">
+                <Property key="VisibleVScroll" value="true"/>
+                <Property key="TouchIntercept" value="true"/>
+                <Property key="TouchOrder" value="7"/>
+            </Widget> 	
+						<Widget type="Button9Patch" skin="Button" position="141 356 26 26" name="LoginRegister_UserAgreementConfirm_Btn">
+								<Property key="NormalImage" value="uishezhi_none.png"/>
+								<Property key="SelectedImage" value="uishezhi_none.png"/>
+								<Property key="DisabledImage" value="uishezhi_none.png"/>
+								<Property key="TouchIntercept" value="true"/>
+								<Property key="TouchOrder" value="4"/>					
+						    <Widget type="ImageBox" skin="RotatingSkin" position="0 0 30 30" name="LoginRegister_UserAgreementConfirm_Img">
+										<Property key="ImageTexture" value="uishezhi_chose.png"/>
+										<Property key="bTextureSet" value="true"/>
+								</Widget>										
+						</Widget>		    
+						<Widget type="TextBox" skin="TextBox" position="176 360 374 30" name="LoginRegister_UserAgreementConfirm_Desc">
+								<Property key="TextColour" value="0 255 11"/>
+								<Property key="FontHeight" value="20"/>
+						</Widget> 						        					          
+        </Widget>   		            
+    </Widget>
+</MyGUI>

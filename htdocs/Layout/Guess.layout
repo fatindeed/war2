@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Widget" skin="PanelEmpty" position="0 0 800 480" name="Guess_Window">
+        <Property key="TouchIntercept" value="true"/>
+        <Property key="TouchOrder" value="5"/>
+        <Property key="zOrder" value="5"/>       
+        <Widget type="ImageBox" skin="ImageBox" position="0 0 800 480" name="Guess_Background">
+            <Property key="ImageTexture" value="c_bluedi.png"/>
+            <Property key="bTextureSet" value="true"/>
+            <Property key="b9Patch" value="true"/>
+            <Property key="9PatchCapWidth" value="2"/>
+            <Widget type="ImageBox" skin="RotatingSkin" position="0 0 800 480" name="Guess_RightHighLight">
+				<Property key="ImageTexture" value="c_diilight.png"/>
+				<Property key="bTextureSet" value="true"/>
+		        <Property key="b9Patch" value="true"/>          	
+            </Widget> 		            
+		    <Widget type="ImageBox" skin="ImageBox" position="0 0 800 48" name="Guess_TitleBackground">
+				<Property key="ImageTexture" value="shop_top.png"/>
+		        <Property key="bTextureSet" value="true"/>
+		        <Property key="b9Patch" value="true"/>
+		        <Property key="9PatchCapWidth" value="16"/>		            	            
+		        <Widget type="TextBox" skin="TextBox" position="0 2 800 35" name="Guess_Title_Text">
+					<Property key="FontHeight" value="18"/>
+				    <Property key="TextAlign" value="Center"/>
+				    <Property key="TextColour" value="0 255 0"/>
+		        </Widget>	            
+				<Widget type="Button9Patch" skin="Button" position="758 5 38 38" name="Guess_Close_Button">		               
+					<Property key="DisabledImage" value="c_cbutton.png"/>
+		            <Property key="NormalImage" value="c_cbutton.png"/>
+		            <Property key="SelectedImage" value="c_cbutton.png"/>
+		            <Property key="TouchIntercept" value="true"/>
+					<Property key="TouchOrder" value="4"/>
+		            <Event name="Clicked" Function="Guess_Close()"/>
+				</Widget>	           			            
+            </Widget>		            					
+           <Widget type="ImageBox" skin="ImageBox" position="28 65 744 320" name="Guess_SmallBg_Img">
+                <Property key="ImageTexture" value="UIImage/meinv.png"/>							
+           </Widget>
+
+			<Widget type="ImageBox" skin="ImageBox" position="28 65 744 320" name="Guess_Small_Img">
+				<Property key="TouchIntercept" value="true"/>
+				<Property key="TouchOrder" value="4"/>
+		        <Widget type="ImageBox" skin="ImageBox" position="0 0 248 161" name="Guess_SmallBg1">
+					<Property key="ImageTexture" value="lt_chat.png"/>
+					<Property key="bTextureSet" value="true"/>
+				    <Property key="b9Patch" value="true"/>
+					<Property key="TouchIntercept" value="true"/>
+				</Widget>
+				<Widget type="ImageBox" skin="ImageBox" position="248 0 248 161" name="Guess_SmallBg2">
+					<Property key="ImageTexture" value="lt_chat.png"/>
+					<Property key="bTextureSet" value="true"/>
+				    <Property key="b9Patch" value="true"/>
+					<Property key="TouchIntercept" value="true"/>
+				</Widget>
+				<Widget type="ImageBox" skin="ImageBox" position="496 0 248 161" name="Guess_SmallBg3">
+					<Property key="ImageTexture" value="lt_chat.png"/>
+					<Property key="bTextureSet" value="true"/>
+				    <Property key="b9Patch" value="true"/>
+					<Property key="TouchIntercept" value="true"/>
+				</Widget>
+				<Widget type="ImageBox" skin="ImageBox" position="0 160 248 160" name="Guess_SmallBg4">
+					<Property key="ImageTexture" value="lt_chat.png"/>
+					<Property key="bTextureSet" value="true"/>
+				    <Property key="b9Patch" value="true"/>
+					<Property key="TouchIntercept" value="true"/>
+				</Widget>
+				<Widget type="ImageBox" skin="ImageBox" position="248 160 248 160" name="Guess_SmallBg5">
+					<Property key="ImageTexture" value="lt_chat.png"/>
+					<Property key="bTextureSet" value="true"/>
+				    <Property key="b9Patch" value="true"/> 
+					<Property key="TouchIntercept" value="true"/>
+				</Widget>
+				<Widget type="ImageBox" skin="ImageBox" position="496 160 248 160" name="Guess_SmallBg6">
+					<Property key="ImageTexture" value="lt_chat.png"/>
+					<Property key="bTextureSet" value="true"/>
+				    <Property key="b9Patch" value="true"/>
+					<Property key="TouchIntercept" value="true"/>
+				</Widget>									
+            </Widget>  
+			
+            <Widget type="Button9Patch" skin="Button" position="200 375 91 91" name="Guess_Shears">
+				<Property key="TouchIntercept" value="true"/>
+				<Property key="TouchOrder" value="4"/>
+				<Property key="DisabledImage" value="menu_friendan.png"/>
+				<Property key="NormalImage" value="menu_friendan.png"/>
+				<Property key="SelectedImage" value="menu_friendan.png"/>
+				<Property key="b9Patch" value="false"/>
+				<Event name="Clicked" Function="MainButton_Shears_Click()"/>
+			</Widget> 
+			<Widget type="Button9Patch" skin="Button" position="350 375 91 91" name="Guess_Stone">
+				<Property key="TouchIntercept" value="true"/>
+				<Property key="TouchOrder" value="4"/>
+				<Property key="DisabledImage" value="menu_movean.png"/>
+				<Property key="NormalImage" value="menu_movean.png"/>
+				<Property key="SelectedImage" value="menu_movean.png"/>
+				<Property key="b9Patch" value="false"/>
+				<Event name="Clicked" Function="MainButton_Stone_Click()"/>
+			</Widget> 
+			<Widget type="Button9Patch" skin="Button" position="500 375 91 91" name="Guess_Cloth">
+				<Property key="TouchIntercept" value="true"/>
+				<Property key="TouchOrder" value="4"/>
+				<Property key="DisabledImage" value="menu_buildan.png"/>
+				<Property key="NormalImage" value="menu_buildan.png"/>
+				<Property key="SelectedImage" value="menu_buildan.png"/>
+				<Property key="b9Patch" value="false"/>
+				<Event name="Clicked" Function="MainButton_Cloth_Click()"/>
+			</Widget> 
+			
+			
+			<Widget type="ImageBox" skin="ImageBox" position="0 0 800 480" name="Guess_GoodsDesc_Mask">
+				<Property key="ImageTexture" value="di_news.png"/>
+				<Property key="bTextureSet" value="true"/>
+				<Property key="b9Patch" value="true"/>      
+				<Property key="TouchIntercept" value="true"/>
+				<Property key="TouchOrder" value="3"/>  	
+        		<Property key="zOrder" value="8"/>														        
+            </Widget>					        
+            <Widget type="ImageBox" skin="ImageBox" position="200 144 402 206" name="Guess_GoodsDescBg_Img">
+				<Property key="ImageTexture" value="di_wpoint.png"/>
+		        <Property key="bTextureSet" value="true"/>
+		        <Property key="b9Patch" value="true"/>
+		        <Property key="9PatchCapWidth" value="10"/>		
+				<Property key="zOrder" value="9"/>		      
+		        <Widget type="Button9Patch" skin="Button" position="359 5 38 38" name="Guess_GoodsDescClose_Button">		               
+					<Property key="DisabledImage" value="c_cbutton.png"/>
+		            <Property key="NormalImage" value="c_cbutton.png"/>
+		            <Property key="SelectedImage" value="c_cbutton.png"/>
+		            <Property key="TouchIntercept" value="true"/>
+		            <Event name="Clicked" Function="Guess_OnDescCloseEvent()"/>
+           		</Widget>	
+		 	
+				<Widget type="ImageBox" skin="ImageBox" position="20 63 360 85" name="Guess_xiakuang">
+					<Property key="ImageTexture" value="di_ajieshao.png"/>
+					<Property key="bTextureSet"	value="true"/>
+					<Property key="b9Patch" value="true"/>
+					<Property key="9PatchCapWidth" value="10"/>	
+					<Widget type="TextBox" skin="TextBox" position="10 10 340 80" name="Guess_GoodsDesc_Text">
+						<Property key="FontHeight" value="18"/>														
+					</Widget> 									  
+				</Widget>									         		  				 
+				<Widget type="Button9Patch" skin="Button" position="142 157 116 42" name="Guess_Confirm_Button">
+					<Property key="NormalImage" value="c_button.png"/>      
+					<Event name="Clicked" Function="Guess_OnConfirmEvent()"/>
+					<Widget type="TextBox" skin="TextBox" position="20 5 80 34" name="Guess_Confirm_Button_Text">
+						<Property key="FontName" value="fonts/common.fnt"/>
+						<Property key="TextType" value="3"/>
+					</Widget>  					  
+				</Widget>	             		                					        				      	            		 
+            </Widget>	  							  						
+        </Widget>
+    </Widget>
+</MyGUI>

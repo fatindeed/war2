@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Widget" skin="PanelEmpty" position="0 0 800 480" name="BuildChoose_Window">
+        <Property key="TouchIntercept" value="true"/>
+        <Property key="zOrder" value="4"/>
+        <Property key="TouchOrder" value="5"/>
+				<Widget type="ImageBox" skin="RotatingSkin" position="-30 0 880 530" name="BuildChoose_DownWindow">
+					<Property key="ImageTexture" value="c_bluedi.png"/>
+					<Property key="bTextureSet" value="true"/>
+					<Property key="b9Patch" value="true"/>
+					<Widget type="ImageBox" skin="RotatingSkin" position="6 66 800 408" name="BuildChoose_DownC_diilightWindow">
+						<Property key="ImageTexture" value="c_diilight.png"/>
+						<Property key="bTextureSet"	value="true"/>
+						<Property key="ScaleX" value="9"/>
+						<Property key="ScaleY" value="4.5"/>
+					</Widget>
+					<Widget type="ImageBox" skin="RotatingSkin" position="33 14 827 467" name="BuildChoose_DownDiWen">
+						<Property key="ImageTexture" value="j_diwen.png"/>
+						<Property key="bTextureSet" value="true"/>
+						<Property key="b9Patch" value="true"/>
+					</Widget>
+					<Widget type="Button9Patch" skin="Button" position="110 90 148 148" name="BuildChoose_House_Button">
+						<Property key="DisabledImage" value="m_zhufang.png"/>
+						<Property key="NormalImage" value="m_zhufang.png"/>
+						<Property key="SelectedImage" value="m_zhufang.png"/>
+						<Property key="TouchIntercept" value="true"/>
+						<Property key="TouchOrder" value="4"/>
+						<Event name="Clicked" Function="BuildChoose_TypeOnClick(0)"/>              
+					</Widget>
+					<Widget type="Button9Patch" skin="Button" position="355 90 148 148" name="BuildChoose_Arrmy_Button">
+						<Property key="DisabledImage" value="m_junshi.png"/>
+						<Property key="NormalImage" value="m_junshi.png"/>
+						<Property key="SelectedImage" value="m_junshi.png"/>
+						<Property key="TouchIntercept" value="true"/>
+						<Property key="TouchOrder" value="4"/>
+						<Event name="Clicked" Function="BuildChoose_TypeOnClick(1)"/>              
+					</Widget>
+					<Widget type="Button9Patch" skin="Button" position="595 90 148 148" name="BuildChoose_Produce_Button">
+						<Property key="DisabledImage" value="m_shengchan.png"/>
+						<Property key="NormalImage" value="m_shengchan.png"/>
+						<Property key="SelectedImage" value="m_shengchan.png"/>
+						<Property key="TouchIntercept" value="true"/>
+						<Property key="TouchOrder" value="4"/>
+						<Event name="Clicked" Function="BuildChoose_TypeOnClick(2)"/>              
+					</Widget>
+          <Widget type="Button9Patch" skin="Button" position="110 280 148 148" name="BuildChoose_Resource_Button">
+              <Property key="DisabledImage" value="m_ziyuan.png"/>
+              <Property key="NormalImage" value="m_ziyuan.png"/>
+              <Property key="SelectedImage" value="m_ziyuan.png"/>
+              <Property key="TouchIntercept" value="true"/>
+              <Property key="TouchOrder" value="4"/>
+              <Event name="Clicked" Function="BuildChoose_TypeOnClick(3)"/>              
+          </Widget>
+			<Widget type="Button9Patch" skin="Button" position="355 280 148 148" name="BuildChoose_Button_ComingSoon">
+				<Property key="NormalImage" value="m_suoding.png"/>
+				<Property key="SelectedImage" value="m_suoding.png"/>
+				<Property key="DisabledImage" value="m_suoding.png"/>
+				<Property key="TouchIntercept" value="true"/>
+				<Property key="TouchOrder" value="4"/>
+				<Event name="Clicked" Function="BuildChoose_ComingSoonClick();"/>  
+			</Widget>
+		</Widget>
+		<Widget type="Button9Patch" skin="Button" position="0 0 800 37" name="BuildChoose_UpWindow">
+			<Property key="NormalImage" value="c_bluedi.png"/>
+            <Property key="SelectedImage" value="c_bluedi.png"/>
+            <Property key="DisabledImage" value="c_bluedi.png"/>
+            <Property key="bTextureSet"	value="true"/>
+			<Property key="b9Patch" value="true"/>
+			<Widget type="ImageBox" skin="RotatingSkin" position="0 0 780 30" name="BuildChoose_UpTiaoDi">
+				<Property key="ImageTexture" value="new_top.png"/>
+				<Property key="bTextureSet"	value="true"/>
+				<Property key="ScaleX" value="26"/>
+			</Widget>
+			<Widget type="Button9Patch" skin="Button" position="365 2 370 26" name="BuildChoose_UpTiaoDi2">
+				<Property key="NormalImage" value="top_skuang.png"/>
+				<Property key="SelectedImage" value="top_skuang.png"/>
+				<Property key="DisabledImage" value="top_skuang.png"/>
+				<Property key="bTextureSet"	value="true"/>
+				<Property key="b9Patch" value="true"/>
+			</Widget>
+			<Widget type="ImageBox" skin="RotatingSkin" position="10 5 20 20" name="BuildChoose_Man_Image">
+           <Property key="ImageTexture" value="UIIcon/u_zymbrk.png"/>
+      </Widget>
+		<Widget type="TextBox" skin="TextBox" position="30 0 70 30" name="BuildChoose_Manamount_Text">
+          <Property key="FontHeight" value="14"/>
+          <Property key="TextAlign" value="Center"/>
+      </Widget>
+			<Widget type="ImageBox" skin="ImageBox" position="115 5 20 20" name="BuildChoose_Coin_Image">
+          <Property key="ImageTexture" value="UIIcon/u_zymbptb.png"/>
+      </Widget>
+      <Widget type="TextBox" skin="TextBox" position="140 0 80 30" name="BuildChoose_Coinamount_Text">
+          <Property key="FontHeight" value="14"/>
+          <Property key="TextAlign" value="Center"/>
+      </Widget>
+      <Widget type="ImageBox" skin="RotatingSkin" position="240 5 20 20" name="BuildChoose_Money_Image">
+          <Property key="ImageTexture" value="UIIcon/u_zymbjq.png"/>
+      </Widget>
+			<Widget type="TextBox" skin="TextBox" position="265 0 80 30" name="BuildChoose_Moneyamount_Text">
+          <Property key="FontHeight" value="14"/>
+          <Property key="TextAlign" value="Center"/>
+          <Property key="TextColour" value="255 240 0"/>
+      </Widget>
+		  <Widget type="ImageBox" skin="RotatingSkin" position="390 5 150 20" name="BuildChoose_Ironamount">
+			<Widget type="ImageBox" skin="RotatingSkin" position="2 3 136 14" name="BuildChoose_Ironamount_Bg">
+					<Property key="ImageTexture" value="c_expkuangdi.png"/>
+					<Property key="bTextureSet"	value="true"/>
+			</Widget>
+				<Widget type="ProgressBar" skin="ProgressBar" position="3 4 134 12" name="BuildChoose_Ironamount_Bar">
+						<Property key="Begin" value="0 0"/>
+						<Property key="End" value="1 0"/>
+						<Property key="ImageTexture" value="plan_fover.png"/>
+						<Property key="bTextureSet"	value="true"/>
+				</Widget>
+				<Widget type="ImageBox" skin="RotatingSkin" position="4 5 133 8" name="BuildChoose_Ironamount_Frame">
+						<Property key="ImageTexture" value="c_expkuang.png"/>
+						<Property key="bTextureSet"	value="true"/>
+				</Widget>		
+				<Widget type="TextBox" skin="TextBox" position="2 0 146 18" name="BuildChoose_Ironamount_Text">
+						<Property key="FontHeight" value="14"/>
+						<Property key="TextAlign" value="Center"/>
+				</Widget> 
+		</Widget>
+    <Widget type="ImageBox" skin="RotatingSkin" position="570 5 150 20" name="BuildChoose_Oilamount">
+			<Widget type="ImageBox" skin="RotatingSkin" position="2 3 136 14" name="BuildChoose_Oilamount_Bg">
+				<Property key="ImageTexture" value="c_expkuangdi.png"/>
+				<Property key="bTextureSet"	value="true"/>
+			</Widget>
+			<Widget type="ProgressBar" skin="ProgressBar" position="3 4 134 12" name="BuildChoose_Oilamount_Bar">
+				<Property key="Begin" value="0 0"/>
+				<Property key="End" value="1 0"/>
+				<Property key="ImageTexture" value="plan_fover.png"/>
+				<Property key="bTextureSet"	value="true"/>
+			</Widget>
+			<Widget type="ImageBox" skin="RotatingSkin" position="4 5 133 8" name="BuildChoose_Oilamount_Frame">
+				<Property key="ImageTexture" value="c_expkuang.png"/>
+				<Property key="bTextureSet"	value="true"/>
+			</Widget>		
+			<Widget type="TextBox" skin="TextBox" position="2 0 146 18" name="BuildChoose_Oilamount_Text">
+				<Property key="FontHeight" value="14"/>
+				<Property key="TextAlign" value="Center"/>
+			</Widget> 
+		</Widget>
+      <Widget type="ImageBox" skin="RotatingSkin" position="370 5 20 20" name="BuildChoose_Iron_Image">
+          <Property key="ImageTexture" value="UIIcon/u_zymbt.png"/>
+      </Widget>
+      <Widget type="ImageBox" skin="RotatingSkin" position="550 5 20 20" name="BuildChoose_Oil_Image">
+          <Property key="ImageTexture" value="UIIcon/u_zymbsy.png"/>
+      </Widget>
+			<Widget type="ImageBox" skin="RotatingSkin" position="758 0 42 42" name="BuildChoose_UpButton">
+				<Property key="ImageTexture" value="di_cbutton.png"/>
+				<Property key="bTextureSet"	value="true"/>
+				<Widget type="Button9Patch" skin="Button" position="2 2 38 38" name="BuildChoose_Button_Close">
+					<Property key="NormalImage" value="c_cbutton.png"/>
+					<Property key="SelectedImage" value="c_cbutton.png"/>
+					<Property key="DisabledImage" value="c_cbutton.png"/>
+					<Property key="TouchIntercept" value="true"/>
+					<Property key="TouchOrder" value="4"/>
+					<Event name="Clicked" Function="BuildChoose_Close();"/>					
+				</Widget>
+			</Widget>
+		</Widget>
+    <Widget type="ImageBox" skin="ImageBox" position="390 230 20 20" name="BuildChoose_ImageBox_Mask">
+        <Property key="ImageTexture" value="UIImage/logo_hd.png"/> 
+    </Widget>		
+		<Widget type="ImageBox" skin="RotatingSkin" position="29 39 743 431" name="BuildChoose_FrontWindow">
+			<Property key="ImageTexture" value="c_di1.png"/>
+			<Property key="bTextureSet" value="true"/>
+			<Property key="b9Patch" value="true"/>
+			<Property key="9PatchCapWidth" value="10"/>
+			<Widget type="ImageBox" skin="RotatingSkin" position="7 45 728 378" name="BuildChoose_FrontDi2Window">
+				<Property key="ImageTexture" value="c_di2.png"/>
+				<Property key="bTextureSet"	value="true"/>
+				<Property key="b9Patch" value="true"/>
+			</Widget>
+			<Widget type="ImageBox" skin="RotatingSkin" position="10 48 722 372" name="BuildChoose_FrontC_ilightWindow">
+				<Property key="ImageTexture" value="c_ilight.png"/>
+				<Property key="bTextureSet"	value="true"/>
+				<Property key="ScaleX" value="7.2"/>
+				<Property key="ScaleY" value="3.7"/>
+			</Widget>
+			<Widget type="ImageBox" skin="RotatingSkin" position="10 50 722 368" name="BuildChoose_FrontDiWen">
+				<Property key="ImageTexture" value="j_ndiwen.png"/>
+				<Property key="bTextureSet"	value="true"/>
+				<Property key="b9Patch" value="true"/>
+			</Widget>
+      <Widget type="ScrollView" skin="ScrollView" position="22 55 700 182" name="BuildChoose_ScrollView">
+          <Property key="TouchIntercept" value="true"/>
+          <Property key="VisibleHScroll" value="true"/>
+          <Property key="TouchOrder" value="4"/>
+      </Widget>
+			<Widget type="Button9Patch" skin="Button" position="703 2 38 38" name="BuildChoose_Back">
+				<Property key="NormalImage" value="c_cbutton.png"/>
+				<Property key="SelectedImage" value="c_cbutton.png"/>
+				<Property key="DisabledImage" value="c_cbutton.png"/>
+				<Event name="Clicked" Function="BuildChoose_GoBack();"/>
+				<Property key="TouchIntercept" value="true"/>
+				<Property key="TouchOrder" value="4"/>
+				<Property key="b9Patch" value="false"/> 
+			</Widget>
+        <Widget type="TextBox" skin="TextBox" position="340 4 60 30" name="BuildChoose_Title_Image">
+            <Property key="FontHeight" value="24"/>
+            <Property key="FontName" value="arial"/>
+            <Property key="TextAlign" value="Center"/>
+            <Property key="TextColour" value="125 250 255"/>
+        </Widget>     
+				<Widget type="ImageBox" skin="ImageBox" position="22 248 701 164" name="BuildChoose_xiakuang">
+					<Property key="ImageTexture" value="di_ajieshao.png"/>
+					<Property key="bTextureSet"	value="true"/>
+					<Property key="b9Patch" value="true"/>
+					<Property key="9PatchCapWidth" value="10"/>				
+					<Widget type="ImageBox" skin="ImageBox" position="5 10 693 60" name="BuildChoose_shangdi">
+						<Property key="ImageTexture" value="c_di4.png"/>
+						<Property key="bTextureSet"	value="true"/>
+						<Property key="b9Patch" value="true"/>
+						<Widget type="TextBox" skin="TextBox" position="0 0  103 24" name="BuildChoose_Title_huafei">
+							<Property key="FontHeight" value="18"/>
+							<Property key="TextAlign" value="Center"/>
+						</Widget>
+						<Widget type="TextBox" skin="TextBox" position="371 0 103 24" name="BuildChoose_Title_renkou">
+							<Property key="FontHeight" value="18"/>
+							<Property key="TextAlign" value="Center"/>
+						</Widget>
+						<Widget type="ImageBox" skin="RotatingSkin" position="56 23 40 40" name="BuildChoose_ImageBox_CostPlatMoney">
+							<Property key="ImageTexture" value="UIIcon/t_zymbptb.png"/>
+						</Widget>
+						<Widget type="TextBox" skin="TextBox" position="96 30 53 24" name="BuildChoose_TextBox_CostPlatMoney">
+							<Property key="FontHeight" value="18"/>
+							<Property key="TextAlign" value="Center"/>
+						</Widget>									
+						<Widget type="ImageBox" skin="RotatingSkin" position="56 23 40 40" name="BuildChoose_ImageBox_CostGold">
+							<Property key="ImageTexture" value="UIIcon/t_zymbjq.png"/>
+						</Widget>
+						<Widget type="TextBox" skin="TextBox" position="96 30 100 24" name="BuildChoose_TextBox_CostGold">
+							<Property key="FontHeight" value="18"/>
+							<Property key="TextAlign" value="Center"/>
+						</Widget>					
+						<Widget type="ImageBox" skin="RotatingSkin" position="162 23 40 40" name="BuildChoose_ImageBox_CostIron">
+							<Property key="ImageTexture" value="UIIcon/t_zymbt.png"/>
+						</Widget>
+						<Widget type="TextBox" skin="TextBox" position="202 30 53 24" name="BuildChoose_TextBox_CostIron">
+							<Property key="FontHeight" value="18"/>
+							<Property key="TextAlign" value="Center"/>
+						</Widget>
+						<Widget type="ImageBox" skin="RotatingSkin" position="268 23 40 40" name="BuildChoose_ImageBox_CostOil">
+							<Property key="ImageTexture" value="UIIcon/t_zymbsy.png"/>
+						</Widget>
+						<Widget type="TextBox" skin="TextBox" position="308 30 53 24" name="BuildChoose_TextBox_CostOil">
+							<Property key="FontHeight" value="18"/>
+							<Property key="TextAlign" value="Center"/>
+						</Widget>
+						<Widget type="ImageBox" skin="RotatingSkin" position="407 23 40 40" name="BuildChoose_Img">
+							<Property key="ImageTexture" value="UIIcon/t_zymbrk.png"/>
+						</Widget>
+						<Widget type="TextBox" skin="TextBox" position="445 30 53 24" name="BuildChoose_Title_ren">
+							<Property key="FontHeight" value="18"/>
+							<Property key="TextAlign" value="Center"/>
+							<Property key="TextColour" value="255 255 255"/>
+						</Widget>
+						<Widget type="TextBox" skin="TextBox" position="490 0 103 24" name="BuildChoose_Title_shijian">
+							<Property key="FontHeight" value="18"/>
+							<Property key="TextAlign" value="Center"/>
+						</Widget>							
+						<Widget type="ImageBox" skin="RotatingSkin" position="530 23 40 40" name="BuildChoose_Img">
+							<Property key="ImageTexture" value="UIIcon/t_zymbsj.png"/>
+						</Widget>
+						<Widget type="TextBox" skin="TextBox" position="570 30 111 24" name="BuildChoose_Title_shi">
+							<Property key="FontHeight" value="18"/>
+							<Property key="TextAlign" value="Center"/>
+							<Property key="TextColour" value="255 255 255"/>
+						</Widget>
+					</Widget>
+					<Widget type="ImageBox" skin="ImageBox" position="0 85 535 76" name="BuildChoose_xiadi">
+						<Property key="ImageTexture" value="di_ajieshao.png"/>
+						<Property key="bTextureSet"	value="true"/>
+						<Property key="b9Patch" value="true"/>
+						<Property key="9PatchCapWidth" value="10"/>
+						<Widget type="TextBox" skin="TextBox" position="3 3 535 76" name="BuildChoose_xiadiTitle">
+							<Property key="FontHeight" value="20"/>
+							<Property key="TextColour" value="125 250 255"/>
+						</Widget>
+					</Widget>
+					<Widget type="Button9Patch" skin="Button" position="566 113 116 42" name="BuildChoose_Button">
+						<Property key="NormalImage" value="c_button.png"/>
+						<Property key="SelectedImage" value="c_button.png"/>
+						<Property key="DisabledImage" value="c_button.png"/>
+						<Property key="TouchIntercept" value="true"/>
+						<Property key="TouchOrder" value="4"/>
+						<Event name="Clicked" Function="BuildChoose_jianzao();"/>					
+						<Widget type="TextBox" skin="TextBox" position="21 3 80 34" name="BuildChoose_Button_Construct_Text">
+								<Property key="FontName" value="fonts/common.fnt"/>
+								<Property key="TextType" value="3"/>
+						</Widget>
+					</Widget>
+				</Widget>
+			</Widget>
+    </Widget>
+</MyGUI>

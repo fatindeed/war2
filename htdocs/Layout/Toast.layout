@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Widget" skin="RotatingSkin" position="0 0 800 480" name="Toast_Window">
+        <Property key="TouchIntercept" value="true"/>
+        <Property key="zOrder" value="14"/>
+        <Property key="TouchOrder" value="3"/>
+        <Widget type="ImageBox" skin="ImageBox" position="120 270 561 71" name="Toast_Background">
+			<Property key="ImageTexture" value="UIImage/yourunit.png"/>
+		</Widget>
+        <Widget type="TextBox" skin="TextBox" position="120 268 561 71" name="Toast_Content_Text">
+            <Property key="TextColour" value="0 207 251"/>
+            <Property key="FontHeight" value="25"/>
+            <Property key="TextAlign" value="Center"/>
+        </Widget>
+		 <Widget type="Time" skin="Time" position="0 0 0 0" name="Toast_TimeMich">
+		    <Event name="Update" Function="Toast_Update();"/>
+		 </Widget>
+    </Widget>
+</MyGUI>

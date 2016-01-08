@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Widget" skin="PanelEmpty" position="0 0 800 480" name="Instance_Window">
+        <Property key="zOrder" value="4"/>
+        <Property key="TouchIntercept" value="true"/>
+        <Property key="TouchOrder" value="5"/>
+		<Widget type="ImageBox" skin="RotatingSkin" position="0 0 800 480" name="Instance_Down">
+			<Property key="ImageTexture" value="c_bluedi.png"/>
+      <Property key="bTextureSet"	value="true"/>
+			<Property key="b9Patch" value="true"/>
+			<Property key="zOrder" value="2"/>
+			<Property key="TouchOrder" value="4"/>
+			<Widget type="ImageBox" skin="RotatingSkin" position="0 0 800 480" name="Instance_DownDi">
+				<Property key="ImageTexture" value="c_di1.png"/>
+				<Property key="bTextureSet" value="true"/>
+				<Property key="b9Patch" value="true"/>
+				<Property key="9PatchCapWidth" value="10"/>
+				<Widget type="ImageBox" skin="RotatingSkin" position="0 48 800 432" name="Instance_Up1">
+					<Property key="ImageTexture" value="c_di2.png"/>
+					<Property key="bTextureSet" value="true"/>
+					<Property key="b9Patch" value="true"/>
+					<Property key="9PatchCapWidth" value="10"/>
+				</Widget>
+				<Widget type="TextBox" skin="TextBox" position="350 9 100 30" name="Instance_Text">
+					<Property key="FontHeight" value="24"/>
+					<Property key="TextAlign" value="Center"/>
+					<Property key="TextColour" value="10 250 230"/>
+				</Widget>
+				<Widget type="Button9Patch" skin="Button" position="757 5 38 38" name="Instance_Close">
+					<Property key="NormalImage" value="c_cbutton.png"/>
+					<Property key="SelectedImage" value="c_cbutton.png"/>
+					<Property key="DisabledImage" value="c_cbutton.png"/>
+					<Event name="Clicked" Function="Instance_Close();"/>
+					<Property key="TouchIntercept" value="true"/>
+					<Property key="TouchOrder" value="4"/>
+					<Property key="b9Patch" value="false"/> 
+				</Widget>
+			</Widget>
+			<Widget type="ImageBox" skin="RotatingSkin" position="0 48 800 432" name="Instance_DownDiWenguang">
+				<Property key="ImageTexture" value="c_diilight.png"/>
+				<Property key="bTextureSet"	value="true"/>
+		    <Property key="b9Patch" value="true"/>     
+				<Widget type="ImageBox" skin="RotatingSkin" position="0 0 800 432" name="Instance_DownDiWen">
+					<Property key="ImageTexture" value="custom_diwen.png"/>
+					<Property key="bTextureSet" value="true"/>
+		      <Property key="b9Patch" value="true"/>  
+				</Widget>
+			</Widget>
+			<Widget type="ImageBox" skin="RotatingSkin" position="133 413 517 62" name="Instance_Task_Background">
+				<Property key="ImageTexture" value="top_skuang.png"/>
+				<Property key="bTextureSet" value="true"/>
+		        <Property key="b9Patch" value="true"/>
+				<Property key="9PatchCapWidth" value="12"/>
+			</Widget>
+			<Widget type="ImageBox" skin="RotatingSkin" position="133 413 517 62" name="Instance_Task_Dark_Background">
+				  <Property key="ImageTexture" value="di_shadow.png"/>
+				  <Property key="bTextureSet" value="true"/>
+		      <Property key="b9Patch" value="true"/>
+			</Widget>
+			<Widget type="ScrollView" skin="ScrollView" position="50 48 705 360" name="Instance_Task_ScrollView">
+          <Property key="TouchIntercept" value="true"/>
+          <Property key="VisibleHScroll" value="true"/>
+          <Property key="TouchOrder" value="4"/>
+      </Widget>
+			<Widget type="ScrollView" skin="ScrollView" position="140 410 500 60" name="Instance_Section_ScrollView">
+         <Property key="VisibleHScroll" value="true"/>
+				 <Property key="TouchIntercept" value="true"/>				
+         <Property key="TouchOrder" value="4"/>
+      </Widget>		
+		</Widget>
+		<Widget type="ImageBox" skin="ImageBox" position="0 0 800 480" name="Instance_ImageBox_Mask">
+        <Property key="ImageTexture" value="di_news.png"/>
+				<Property key="bTextureSet" value="true"/>
+        <Property key="b9Patch" value="true"/>      
+        <Property key="9PatchCapWidth" value="2"/>	
+				<Property key="TouchIntercept" value="true"/>
+				<Property key="TouchOrder" value="3"/>  
+        <Property key="zOrder" value="5"/>				
+		</Widget>	
+		<Widget type="ImageBox" skin="RotatingSkin" position="97 55 610 385" name="Instance_UpData">
+			<Property key="ImageTexture" value="c_di1.png"/>
+			<Property key="bTextureSet" value="true"/>
+			<Property key="b9Patch" value="true"/>
+			<Property key="9PatchCapWidth" value="10"/>
+			<Property key="TouchIntercept" value="true"/>
+			<Property key="TouchOrder" value="3"/>
+       <Property key="zOrder" value="5"/>				
+			<Widget type="ImageBox" skin="RotatingSkin" position="15 45 580 325" name="Instance_Up1">
+				<Property key="ImageTexture" value="c_di2.png"/>
+				<Property key="bTextureSet"	value="true"/>
+				<Property key="b9Patch" value="true"/>
+				<Property key="9PatchCapWidth" value="10"/>				
+				<Widget type="ImageBox" skin="RotatingSkin" position="2 2 576 321" name="Instance_Up2">
+					<Property key="ImageTexture" value="c_diilight.png"/>
+					<Property key="bTextureSet"	value="true"/>
+		      <Property key="b9Patch" value="true"/>   
+					<Widget type="ImageBox" skin="RotatingSkin" position="0 0 576 321" name="Instance_Up3">
+						<Property key="ImageTexture" value="custom_diwen.png"/>
+						<Property key="bTextureSet" value="true"/>
+						<Property key="b9Patch" value="true"/>  
+					</Widget>
+				</Widget>
+			</Widget>
+			<Widget type="TextBox" skin="TextBox" position="0 9 610 30" name="Instance_Up_Text">
+				 <Property key="FontHeight" value="24"/>
+				 <Property key="TextAlign" value="Center"/>
+				 <Property key="TextColour" value="125 250 255"/>
+			</Widget>
+			<Widget type="Button9Patch" skin="Button" position="567 5 38 38" name="Instance_Up_Close">
+				<Property key="NormalImage" value="c_cbutton.png"/>
+				<Property key="SelectedImage" value="c_cbutton.png"/>
+				<Property key="DisabledImage" value="c_cbutton.png"/>
+				<Property key="TouchIntercept" value="true"/>
+				<Property key="TouchOrder" value="2"/>
+				<Property key="b9Patch" value="false"/> 
+				<Event name="Clicked" Function="Instance_UpClose()"/>				
+			</Widget>
+			<Widget type="Button9Patch" skin="Button" position="453 318 116 42" name="Instance_Attack">
+				<Property key="NormalImage" value="c_button.png"/>
+				<Property key="SelectedImage" value="c_button.png"/>
+				<Property key="DisabledImage" value="c_button.png"/>
+				<Event name="Clicked" Function="Instance_Attack()"/>
+				<Property key="TouchIntercept" value="true"/>
+				<Property key="TouchOrder" value="2"/>
+				<Property key="b9Patch" value="false"/> 
+				<Widget type="TextBox" skin="TextBox" position="8 6 100 30" name="Instance_Attack_Text">
+					<Property key="FontHeight" value="18"/>
+					<Property key="TextAlign" value="Center"/>
+					<Property key="TextColour" value="0 255 255"/>
+				</Widget>
+			</Widget>
+			<Widget type="TextBox" skin="TextBox" position="105 55 180 28" name="Instance_reward_Text">
+				<Property key="FontHeight" value="22"/>
+				<Property key="TextAlign" value="Left VCenter"/>
+			</Widget>
+			<Widget type="TextBox" skin="TextBox" position="105 145 180 28" name="Instance_acquire_Text">
+				 <Property key="FontHeight" value="22"/>
+				 <Property key="TextAlign" value="Left VCenter"/>
+			</Widget>
+			<Widget type="ScrollView" skin="ScrollView" position="105 80 400 65" name="Instance_rewardScrollView">
+         <Property key="TouchIntercept" value="true"/>
+         <Property key="VisibleHScroll" value="true"/>
+         <Property key="TouchOrder" value="4"/>
+      </Widget>
+			<Widget type="ScrollView" skin="ScrollView" position="105 170 400 65" name="Instance_acquireScrollView">
+         <Property key="TouchIntercept" value="true"/>
+         <Property key="VisibleHScroll" value="true"/>
+         <Property key="TouchOrder" value="4"/>
+      </Widget>
+			<Widget type="ImageBox" skin="ImageBox" position="35 235 380 125" name="Instance_describe">
+				<Property key="ImageTexture" value="di_ajieshao.png"/>
+				<Property key="bTextureSet"	value="true"/>
+				<Property key="b9Patch" value="true"/>
+        		<Property key="9PatchCapWidth" value="10"/> 
+				<Widget type="TextBox" skin="TextBox" position="15 15 350 95" name="Instance_describe_Text">
+					  <Property key="FontHeight" value="18"/>
+					  <Property key="FontName" value="arial"/>
+					  <Property key="TextColour" value="0 255 255"/>
+				</Widget>
+			</Widget>
+		</Widget>
+    </Widget>
+</MyGUI>

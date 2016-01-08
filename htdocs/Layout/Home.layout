@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Widget" skin="PanelEmpty" position="0 0 800 480" name="Home_Window">
+        <Property key="TouchIntercept" value="true"/>
+        <Property key="TouchOrder" value="5"/>
+        <Property key="zOrder" value="3"/>
+        <Widget type="ImageBox" skin="RotatingSkin" position="190 80 420 321" name="Home_Work_BG">
+            <Property key="ImageTexture" value="c_di1.png"/>
+			<Property key="bTextureSet" value="true"/>
+            <Property key="b9Patch" value="true"/>
+            <Property key="9PatchCapWidth" value="30"/>
+       	    <Widget type="Button9Patch" skin="Button" position="378 3 38 38" name="Home_Close_Button">		        
+		        <Property key="DisabledImage" value="c_cbutton.png"/>
+		        <Property key="NormalImage" value="c_cbutton.png"/>
+		        <Property key="SelectedImage" value="c_cbutton.png"/>
+		        <Property key="TouchOrder" value="4"/>
+		        <Property key="TouchIntercept" value="true"/>
+				<Event name="Clicked" Function="Home_Close();"/>		            
+			</Widget>  
+            <Widget type="ImageBox" skin="ImageBox" position="6 10 20 20" name="Home_People_Img">
+                <Property key="ImageTexture" value="UIIcon/u_zymbrk.png"/>
+            </Widget>        		
+            <Widget type="TextBox" skin="TextBox" position="25 10 80 30" name="Home_People_Text">
+                <Property key="FontHeight" value="18"/>
+            </Widget>                      
+            <Widget type="TextBox" skin="TextBox" position="145 2 145 45" name="Home_Name_Text">
+                <Property key="FontHeight" value="24"/>
+                <Property key="TextAlign" value="Center"/>
+                <Property key="TextColour" value="125	250	255"/>
+            </Widget>
+            <Widget type="ImageBox" skin="RotatingSkin" position="10 40 400 230" name="Home_Name_SubPanel">
+		        <Property key="ImageTexture" value="di_up.png"/>
+				<Property key="bTextureSet" value="true"/>
+		        <Property key="b9Patch" value="true"/>
+		        <Property key="9PatchCapWidth" value="12"/>            	
+            </Widget>            							
+            <Widget type="ImageBox" skin="RotatingSkin" position="18 45 385 220" name="Home_Name_HighLight">
+		        <Property key="ImageTexture" value="c_ilight.png"/>
+				<Property key="bTextureSet" value="true"/>
+		        <Property key="b9Patch" value="true"/>          	
+            </Widget>
+            <Widget type="ImageBox" skin="RotatingSkin" position="18 45 385 220" name="Home_Name_TableLine">
+		        <Property key="ImageTexture" value="c_tskuangdi.png"/>
+				<Property key="bTextureSet" value="true"/>
+		        <Property key="b9Patch" value="true"/>          	
+            </Widget>            
+          	<Widget type="ImageBox" skin="RotatingSkin" position="35 77 350 18" name="Home_Name_GoldFrame_Bg">
+		   		<Property key="ImageTexture" value="c_pdi.png"/>
+		        <Property key="bTextureSet"	value="true"/>
+		        <Property key="b9Patch" value="true"/>
+		 	</Widget>
+			<Widget type="ProgressBar" skin="ProgressBar" position="35 78 349 18" name="Home_Name_GoldBar">
+				<Property key="Begin" value="0 0"/>
+				<Property key="End" value="1 0"/>
+		  		<Property key="ImageTexture" value="c_pman.png"/>
+		  		<Property key="bTextureSet"	value="true"/>
+			</Widget>
+		  		  <Widget type="ImageBox" skin="RotatingSkin" position="35 77 350 20" name="Home_Name_GoldBar_Frame">
+		       		  <Property key="ImageTexture" value="c_pkuang.png"/>
+		       		  <Property key="bTextureSet"	value="true"/>
+		       		  <Property key="b9Patch" value="true"/>
+		       		  <Property key="9PatchCapWidth" value="6"/>
+		    		</Widget>		         
+            <Widget type="ImageBox" skin="ImageBox" position="20 68 40 40" name="Home_Coin_Img">
+                <Property key="ImageTexture" value="UIIcon/t_zymbjq.png"/>
+            </Widget>
+            <Widget type="TextBox" skin="TextBox" position="160 74 200 24" name="Home_Coin_Text">
+                <Property key="FontHeight" value="18"/>
+            </Widget>
+          	<Widget type="ImageBox" skin="RotatingSkin" position="35 152 350 18" name="Home_Name_ExpFrame_Bg">
+		   			    <Property key="ImageTexture" value="c_pdi.png"/>
+		            <Property key="bTextureSet"	value="true"/>
+		            <Property key="b9Patch" value="true"/>
+		 		    </Widget>
+				    <Widget type="ProgressBar" skin="ProgressBar" position="35 153 349 18" name="Home_Name_ExpBar">
+		  		      <Property key="Begin" value="0 0"/>
+				        <Property key="End" value="1 0"/>
+		  		      <Property key="ImageTexture" value="c_pman.png"/>
+		  		      <Property key="bTextureSet"	value="true"/>
+		  		  </Widget>
+		  		  <Widget type="ImageBox" skin="RotatingSkin" position="35 152 350 20" name="Home_Name_ExpBar_Frame">
+		       		  <Property key="ImageTexture" value="c_pkuang.png"/>
+		       		  <Property key="bTextureSet"	value="true"/>
+		       		  <Property key="b9Patch" value="true"/>
+		       		  <Property key="9PatchCapWidth" value="6"/>
+		    		</Widget>                        
+            <Widget type="ImageBox" skin="ImageBox" position="20 140 40 40" name="Home_Exp_Img">
+                <Property key="ImageTexture" value="UIIcon/t_zymbjyz.png"/>
+            </Widget>
+            <Widget type="TextBox" skin="TextBox" position="160 152 200 24" name="Home_Exp_Text">
+                <Property key="FontHeight" value="18"/>
+            </Widget>
+            <Widget type="TextBox" skin="TextBox" position="100 216 150 25" name="Home_Recv_Text">
+                <Property key="FontHeight" value="18"/>
+                <Property key="TextAlign" value="Center"/>
+            </Widget>
+            <Widget type="TextBox" skin="TextBox" position="230 216 100 25" name="Home_Recv_Time_Text">
+                <Property key="FontHeight" value="18"/>
+                <Property key="TextAlign" value="Left Center"/>
+                <Widget type="Time" skin="Time" position="0 0 0 0" name="Home_Time_Mich">
+                    <Event name="Update" Function="Home_Update_Time()"/>
+                </Widget>
+            </Widget>
+		        <Widget type="TextBox" skin="TextBox" position="65 66 305 145" name="Home_Create_Text">
+		            <Property key="FontHeight" value="24"/>
+		            <Property key="TextAlign" value="Center"/>
+		        </Widget>
+		        <Widget type="ImageBox" skin="ImageBox" position="35 160 349 18" name="Home_CreateExp_Background_Img">
+		   			    <Property key="ImageTexture" value="c_pdi.png"/>
+		            <Property key="bTextureSet"	value="true"/>
+		            <Property key="b9Patch" value="true"/>
+		        </Widget>
+		        <Widget type="ProgressBar" skin="ProgressBar" position="35 161 351 18" name="Home_CreateExp">
+		            <Property key="Begin" value="0 0"/>
+		            <Property key="End" value="1 0"/>
+		            <Property key="ImageTexture" value="c_pman.png"/>            
+		            <Property key="bTextureSet"	value="true"/>
+		        </Widget>
+		        <Widget type="ImageBox" skin="ImageBox" position="35 160 349 20" name="Home_Exp_Light_Img">
+		       		  <Property key="ImageTexture" value="c_pkuang.png"/>
+		       		  <Property key="bTextureSet"	value="true"/>
+		       		  <Property key="b9Patch" value="true"/>
+		       		  <Property key="9PatchCapWidth" value="6"/>
+		        </Widget>
+				<Widget type="TextBox" skin="TextBox" position="10 153 400 35" name="Home_CreateTime_Text">
+		            <Property key="FontHeight" value="18"/>
+		            <Property key="TextAlign" value="Center"/>
+		            <Widget type="Time" skin="Time" position="0 0 0 0" name="Home_BuildTime_Mich">
+		                <Event name="Update" Function="Home_Update_Build_Time();"/>
+		            </Widget>
+		        </Widget>
+		        <Widget type="Button9Patch" skin="Button" position="160 270 102 48" name="Home_AddSpeed_Button">
+		            <Event name="Clicked" Function="Home_AddSpeed_Click();"/>
+		            <Property key="DisabledImage" value="button_pay.png"/>
+		            <Property key="NormalImage" value="button_pay.png"/>
+		            <Property key="SelectedImage" value="button_pay.png"/>
+		            <Property key="TouchOrder" value="4"/>
+		            <Property key="TouchIntercept" value="true"/>
+		            <Widget type="TextBox" skin="TextBox" position="10 8 70 34" name="Home_AddSpeed_Button_Text">
+             			 <Property key="FontHeight" value="18"/>		      
+			             <Property key="TextAlign" value="Center"/>		
+		     	  		</Widget> 		            
+		        </Widget>		 
+		        <Widget type="ImageBox" skin="ImageBox" position="100 87 40 40" name="Home_Res_Icon">
+		            <Property key="ImageTexture" value="UIIcon/t_zymbjq.png"/>
+		        </Widget>
+		        <Widget type="TextBox" skin="TextBox" position="170 87 100 40" name="Home_Res_Name">
+		            <Property key="FontHeight" value="20"/>
+		            <Property key="TextAlign" value="Center"/>
+		        </Widget>		        
+		        <Widget type="TextBox" skin="TextBox" position="20 162 400 40" name="Home_Res_Num">
+		            <Property key="FontHeight" value="18"/>
+		            <Property key="TextAlign" value="Center"/>
+		        </Widget>		
+		        <Widget type="Button9Patch" skin="Button" position="292 274 116 42" name="Home_Recv_Button">
+		            <Property key="NormalImage" value="c_button.png"/>
+		            <Property key="TouchOrder" value="4"/>
+							  <Property key="TouchIntercept" value="true"/>            
+							  <Event name="Clicked" Function="Home_Recv_Click();"/>
+		            <Widget type="TextBox" skin="TextBox" position="20 5 80 34" name="Home_Recv_Button_Text">
+		             	 <Property key="FontName" value="fonts/common.fnt"/>
+		             	 <Property key="TextType" value="3"/>
+		     	  		</Widget>  					  
+		        </Widget>		   
+		        <Widget type="Button9Patch" skin="Button" position="292 274 116 42" name="Home_BuildStorage_Button">
+		            <Property key="NormalImage" value="c_button.png"/>
+		            <Property key="TouchOrder" value="4"/>
+							  <Property key="TouchIntercept" value="true"/>            
+		            <Widget type="TextBox" skin="TextBox" position="20 5 80 34" name="Home_BuildStorage_Button_Text">
+		             	 <Property key="FontName" value="fonts/common.fnt"/>
+		             	 <Property key="TextType" value="3"/>
+		     	  		</Widget>  					  
+		        </Widget>
+		        <Widget type="TextBox" skin="TextBox" position="16 110 388 65" name="Home_Resource_Text">
+		            <Property key="FontHeight" value="18"/>
+		           	<Property key="TextAlign" value="Center"/>
+		        </Widget>		 
+		        <Widget type="Button9Patch" skin="Button" position="152 274 116 42" name="Home_ToBuild">
+		            <Property key="NormalImage" value="c_button.png"/>
+		            <Property key="TouchOrder" value="4"/>
+		        		<Property key="TouchIntercept" value="true"/>   
+		        		<Event name="Clicked" Function="Home_ToBuildA();"/>         
+		            <Widget type="TextBox" skin="TextBox" position="20 5 80 34" name="Home_ToBuild_Text">
+		             	 <Property key="FontName" value="fonts/common.fnt"/>
+		             	 <Property key="TextType" value="3"/>
+		     	  		</Widget>       		
+		        </Widget>		               			                                  
+		        <Widget type="ScrollView" skin="ScrollView" position="40 120 375 85" name="Home_ScrollView">
+            		<Property key="VisibleHScroll" value="true"/>
+       			</Widget>
+				<Widget type="ImageBox" skin="RotatingSkin" position="40 66 350 18" name="Home_Name_CoinFrame_Bg">
+					<Property key="ImageTexture" value="c_pdi.png"/>
+					<Property key="bTextureSet"	value="true"/>
+					<Property key="b9Patch" value="true"/>
+		 		</Widget>  
+				<Widget type="ProgressBar" skin="ProgressBar" position="40 66 349 18" name="Home_Coin_Count_Bar">
+					  <Property key="Begin" value="0 0"/>
+				      <Property key="End" value="1 0"/>
+		  		      <Property key="ImageTexture" value="c_pman.png"/>
+		  		      <Property key="bTextureSet"	value="true"/>
+				</Widget>
+				<Widget type="ImageBox" skin="RotatingSkin" position="40 66 350 20" name="Home_Coin_Frame">
+		       		  <Property key="ImageTexture" value="c_pkuang.png"/>
+		       		  <Property key="bTextureSet"	value="true"/>
+		       		  <Property key="b9Patch" value="true"/>
+		       		  <Property key="9PatchCapWidth" value="6"/>
+		    	</Widget>
+				<Widget type="ImageBox" skin="ImageBox" position="30 50 40 40" name="Home_Coin_Icon">
+					<Property key="ImageTexture" value="UIIcon/t_zymbjq.png"/>
+				</Widget>
+				<Widget type="TextBox" skin="TextBox" position="32 53 400 44" name="Home_Coin_Count">
+		            <Property key="FontHeight" value="18"/>
+		            <Property key="TextAlign" value="Center"/>
+		        </Widget>
+				<Widget type="ImageBox" skin="RotatingSkin" position="40 126 350 18" name="Home_Name_StellFrame_Bg">
+					<Property key="ImageTexture" value="c_pdi.png"/>
+					<Property key="bTextureSet"	value="true"/>
+					<Property key="b9Patch" value="true"/>
+		 		</Widget>  
+				<Widget type="ProgressBar" skin="ProgressBar" position="40 126 349 18" name="Home_Stell_Count_Bar">
+					<Property key="Begin" value="0 0"/>
+				    <Property key="End" value="1 0"/>
+		  		    <Property key="ImageTexture" value="c_pman.png"/>
+		  		    <Property key="bTextureSet"	value="true"/>
+				</Widget>
+				<Widget type="ImageBox" skin="RotatingSkin" position="40 126 350 20" name="Home_Stell_Frame">
+		       		  <Property key="ImageTexture" value="c_pkuang.png"/>
+		       		  <Property key="bTextureSet"	value="true"/>
+		       		  <Property key="b9Patch" value="true"/>
+		       		  <Property key="9PatchCapWidth" value="6"/>
+		    	</Widget>
+				<Widget type="ImageBox" skin="ImageBox" position="30 110 40 40" name="Home_Stell_Icon">
+					<Property key="ImageTexture" value="UIIcon/t_zymbt.png"/>
+				</Widget>
+				<Widget type="TextBox" skin="TextBox" position="32 113 400 44" name="Home_Stell_Count">
+		            <Property key="FontHeight" value="18"/>
+		            <Property key="TextAlign" value="Center"/>
+		        </Widget>	
+
+				<!--石油-->
+				<Widget type="ImageBox" skin="RotatingSkin" position="40 186 350 18" name="Home_Name_OilFrame_Bg">
+					<Property key="ImageTexture" value="c_pdi.png"/>
+					<Property key="bTextureSet"	value="true"/>
+					<Property key="b9Patch" value="true"/>
+		 		</Widget>  
+				<Widget type="ProgressBar" skin="ProgressBar" position="40 186 349 18" name="Home_Oil_Count_Bar">
+					<Property key="Begin" value="0 0"/>
+				    <Property key="End" value="1 0"/>
+		  		    <Property key="ImageTexture" value="c_pman.png"/>
+		  		    <Property key="bTextureSet"	value="true"/>
+				</Widget>
+				<Widget type="ImageBox" skin="RotatingSkin" position="40 186 350 20" name="Home_Oil_Frame">
+		       		  <Property key="ImageTexture" value="c_pkuang.png"/>
+		       		  <Property key="bTextureSet"	value="true"/>
+		       		  <Property key="b9Patch" value="true"/>
+		       		  <Property key="9PatchCapWidth" value="6"/>
+		    	</Widget>
+				<Widget type="ImageBox" skin="ImageBox" position="30 170 40 40" name="Home_Oil_Icon">
+					<Property key="ImageTexture" value="UIIcon/t_zymbsy.png"/>
+				</Widget>
+				<Widget type="TextBox" skin="TextBox" position="32 173 400 44" name="Home_Oil_Count">
+		            <Property key="FontHeight" value="18"/>
+		            <Property key="TextAlign" value="Center"/>
+		        </Widget>	
+			</Widget>
+    </Widget>
+</MyGUI>

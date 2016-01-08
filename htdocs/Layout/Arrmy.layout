@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Widget" skin="RotatingSkin" position="0 354 800 126" name="Arrmy_Window">
+        <Property key="TouchIntercept" value="true"/>
+        <Property key="zOrder" value="4"/>
+        <Property key="TouchOrder" value="5"/>
+        <Widget type="Widget" skin="PanelEmpty" position="0 -300 800 354" name="Arrmy_SubWindow">
+            <Event name="Clicked" Function="Arrmy_Close();"/>
+            <Property key="TouchIntercept" value="true"/>
+            <Property key="TouchOrder" value="5"/>
+        </Widget>
+				<Widget type="ImageBox" skin="RotatingSkin" position="0 0 20 44" name="Arrmy_TitlePanelLeft">
+						<Property key="ImageTexture" value="di_bdownl.png"/>
+						<Property key="bTextureSet"	value="true"/>
+				</Widget>
+				<Widget type="ImageBox" skin="RotatingSkin" position="20 0 210 44" name="Arrmy_TitlePanelLeftMiddle">
+						<Property key="ImageTexture" value="di_bdownlz.png"/>
+						<Property key="bTextureSet"	value="true"/>
+						<Property key="b9Patch" value="true"/>
+						<Property key="9PatchCapWidth" value="2"/>
+				</Widget>
+				<Widget type="ImageBox" skin="RotatingSkin" position="230 0 20 44" name="Arrmy_TitlePanelMiddle">
+						<Property key="ImageTexture" value="di_bdownz.png"/>
+						<Property key="bTextureSet"	value="true"/>
+				</Widget>
+				<Widget type="ImageBox" skin="RotatingSkin" position="250 15 550 29" name="Arrmy_TitlePanelRight">
+						<Property key="ImageTexture" value="di_bdownr.png"/>
+						<Property key="bTextureSet"	value="true"/>
+						<Property key="b9Patch" value="true"/>
+						<Property key="9PatchCapWidth" value="2"/>
+		        <Widget type="TextBox" skin="TextBox" position="660 1 130 20" name="Arrmy_Content_Text">
+		            <Property key="TextColour" value="0 207 251"/>
+		            <Property key="FontHeight" value="12"/>
+		            <Property key="TextAlign" value="Center"/>
+		        </Widget>						
+				</Widget>   
+        <Widget type="Button9Patch" skin="Button" position="10 5 104 32" name="Arrmy_Unit_Button">
+            <Property key="DisabledImage" value="button_arrmy.png"/>
+            <Property key="NormalImage" value="button_arrmy.png"/>
+            <Property key="SelectedImage" value="button_arrmy.png"/>
+            <Property key="TouchIntercept" value="true"/>
+            <Property key="TouchOrder" value="4"/>
+            <Event name="Clicked" Function="Arrmy_Unit();"/>                
+        </Widget>            
+        <Widget type="Button9Patch" skin="Button" position="124 5 104 32" name="Arrmy_Arrmy_Button">
+            <Property key="DisabledImage" value="button_employ.png"/>
+            <Property key="NormalImage" value="button_employ.png"/>
+            <Property key="SelectedImage" value="button_employ.png"/>         
+            <Property key="TouchIntercept" value="true"/>
+            <Property key="TouchOrder" value="4"/>
+            <Event name="Clicked" Function="Arrmy_Arrmy();"/>
+        </Widget>				     
+        <Widget type="ImageBox" skin="RotatingSkin" position="0 44 800 82" name="Arrmy_Downboard_Image">
+						<Property key="ImageTexture" value="di_aabkuang.png"/>
+						<Property key="bTextureSet"	value="true"/>
+						<Property key="b9Patch" value="true"/>
+						<Property key="9PatchCapWidth" value="10"/>
+            <Widget type="ScrollView" skin="ScrollView" position="20 7 760 70" name="Arrmy_ScrollView">
+                <Property key="VisibleHScroll" value="true"/>
+                <Property key="TouchIntercept" value="false"/>
+                <Property key="TouchOrder" value="4"/>
+            </Widget>
+        </Widget>
+    </Widget>
+</MyGUI>

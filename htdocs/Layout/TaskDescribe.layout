@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Widget" skin="PanelEmpty" position="0 0 800 480" name="TaskDescribe_Window">
+        <Property key="zOrder" value="3"/>
+        <Property key="TouchIntercept" value="true"/>
+        <Property key="TouchOrder" value="5"/>
+        <Widget type="ImageBox" skin="ImageBox" position="196 47 456 409" name="TaskDescribe_Backgroun">
+            <Property key="ImageTexture" value="c_di1.png"/>
+            <Property key="bTextureSet"	value="true"/>
+			<Property key="b9Patch" value="true"/>
+			<Property key="9PatchCapWidth" value="10"/>
+			<Widget type="ImageBox" skin="ImageBox" position="9 52 437 347" name="TaskDescribe2_Backgroun">
+				<Property key="ImageTexture" value="c_di2.png"/>
+				<Property key="bTextureSet"	value="true"/>
+				<Property key="b9Patch" value="true"/>
+			</Widget>
+			<Widget type="ImageBox" skin="ImageBox" position="9 52 437 347" name="TaskDescribe3_Backgroun">
+				<Property key="ImageTexture" value="c_ilight.png"/>
+				<Property key="bTextureSet"	value="true"/>
+				<Property key="b9Patch" value="true"/>
+			</Widget>
+            <Widget type="TextBox" skin="TextBox" position="0 10 450 40" name="TaskDescribe_Title_Text">
+                <Property key="FontHeight" value="30"/>
+                <Property key="TextAlign" value="Center"/>
+                <Property key="TextColour" value="125 250 255"/>
+                <Property key="TextShadow" value="true"/>
+            </Widget>
+            <Widget type="ScrollView" skin="ScrollView" position="11 53 430 345" name="TaskDescribe_ScrollView">
+                <Property key="VisibleVScroll" value="true"/>
+				        <Property key="TouchIntercept" value="true"/>
+				        <Property key="TouchOrder" value="4"/>                
+            </Widget>
+            <Widget type="Button9Patch" skin="Button" position="416 2 38 38" name="TaskDescribe_Close_Button">
+                <Property key="NormalImage" value="c_cbutton.png"/>
+                <Property key="SelectedImage" value="c_cbutton.png"/>
+                <Property key="DisabledImage" value="c_cbutton.png"/>                
+				        <Property key="TouchIntercept" value="true"/>
+				        <Property key="TouchOrder" value="4"/>
+                <Event name="Clicked" Function="TaskDescribe_Close();"/>
+            </Widget>
+        </Widget>
+    </Widget>
+</MyGUI>

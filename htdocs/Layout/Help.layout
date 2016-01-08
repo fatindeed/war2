@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Widget" skin="PanelEmpty" position="0 0 800 480" name="Help_Window">
+        <Property key="zOrder" value="9"/>
+        <Property key="TouchIntercept" value="true"/>
+        <Property key="TouchOrder" value="5"/>
+		<Widget type="ImageBox" skin="ImageBox" position="390 230 20 20" name="Help_Mask">
+		    <Property key="ImageTexture" value="UIImage/logo_hd.png"/> 
+		</Widget>
+		<Widget type="ImageBox" skin="RotatingSkin" position="0 0 800 480" name="Help_ImageView">
+            <Property key="ImageTexture" value="UIImage/uibangzhu_1.png"/>   
+        	                     
+        </Widget>  
+		<Widget type="Button" skin="Button" position="528 80 140 52" name="Help_Next">
+						<Property key="NormalImage" value="UIImage/uibutton_normal.png"/>
+						<Property key="SelectedImage" value="UIImage/uibutton_selected.png"/>
+						<Property key="DisabledImage" value="UIImage/uibutton_selected.png"/>
+						<Property key="TouchIntercept" value="true"/>
+						<Property key="TouchOrder" value="4"/>
+						<Event name="Clicked" Function="Help_Next_Click()"/>		
+        </Widget>
+		<Widget type="ImageBox" skin="RotatingSkin" position="528 80 140 52" name="Help_Next_Text">
+               <Property key="ImageTexture" value="UIImage/uibutton_next.png"/>                  
+        </Widget> 
+		
+		
+		
+		
+		
+        <Widget type="Button" skin="Button" position="278 203 250 63" name="Help_OK">
+						<Property key="NormalImage" value="UIImage/uibutton_travel_normal.png"/>
+						<Property key="SelectedImage" value="UIImage/uibutton_travel_select.png"/>
+						<Property key="DisabledImage" value="UIImage/uibutton_travel_select.png"/>
+						<Property key="TouchIntercept" value="true"/>
+						<Property key="TouchOrder" value="4"/>
+						<Event name="Clicked" Function="Help_OK_Click()"/>		
+        </Widget>
+		<Widget type="ImageBox" skin="RotatingSkin" position="278 203 250 63" name="Help_OK_Text">
+               <Property key="ImageTexture" value="UIImage/uibutton_travel_text.png"/>                  
+        </Widget>
+
+    </Widget>
+</MyGUI>

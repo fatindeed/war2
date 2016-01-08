@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Widget" skin="RotatingSkin" position="0 0 800 480" name="HeavenLadderMatch_Window">
+        <Property key="TouchIntercept" value="true"/>
+        <Property key="TouchOrder" value="5"/>
+        <Property key="zOrder" value="4"/>
+        <Widget type="ImageBox" skin="RotatingSkin" position="0 0 800 480" name="HeavenLadderMatch_BG">
+            <Property key="ImageTexture" value="uitianti_bigbg.png"/>
+						<Property key="bTextureSet" value="true"/>
+            <Property key="b9Patch" value="true"/>       
+            <Property key="9PatchCapWidth" value="2"/>   	
+        </Widget> 	 
+        <Widget type="ImageBox" skin="RotatingSkin" position="0 0 800 57" name="HeavenLadderMatch_TitleFrame">
+            <Property key="ImageTexture" value="uitianti_title.png"/>
+						<Property key="bTextureSet" value="true"/>       	
+        </Widget>  
+        <Widget type="ImageBox" skin="RotatingSkin" position="0 56 800 24" name="HeavenLadderMatch_Title2Frame">
+            <Property key="ImageTexture" value="uitianti_title2.png"/>
+						<Property key="bTextureSet" value="true"/>       	
+        </Widget>        
+        <Widget type="ImageBox" skin="RotatingSkin" position="280 0 240 94" name="HeavenLadderMatch_Logo">
+            <Property key="ImageTexture" value="uitianti_logo.png"/>
+						<Property key="bTextureSet" value="true"/>       	
+        </Widget>  
+        <Widget type="ImageBox" skin="RotatingSkin" position="79 469 642 11" name="HeavenLadderMatch_Bottom2Bar">
+            <Property key="ImageTexture" value="uitianti_title2down.png"/>
+						<Property key="bTextureSet" value="true"/>       	
+        </Widget>                   
+        <Widget type="ImageBox" skin="RotatingSkin" position="0 457 800 24" name="HeavenLadderMatch_BottomBar">
+            <Property key="ImageTexture" value="uitianti_title2.png"/>
+						<Property key="bTextureSet" value="true"/>       	
+						<Property key="FlipY" value="true"/>  
+        </Widget>       
+        <Widget type="Button9Patch" skin="Button9Patch" position="750 3 48 47" name="HeavenLadderMatch_Close">
+						<Property key="NormalImage" value="uitianti_close.png"/>
+						<Property key="SelectedImage" value="uitianti_close.png"/>
+						<Property key="DisabledImage" value="uitianti_close.png"/>
+						<Property key="TouchIntercept" value="true"/>
+						<Property key="TouchOrder" value="4"/>
+						<Event name="Clicked" Function="HeavenLadderMatch_Close();"/>		
+        </Widget>			
+        <Widget type="ImageBox" skin="RotatingSkin" position="20 95 188 360" name="HeavenLadderMatch_HonourBG">
+            <Property key="ImageTexture" value="uitianti_midbg.png"/>
+						<Property key="bTextureSet" value="true"/>
+            <Property key="b9Patch" value="true"/>          	
+            <Property key="9PatchCapWidth" value="4"/>      
+        		<Widget type="ImageBox" skin="RotatingSkin" position="1 1 187 42" name="HeavenLadderMatch_HonourTitle">
+		            <Property key="ImageTexture" value="uitianti_midtitle.png"/>
+								<Property key="bTextureSet" value="true"/>  
+		        		<Widget type="TextBox" skin="TextBox" position="0 0 187 42" name="HeavenLadderMatch_HonourTitleText">
+		            		<Property key="TextColour" value="182 255 242"/>
+		            		<Property key="FontHeight" value="22"/>
+										<Property key="TextAlign" value="Center"/> 				
+            		</Widget>															       	 
+            </Widget>   
+            <Widget type="ImageBox" skin="RotatingSkin" position="16 69 154 37" name="HeavenLadderMatch_HonourSubTitleBG">
+		            <Property key="ImageTexture" value="uitianti_littletitle.png"/>
+								<Property key="bTextureSet" value="true"/>
+		            <Property key="b9Patch" value="true"/>          	
+		            <Property key="9PatchCapWidth" value="4"/>      
+		        		<Widget type="TextBox" skin="TextBox" position="0 0 154 37" name="HeavenLadderMatch_HonourSubTitleText">
+		            		<Property key="FontHeight" value="22"/>
+										<Property key="TextAlign" value="Center"/> 				
+            		</Widget>		            
+            </Widget> 
+            <Widget type="ImageBox" skin="RotatingSkin" position="16 106 154 133" name="HeavenLadderMatch_HonourPointBG">
+		            <Property key="ImageTexture" value="uitianti_littlebg.png"/>
+								<Property key="bTextureSet" value="true"/>
+		            <Property key="b9Patch" value="true"/>          	
+		            <Property key="9PatchCapWidth" value="4"/>   
+		            <Widget type="ImageBox" skin="RotatingSkin" position="0 0 149 119" name="HeavenLadderMatch_HonourPointShineBG">
+				            <Property key="ImageTexture" value="uitianti_rongyubg.png"/>
+										<Property key="bTextureSet" value="true"/>
+				            <Property key="b9Patch" value="true"/>          	
+				            <Property key="9PatchCapWidth" value="4"/> 		  
+				        		<Widget type="ImageBox" skin="RotatingSkin" position="25 19 108 48" name="HeavenLadderMatch_HonourPointSubBG">
+				            		<Property key="ImageTexture" value="uitianti_shuzhiheidi.png"/>				            		
+												<Property key="bTextureSet" value="true"/>
+						            <Property key="b9Patch" value="true"/>          	
+						            <Property key="9PatchCapWidth" value="4"/> 			
+						        		<Widget type="TextBox" skin="TextBox" position="0 0 108 48" name="HeavenLadderMatch_HonourPointSubText">
+						            		<Property key="FontHeight" value="36"/>
+		            						<Property key="TextColour" value="0 255 255"/>						            		
+														<Property key="TextAlign" value="Center"/> 				
+				            		</Widget>							            
+		            		</Widget>									                    				            
+				        </Widget>   		
+		            <Widget type="ImageBox" skin="RotatingSkin" position="1 85 152 55" name="HeavenLadderMatch_HonourPredictObtainBG">
+				            <Property key="ImageTexture" value="uitianti_yujirongyu.png"/>
+										<Property key="bTextureSet" value="true"/>
+				            <Property key="b9Patch" value="true"/>          	
+				            <Property key="9PatchCapWidth" value="4"/> 		
+				        		<Widget type="TextBox" skin="TextBox" position="0 5 152 25" name="HeavenLadderMatch_HonourPredictObtainTitle">
+				            		<Property key="FontHeight" value="18"/>
+            						<Property key="TextColour" value="0 255 255"/>						            		
+												<Property key="TextAlign" value="Center"/> 				
+		            		</Widget>							  
+				        		<Widget type="TextBox" skin="TextBox" position="0 25 152 25" name="HeavenLadderMatch_HonourPredictObtainText">
+				            		<Property key="FontHeight" value="18"/>
+            						<Property key="TextColour" value="0 255 255"/>						            		
+												<Property key="TextAlign" value="Center"/> 				
+		            		</Widget>				            		          	    
+            		</Widget>							                    			        		                
+						</Widget>
+		        <Widget type="ImageBox" skin="RotatingSkin" position="20 84 153 216" name="HeavenLadderMatch_Cup">
+		            <Property key="ImageTexture" value="uitianti_jiangbei.png"/>
+								<Property key="bTextureSet" value="true"/>     	
+						</Widget>							
+		        <Widget type="Button9Patch" skin="Button" position="25 272 138 55" name="HeavenLadderMatch_HonourExchange">
+		            <Property key="NormalImage" value="uitianti_rongyuduihuan.png"/>
+		            <Property key="SelectedImage" value="uitianti_rongyuduihuan2.png"/>				            
+		            <Property key="DisabledImage" value="uitianti_rongyuduihuan2.png"/>
+		            <Property key="TouchIntercept" value="true"/>
+		            <Property key="TouchOrder" value="4"/>
+		            <Event name="Clicked" Function="HeavenLadderMatch_HonourExchangeClick()"/>                
+		        </Widget>  								             		
+        </Widget>        	 
+        <Widget type="ImageBox" skin="RotatingSkin" position="231 95 340 360" name="HeavenLadderMatch_DetailBG">
+            <Property key="ImageTexture" value="uitianti_midbg.png"/>
+						<Property key="bTextureSet" value="true"/>
+            <Property key="b9Patch" value="true"/>          	
+            <Property key="9PatchCapWidth" value="4"/>      
+            <Widget type="ImageBox" skin="RotatingSkin" position="0 54 340 307" name="HeavenLadderMatch_DetailShineBG">
+		            <Property key="ImageTexture" value="uitianti_midwenli.png"/>
+								<Property key="bTextureSet" value="true"/>
+		            <Property key="b9Patch" value="true"/>          	
+		            <Property key="9PatchCapWidth" value="4"/> 	        		
+						</Widget>
+            <Widget type="ImageBox" skin="RotatingSkin" position="10 8 320 172" name="HeavenLadderMatch_DetailSubBG">
+		            <Property key="ImageTexture" value="uitianti_littlebg.png"/>
+								<Property key="bTextureSet" value="true"/>
+		            <Property key="b9Patch" value="true"/>          	
+		            <Property key="9PatchCapWidth" value="4"/> 	    
+		            <Widget type="ImageBox" skin="RotatingSkin" position="0 0 204 115" name="HeavenLadderMatch_DetailSubBadgeBG">
+				            <Property key="ImageTexture" value="uitianti_jifenbg.png"/>
+										<Property key="bTextureSet" value="true"/>
+				            <Property key="b9Patch" value="true"/>          	
+				            <Property key="9PatchCapWidth" value="4"/> 	
+								</Widget>
+		        		<Widget type="TextBox" skin="TextBox" position="0 30 192 55" name="HeavenLadderMatch_DetailScoreText">
+		            		<Property key="FontHeight" value="48"/>
+        						<Property key="TextColour" value="255 234 0"/>						            		
+										<Property key="TextAlign" value="Center"/> 				
+            		</Widget>									
+		            <Widget type="ImageBox" skin="RotatingSkin" position="196 9 118 62" name="HeavenLadderMatch_DetailSubVicDefBG">
+				            <Property key="ImageTexture" value="uitianti_shuzhiheidi.png"/>
+										<Property key="bTextureSet" value="true"/>
+				            <Property key="b9Patch" value="true"/>          	
+				            <Property key="9PatchCapWidth" value="4"/> 	
+				        		<Widget type="TextBox" skin="TextBox" position="0 0 62 31" name="HeavenLadderMatch_DetailVicDesc">
+				            		<Property key="FontHeight" value="18"/>
+				    						<Property key="TextColour" value="0 255 255"/>						            		
+												<Property key="TextAlign" value="Center"/> 				
+				        		</Widget>				
+				        		<Widget type="TextBox" skin="TextBox" position="63 0 56 31" name="HeavenLadderMatch_DetailVicText">
+				            		<Property key="FontHeight" value="18"/>
+				    						<Property key="TextColour" value="0 255 0"/>						            		
+												<Property key="TextAlign" value="Left Center"/> 				
+				        		</Widget>		
+				        		<Widget type="TextBox" skin="TextBox" position="0 31 62 31" name="HeavenLadderMatch_DetailDefDesc">
+				            		<Property key="FontHeight" value="18"/>
+				    						<Property key="TextColour" value="0 255 255"/>						            		
+												<Property key="TextAlign" value="Center"/> 				
+				        		</Widget>				
+				        		<Widget type="TextBox" skin="TextBox" position="63 31 56 31" name="HeavenLadderMatch_DetailDefText">
+				            		<Property key="FontHeight" value="18"/>
+				    						<Property key="TextColour" value="0 255 0"/>						            		
+												<Property key="TextAlign" value="Left Center"/> 				
+				        		</Widget>					        					            
+								</Widget>	
+		            <Widget type="ImageBox" skin="RotatingSkin" position="11 95 174 69" name="HeavenLadderMatch_DetailSubScoreBG">
+				            <Property key="ImageTexture" value="uitianti_shuzhiheidi.png"/>
+										<Property key="bTextureSet" value="true"/>
+				            <Property key="b9Patch" value="true"/>          	
+				            <Property key="9PatchCapWidth" value="4"/> 	
+				        		<Widget type="TextBox" skin="TextBox" position="0 10 174 25" name="HeavenLadderMatch_DetailScoreChangeDesc">
+				            		<Property key="FontHeight" value="18"/>
+				    						<Property key="TextColour" value="0 255 255"/>						            		
+												<Property key="TextAlign" value="Center"/> 				
+				        		</Widget>				
+				        		<Widget type="TextBox" skin="TextBox" position="0 35 174 25" name="HeavenLadderMatch_DetailScoreChangeText">
+				            		<Property key="FontHeight" value="18"/>
+				    						<Property key="TextColour" value="0 255 0"/>						            		
+												<Property key="TextAlign" value="Center"/> 				
+				        		</Widget>					        		            
+								</Widget>	
+		            <Widget type="ImageBox" skin="RotatingSkin" position="196 76 118 89" name="HeavenLadderMatch_DetailSubBankBG">
+				            <Property key="ImageTexture" value="uitianti_shuzhiheidi.png"/>
+										<Property key="bTextureSet" value="true"/>
+				            <Property key="b9Patch" value="true"/>          	
+				            <Property key="9PatchCapWidth" value="4"/> 	
+				        		<Widget type="TextBox" skin="TextBox" position="0 5 118 25" name="HeavenLadderMatch_DetailBankDesc">
+				            		<Property key="FontHeight" value="18"/>
+				    						<Property key="TextColour" value="0 255 255"/>						            		
+												<Property key="TextAlign" value="Center"/> 				
+				        		</Widget>				
+				        		<Widget type="TextBox" skin="TextBox" position="0 25 118 42" name="HeavenLadderMatch_DetailBankText">
+				            		<Property key="FontHeight" value="36"/>
+				    						<Property key="TextColour" value="255 54 0"/>						            		
+												<Property key="TextAlign" value="Center"/> 															
+				        		</Widget>			
+				            <Widget type="ImageBox" skin="RotatingSkin" position="30 65 17 17" name="HeavenLadderMatch_DetailBankChangeRateIcon">
+						            <Property key="ImageTexture" value="uitianti_paimingdown.png"/>
+												<Property key="bTextureSet" value="true"/>	
+				            		<Property key="b9Patch" value="true"/>  
+				            		<Property key="9PatchCapWidth" value="4"/> 					            																	       
+									  </Widget>				
+				        		<Widget type="TextBox" skin="TextBox" position="45 62 63 25" name="HeavenLadderMatch_DetailBankChangeRateText">
+				            		<Property key="FontHeight" value="18"/>
+				    						<Property key="TextColour" value="255 54 0"/>						            		
+												<Property key="TextAlign" value="Center"/> 				
+				        		</Widget>									  								 				            
+								</Widget>																											            		                		
+						</Widget>			
+        		<Widget type="TextBox" skin="TextBox" position="0 194 340 25" name="HeavenLadderMatch_DetailCountDownDesc">
+            		<Property key="FontHeight" value="18"/>
+    						<Property key="TextColour" value="0 255 255"/>						            		
+								<Property key="TextAlign" value="Center"/> 				
+        		</Widget>							
+         		<Widget type="TextBox" skin="TextBox" position="0 220 340 30" name="HeavenLadderMatch_DetailCountDownText">
+            		<Property key="FontHeight" value="24"/>
+    						<Property key="TextColour" value="0 255 255"/>						            		
+								<Property key="TextAlign" value="Center"/> 				
+        		</Widget>      
+            <Widget type="Time" skin="Time" position="0 0 0 0" name="HeavenLadderMatch_Time_Mich">
+                <Event name="Update" Function="HeavenLadderMatch_Update_Time()"/>
+            </Widget>        		 		
+		        <Widget type="Button9Patch" skin="Button" position="28 248 284 96" name="HeavenLadderMatch_JoinMatch">
+		            <Property key="NormalImage" value="uitianti_canjia.png"/>
+		            <Property key="SelectedImage" value="uitianti_canjia2.png"/>				            
+		            <Property key="DisabledImage" value="uitianti_canjia2.png"/>
+		            <Property key="TouchIntercept" value="true"/>
+		            <Property key="TouchOrder" value="4"/>
+		            <Event name="Clicked" Function="HeavenLadderMatch_JoinMatchClick();"/>                
+		        </Widget>          							            
+        </Widget>	                     
+        <Widget type="ImageBox" skin="RotatingSkin" position="588 95 188 360" name="HeavenLadderMatch_RankBG">
+            <Property key="ImageTexture" value="uitianti_midbg.png"/>
+						<Property key="bTextureSet" value="true"/>
+            <Property key="b9Patch" value="true"/>          	
+            <Property key="9PatchCapWidth" value="4"/>    
+        		<Widget type="ImageBox" skin="RotatingSkin" position="1 1 187 42" name="HeavenLadderMatch_RankMidTitle">
+		            <Property key="ImageTexture" value="uitianti_midtitle.png"/>
+								<Property key="bTextureSet" value="true"/>  
+		        		<Widget type="TextBox" skin="TextBox" position="0 0 187 42" name="HeavenLadderMatch_RankMidTitleText">
+		            		<Property key="TextColour" value="182 255 242"/>
+		            		<Property key="FontHeight" value="22"/>
+										<Property key="TextAlign" value="Center"/> 				
+            		</Widget>															       	 
+            </Widget>  
+        		<Widget type="ImageBox" skin="RotatingSkin" position="1 42 187 35" name="HeavenLadderMatch_RankTabBG">
+		            <Property key="ImageTexture" value="uitianti_paihangbg.png"/>
+								<Property key="bTextureSet" value="true"/>  
+            		<Property key="b9Patch" value="true"/> 				
+		        		<Widget type="TextBox" skin="TextBox" position="0 0 187 35" name="HeavenLadderMatch_RankTabText">
+		            		<Property key="FontHeight" value="18"/>		
+		            		<Property key="TextAlign" value="Left Center"/> 	
+            		</Widget>	            								        														       	 
+            </Widget>                                
+			      <Widget type="ScrollView" skin="ScrollView" position="0 78 187 245" name="HeavenLadderMatch_RankList">
+			          <Property key="TouchIntercept" value="true"/>			       
+			          <Property key="TouchOrder" value="4"/>
+			          <Property key="VisibleVScroll" value="true"/>
+			      </Widget> 
+        		<Widget type="ImageBox" skin="RotatingSkin" position="1 325 187 35" name="HeavenLadderMatch_RankBottomBar">
+		            <Property key="ImageTexture" value="uitianti_paihangmybg.png"/>
+								<Property key="bTextureSet" value="true"/>  
+            		<Property key="b9Patch" value="true"/> 										        														       	 
+            		<Property key="9PatchCapWidth" value="2"/> 			
+		        		<Widget type="TextBox" skin="TextBox" position="25 0 109 35" name="HeavenLadderMatch_RankBottomMyself">
+		            		<Property key="TextColour" value="0 255 234"/>
+		            		<Property key="FontHeight" value="18"/>
+										<Property key="TextAlign" value="Left Center"/> 				
+            		</Widget>	    
+		        		<Widget type="TextBox" skin="TextBox" position="120 0 78 35" name="HeavenLadderMatch_RankBottomMyselfCount">
+		            		<Property key="TextColour" value="0 255 234"/>
+		            		<Property key="FontHeight" value="18"/>
+										<Property key="TextAlign" value="Left Center"/> 				
+            		</Widget>	            		        		
+            </Widget>   			                 
+        </Widget>                       				
+    </Widget>
+</MyGUI>

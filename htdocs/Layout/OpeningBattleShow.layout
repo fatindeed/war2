@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Widget" skin="PanelEmpty" position="0 0 800 480" name="OpeningBattleShow_Window">
+        <Property key="zOrder" value="9"/>
+        <Property key="TouchIntercept" value="true"/>
+        <Property key="TouchOrder" value="5"/>
+		    <Widget type="ImageBox" skin="RotatingSkin" position="0 0 800 480" name="OpeningBattleShow_bg">
+            <Property key="ImageTexture" value="maps/donghuabeijing.png"/>                       
+        </Widget>       
+        <Widget type="SkeletonView" skin="RotatingSkin" position="400 -240 800 480" name="OpeningBattleShow_FrontScene">
+            <Property key="SkeletonDataFile" value="UIImage/skeleton_effect/skeleton.json"/>
+            <Property key="AtlasFile" value="UIImage/skeleton_effect/skeleton.txt"/>
+            <Property key="Scale" value="1.05"/>
+			<Event name="TimeEnd" Function="OpeningBattleShow_OnPlayEnd()"/>    
+        </Widget>
+		
+		<Widget type="Button9Patch" skin="Button" position="684 20 72 39" name="OpeningBattleShow_Skip_Button">
+			<Property key="NormalImage" value="uidenglu_tiaoguo.png"/>
+			<Property key="SelectedImage" value="uidenglu_tiaoguo.png"/>
+			<Property key="DisabledImage" value="uidenglu_tiaoguo.png"/>
+			<Property key="TouchIntercept" value="true"/>
+			<Property key="TouchOrder" value="4"/>
+			<Event name="Clicked" Function="OpeningBattleShow_OnSkipEvent()"/>		   
+		</Widget>
+    </Widget>
+</MyGUI>
+

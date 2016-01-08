@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Widget" skin="PanelEmpty" position="0 0 800 480" name="Train_Window">
+        <Property key="zOrder" value="4"/>
+        <Property key="TouchIntercept" value="true"/>
+        <Property key="TouchOrder" value="5"/>
+        <Widget type="ImageBox" skin="RotatingSkin" position="29 27 743 431" name="Train_BackGround_Image">
+            <Property key="ImageTexture" value="c_di1.png"/>
+						<Property key="bTextureSet" value="true"/>
+            <Property key="b9Patch" value="true"/>
+            <Property key="9PatchCapWidth" value="30"/> 
+		        <Widget type="ImageBox" skin="RotatingSkin" position="6 10 20 20" name="Train_Man_Image">
+		            <Property key="ImageTexture" value="UIIcon/u_zymbrk.png"/>
+		        </Widget>
+		        <Widget type="TextBox" skin="TextBox" position="25 10 80 30" name="Train_ManReduce_Text">
+		            <Property key="FontHeight" value="18"/>
+		        </Widget>       
+		        <Widget type="TextBox" skin="TextBox" position="0 2 743 35" name="Train_BuildingName_Text">
+		            <Property key="FontHeight" value="24"/>
+		            <Property key="TextAlign" value="Center"/>
+		            <Property key="TextColour" value="125	250	255"/>
+		        </Widget>		             
+            <Widget type="Button9Patch" skin="Button" position="700 3 38 38" name="Train_Exit_Button">
+                <Property key="DisabledImage" value="c_cbutton.png"/>
+                <Property key="NormalImage" value="c_cbutton.png"/>
+                <Property key="SelectedImage" value="c_cbutton.png"/>
+                <Property key="TouchOrder" value="4"/>
+                <Event name="Clicked" Function="Train_Exit();"/>   
+            </Widget>
+           	<Widget type="ImageBox" skin="RotatingSkin" position="11 39 218 378" name="Train_LeftPanel">
+		            <Property key="ImageTexture" value="c_di2.png"/>
+								<Property key="bTextureSet" value="true"/>
+		            <Property key="b9Patch" value="true"/>
+		            <Property key="9PatchCapWidth" value="6"/>     
+				        <Widget type="ScrollView" skin="ScrollView" position="8 6 218 366" name="Train_Untrain_ScrollView">
+				            <Property key="VisibleVScroll" value="true"/>
+		            		<Property key="TouchIntercept" value="true"/>				            
+				            <Property key="TouchOrder" value="4"/>
+				        </Widget>		
+				        <Widget type="Button9Patch" skin="Button" position="8 6 202 86" name="Train_List_Image">
+				            <Property key="NormalImage" value="arrmy_commond.png"/>
+            				<Property key="TouchOrder" value="4"/>				            
+        						<Property key="TouchIntercept" value="true"/>            				
+										<Event name="Clicked" Function="Train_SelectUnitInfoOnClick();"/>				            
+				            <Widget type="ImageBox" skin="RotatingSkin" position="10 10 63 63" name="Train_Unithead_Image">
+				                <Property key="ImageTexture" value="Arrmy/t_bb.png"/>
+				            </Widget>
+				            <Widget type="TextBox" skin="TextBox" position="90 20 175 30" name="Train_ListName_Text">
+				                <Property key="FontHeight" value="18"/>
+				                <Property key="TextColour" value="0 255 255"/>                
+				            </Widget>
+				            <Widget type="TextBox" skin="TextBox" position="5 3 50 30" name="Train_Unithead_Level">
+				                <Property key="FontHeight" value="15"/>
+				                <Property key="TextColour" value="0 255 255"/>                
+				            </Widget>
+				            <Widget type="TextBox" skin="TextBox" position="130 60 100 30" name="Train_Unithead_Training">
+				                <Property key="FontHeight" value="18"/>
+				                <Property key="TextColour" value="0 255 0"/>                
+				            </Widget>				            				            
+				        </Widget>		
+				        <Widget type="ScrollView" skin="ScrollView" position="8 93 202 272" name="Train_Training_ScrollView">
+           				 <Property key="VisibleVScroll" value="true"/>
+        				</Widget>		                           	
+          	</Widget> 
+            <Widget type="ImageBox" skin="RotatingSkin" position="233 39 499 378" name="Train_RightPanel">
+		            <Property key="ImageTexture" value="c_di2.png"/>
+								<Property key="bTextureSet" value="true"/>
+		            <Property key="b9Patch" value="true"/>
+		            <Property key="9PatchCapWidth" value="6"/>   		             
+		            <Widget type="ImageBox" skin="RotatingSkin" position="0 0 499 378" name="Train_RightHighLight">
+				            <Property key="ImageTexture" value="c_diilight.png"/>
+										<Property key="bTextureSet" value="true"/>
+				            <Property key="b9Patch" value="true"/>          	
+		            </Widget> 
+		            <Widget type="ImageBox" skin="RotatingSkin" position="3 3 490 368" name="Train_TableLine">
+				            <Property key="ImageTexture" value="j_ndiwen.png"/>
+										<Property key="bTextureSet" value="true"/>
+				            <Property key="b9Patch" value="true"/>          	
+		            </Widget> 		            
+		            <Widget type="ImageBox" skin="RotatingSkin" position="2 2 494 202" name="Train_RightTopPanel">
+				            <Property key="ImageTexture" value="c_ishadow.png"/>
+										<Property key="bTextureSet" value="true"/>
+				            <Property key="b9Patch" value="true"/>		
+				            <Property key="9PatchCapWidth" value="2"/>             
+				            <Widget type="ImageBox" skin="RotatingSkin" position="0 60 135 62" name="Train_RightUnitFrame">
+						        	<Property key="ImageTexture" value="UIImage/fightview.png"/>	
+									    <Widget type="SkeletonView" skin="SkeletonView" position="65 -35 105 105" name="Train_Unitpic_Image">						    
+									    </Widget>            					              	
+				            </Widget> 
+								<Widget type="TextBox" skin="TextBox" position="177 32 100 25" name="Train_UnitAtk_Mark_Text">
+						            <Property key="FontHeight" value="18"/>
+						            <Property key="TextColour" value="0 255 0"/>      
+						        </Widget>
+						        <Widget type="TextBox" skin="TextBox" position="177 62 100 25" name="Train_UnitDef_Mark_Text">
+						            <Property key="FontHeight" value="18"/>
+						            <Property key="TextColour" value="0 255 0"/>      
+						        </Widget>						        				                   
+						        <Widget type="TextBox" skin="TextBox" position="177 92 100 25" name="Train_UnitHp_Mark_Text">
+						            <Property key="FontHeight" value="18"/>
+						            <Property key="TextColour" value="0 255 0"/>      
+						        </Widget>
+								
+								<Widget type="TextBox" skin="TextBox" position="127 32 100 25" name="Train_UnitAtk_Text">
+						            <Property key="FontHeight" value="18"/>
+						            <Property key="TextColour" value="0 255 255"/>      
+						        </Widget>
+						        <Widget type="TextBox" skin="TextBox" position="127 62 100 25" name="Train_UnitDef_Text">
+						            <Property key="FontHeight" value="18"/>
+						            <Property key="TextColour" value="0 255 255"/>      
+						        </Widget>						        				                   
+						        <Widget type="TextBox" skin="TextBox" position="127 92 100 25" name="Train_UnitHp_Text">
+						            <Property key="FontHeight" value="18"/>
+						            <Property key="TextColour" value="0 255 255"/>      
+						        </Widget>
+				            <Widget type="ImageBox" skin="RotatingSkin" position="230 19 252 91" name="Train_UnitIntroduce">
+						            <Property key="ImageTexture" value="di_ajieshao.png"/>
+												<Property key="bTextureSet" value="true"/>
+						            <Property key="b9Patch" value="true"/>
+		            				<Property key="9PatchCapWidth" value="10"/> 						                      	
+				            </Widget> 		
+						        <Widget type="Button" skin="Button" position="5 140 54 54" name="Train_SkillLock1_Button">
+						            <Property key="NormalImage" value="UIImage/skill_lock.png"/>
+						            <Property key="SelectedImage" value="UIImage/skill_lock.png"/>						            
+						            <Property key="DisabledImage" value="UIImage/skill_lock.png"/>
+						        </Widget>			              				        
+						        <Widget type="Button9Patch" skin="Button" position="297 146 116 42" name="Train_UnitInfo_Button">
+						            <Property key="DisabledImage" value="c_button.png"/>
+						            <Property key="NormalImage" value="c_button.png"/>
+						            <Property key="SelectedImage" value="c_button.png"/>
+						            <Property key="TouchOrder" value="4"/>
+						            <Event name="Clicked" Function="Train_UnitInfo()"/>						            
+				                <Widget type="TextBox" skin="TextBox" position="20 5 80 34" name="Train_UnitInfo_Button_Text">
+				                    <Property key="FontName" value="fonts/common.fnt"/>
+				                    <Property key="TextType" value="3"/>
+				                </Widget>						            
+						    </Widget>				          							        				            		    
+		            </Widget>    
+		            <Widget type="ScrollView" skin="ScrollView" position="0 209 499 50" name="Train_ScrollView2">
+            				<Property key="VisibleVScroll" value="true"/>
+       					</Widget> 
+					<Widget type="ScrollView" skin="ScrollView" position="0 260 499 50" name="Train_ScrollView3">
+            			<Property key="VisibleVScroll" value="true"/>
+       				</Widget>
+								<Widget type="TextBox" skin="TextBox" position="0 213 499 25" name="Train_Costdetail_Text">
+				            <Property key="FontHeight" value="18"/>
+				            <Property key="TextAlign" value="Center"/>
+				        </Widget>        
+				        <Widget type="TextBox" skin="TextBox" position="0 253 499 25" name="Train_Time_Text">
+				            <Property key="FontHeight" value="18"/>
+				            <Property key="TextAlign" value="Center"/>
+				            <Widget type="Time" skin="Time" position="0 0 0 0" name="Train_Time_Timer">
+				                <Event name="Update" Function="Train_UpdateTime();"/>
+				            </Widget>
+				        </Widget>
+				        <Widget type="ImageBox" skin="ImageBox" position="111 281 276 18" name="Train_Exp_Background_Img">
+				   			    <Property key="ImageTexture" value="c_pdi.png"/>
+				            <Property key="bTextureSet"	value="true"/>
+				            <Property key="b9Patch" value="true"/>
+				        </Widget>
+				        <Widget type="ProgressBar" skin="ProgressBar" position="111 279 276 20" name="Train_CreateExp">
+				            <Property key="Begin" value="0 0"/>
+				            <Property key="End" value="1 0"/>
+				  		      <Property key="ImageTexture" value="plan_ingman.png"/>
+				  		      <Property key="bTextureSet"	value="true"/>				            
+				        </Widget>
+				        <Widget type="ImageBox" skin="ImageBox" position="111 281 276 20" name="Train_Exp_Light_Img">
+				       		  <Property key="ImageTexture" value="c_pkuang.png"/>
+				       		  <Property key="bTextureSet"	value="true"/>
+				       		  <Property key="b9Patch" value="true"/>
+				       		  <Property key="9PatchCapWidth" value="6"/>
+				        </Widget>   		     			            					   
+				        <Widget type="Button9Patch" skin="Button" position="191 316 116 42" name="Train_Train_Button">
+							<Property key="NormalImage" value="c_button.png"/>
+						    <Property key="SelectedImage" value="c_button.png"/>
+						    <Property key="DisabledImage" value="c_button.png"/>				            
+				       		<Property key="TouchIntercept" value="true"/>            
+				        <Property key="TouchOrder" value="4"/>
+				        <Event name="Clicked" Function="Train_Train();"/>				            
+				        <Widget type="TextBox" skin="TextBox" position="20 5 80 34" name="Train_Train_Text">
+				            <Property key="FontName" value="fonts/common.fnt"/>
+				            <Property key="TextType" value="3"/>
+				        </Widget>          
+				    </Widget>  
+				    <Widget type="Button9Patch" skin="Button" position="198 316 102 48" name="Train_Quicken_Button">						            
+				        <Property key="NormalImage" value="button_pay.png"/>
+				        <Property key="TouchOrder" value="4"/>
+				        <Property key="TouchIntercept" value="true"/>      
+						<Event name="Clicked" Function="Train_Quicken();"/>				
+		            <Widget type="TextBox" skin="TextBox" position="10 8 70 34" name="Train_Quicken_Button_Text">
+		               	<Property key="FontHeight" value="18"/>		      
+						<Property key="TextAlign" value="Center"/>			               			              
+		            </Widget>										        		
+				    </Widget>		
+				    <Widget type="Button9Patch" skin="Button" position="191 316 116 42" name="Train_Collect_Button">
+				        <Property key="NormalImage" value="c_button.png"/>
+				        <Property key="TouchOrder" value="4"/>
+				        <Property key="TouchIntercept" value="true"/>
+				        <Event name="Clicked" Function="Train_OnRecv();"/>            
+				        <Widget type="TextBox" skin="TextBox" position="20 5 80 34" name="Train_Collect_Button_Text">
+				        <Property key="FontName" value="fonts/common.fnt"/>
+				        <Property key="TextType" value="3"/>
+				    </Widget>	
+				</Widget>	
+				<Widget type="TextBox" skin="TextBox" position="240 25 240 100" name="Train_Desc_Content">
+					<Property key="FontHeight" value="18"/>
+					<Property key="TextColour" value="0 255 0"/>  
+				</Widget>
+			</Widget>  		                    	      		
+        </Widget>   
+    </Widget>
+</MyGUI>

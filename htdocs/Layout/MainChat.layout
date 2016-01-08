@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+		<Widget type="Widget" skin="PanelEmpty" position="0 395 520 85" name="MainChat_Window">
+        <Property key="zOrder" value="2"/>
+        <Property key="TouchIntercept" value="false"/>
+        <Property key="TouchOrder" value="7"/>
+        <Widget type="Button9Patch" skin="Button" position="8 35 50 50" name="MainChat_chat_Button">
+       		  <Event name="Clicked" Function="MainChat_ToChat()"/>
+     		    <Property key="DisabledImage" value="message_icon.png"/>
+    	      <Property key="NormalImage" value="message_icon.png"/>
+            <Property key="SelectedImage" value="message_icon.png"/>
+            <Property key="zOrder" value="3"/>				
+            <Property key="TouchIntercept" value="true"/>
+            <Property key="TouchOrder" value="6"/>
+            <Property key="b9Patch" value="false"/>
+        </Widget>
+    		<Widget type="Button9Patch" skin="Button" position="0 -60 260 78" name="MainChat_Alert_Button">
+       		  <Event name="Clicked" Function="MainChat_Chat()"/>
+     		    <Property key="DisabledImage" value="chat_BG.png"/>
+    	      <Property key="NormalImage" value="chat_BG.png"/>
+            <Property key="SelectedImage" value="chat_BG.png"/>
+            <Property key="zOrder" value="3"/>				
+            <Property key="TouchIntercept" value="true"/>
+            <Property key="TouchOrder" value="6"/>
+            <Property key="bTextureSet"	value="true"/>
+            <Widget type="ScrollView" skin="ScrollView" position="0 0 260 78" name="MainChat_ScrollView">
+                <Property key="VisibleVScroll1" value="true"/>
+            </Widget>
+				    <Widget type="TextBox" skin="TextBox" position="260 0 260 78" name="MainChat_TextBox_ListHistory">
+                <Property key="FontHeight" value="12"/>
+                <Property key="FontName" value="Default"/>
+						    <Property key="AnchorPoint" value="0 1"/>
+                <Property key="TextColour" value="255 255 0"/>
+						    <Property key="TextType" value="2"/>
+            </Widget>
+        </Widget>
+    </Widget>
+</MyGUI>

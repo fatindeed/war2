@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Widget" skin="PanelEmpty" position="0 0 800 30" name="UserMainPanel_Window">
+        <Property key="zOrder" value="3"/>
+        <Property key="TouchIntercept" value="true"/>
+        <Property key="TouchOrder" value="7"/>
+        <Widget type="Widget" skin="PanelEmpty" position="0 0 205 80" name="UserMainPanel_SubWindow">
+		    <Property key="zOrder" value="3"/>
+		    <Property key="TouchIntercept" value="true"/>
+		    <Property key="TouchOrder" value="7"/>
+        </Widget>
+        <Widget type="ImageBox" skin="RotatingSkin" position="3 5 52 52" name="UserMainPanel_Portrait">
+            <Property key="ImageTexture" value="uidenglu_touxiang1.png"/>
+            <Property key="bTextureSet"	value="true"/>        
+            <Property key="b9Patch" value="true"/>                
+        </Widget>
+        <Widget type="ImageBox" skin="RotatingSkin" position="0 0 58 60" name="UserMainPanel_Portrait_Frame">
+            <Property key="ImageTexture" value="di_head.png"/>
+            <Property key="bTextureSet"	value="true"/>
+        </Widget>
+        <Widget type="ImageBox" skin="RotatingSkin" position="58 0 740 30" name="UserMainPanel_Main_Bar">
+            <Property key="ImageTexture" value="new_top.png"/>
+            <Property key="bTextureSet"	value="true"/>
+            <Property key="b9Patch" value="true"/>
+            <Property key="9PatchCapWidth" value="2"/>
+        </Widget>
+        <Widget type="ImageBox" skin="RotatingSkin" position="440 2 357 26" name="UserMainPanel_SubBar">
+            <Property key="ImageTexture" value="top_skuang.png"/>
+            <Property key="bTextureSet"	value="true"/>
+            <Property key="b9Patch" value="true"/>
+            <Property key="9PatchCapWidth" value="12"/>
+        </Widget>
+        <Widget type="ImageBox" skin="RotatingSkin" position="794 0 6 30" name="UserMainPanel_SubBar_RightFrame">
+            
+            <Property key="bTextureSet"	value="true"/>
+        </Widget>        
+        <Widget type="ImageBox" skin="RotatingSkin" position="58 30 80 30" name="UserMainPanel_PlatMoney_Bar">
+            <Property key="ImageTexture" value="new_top.png"/>
+            <Property key="bTextureSet"	value="true"/>
+            <Property key="b9Patch" value="true"/>
+            <Property key="9PatchCapWidth" value="2"/>
+        </Widget>
+        <Widget type="ImageBox" skin="RotatingSkin" position="160 30 6 30" name="UserMainPanel_PlatMoneyBar_RightFrame">
+            
+            <Property key="bTextureSet"	value="true"/>
+        </Widget>
+        <Widget type="ImageBox" skin="ImageBox" position="70 34 20 20" name="Resource_Coin_Image">
+            <Property key="ImageTexture" value="UIIcon/u_zymbptb.png"/>
+        </Widget>
+        <Widget type="TextBox" skin="TextBox" position="100 33 70 25" name="Resource_Coinamount_Text">
+            <Property key="FontHeight" value="14"/>
+            <Property key="TextAlign" value="Left Center"/>
+            <Property key="TextColour" value="120 250 40"/>
+        </Widget>
+        <Widget type="ImageBox" skin="RotatingSkin" position="270 5 20 20" name="Resource_Money_Image">
+            <Property key="ImageTexture" value="UIIcon/u_zymbjq.png"/>
+        </Widget>
+        <Widget type="TextBox" skin="TextBox" position="310 2 65 26" name="Resource_Moneyamount_Text">
+            <Property key="FontHeight" value="14"/>
+            <Property key="TextAlign" value="Left Center"/>            
+            <Property key="TextColour" value="255 240 0"/>
+			<Widget type="Time" skin="Time" position="0 0 0 0" name="Resource_Money_Time_Mich">
+                    <Event name="Update" Function="UserMainPanel_UpdateCoin();"/>
+                </Widget>
+        </Widget>        
+        <Widget type="ImageBox" skin="RotatingSkin" position="454 5 20 20" name="Resource_Iron_Image">
+            <Property key="ImageTexture" value="UIIcon/u_zymbt.png"/>
+        </Widget>
+        <Widget type="ImageBox" skin="RotatingSkin" position="624 5 20 20" name="Resource_Oil_Image">
+            <Property key="ImageTexture" value="UIIcon/u_zymbsy.png"/>
+        </Widget>
+        <Widget type="ImageBox" skin="RotatingSkin" position="170 5 20 20" name="Resource_Man_Image">
+            <Property key="ImageTexture" value="UIIcon/u_zymbrk.png"/>
+        </Widget>
+        <Widget type="ImageBox" skin="RotatingSkin" position="470 5 150 20" name="Resource_Ironamount">
+			<Widget type="ImageBox" skin="RotatingSkin" position="2 3 136 14" name="UserPanel_Ironamount_Bg">
+				<Property key="ImageTexture" value="c_expkuangdi.png"/>
+				<Property key="bTextureSet"	value="true"/>
+			</Widget>
+			<Widget type="ProgressBar" skin="ProgressBar" position="4 4 134 12" name="UserPanel_Ironamount_Bar">
+				<Property key="Begin" value="0 0"/>
+				<Property key="End" value="1 0"/>
+				<Property key="ImageTexture" value="plan_fover.png"/>
+				<Property key="bTextureSet"	value="true"/>
+			</Widget>
+			<Widget type="ImageBox" skin="RotatingSkin" position="5 4 133 8" name="UserPanel_Ironamount_Frame">
+				<Property key="ImageTexture" value="c_expkuang.png"/>
+				<Property key="bTextureSet"	value="true"/>
+			</Widget>		
+			<Widget type="TextBox" skin="TextBox" position="2 0 146 18" name="UserPanel_Ironamount_Text">
+				<Property key="FontHeight" value="14"/>
+				<Property key="TextAlign" value="Center"/>
+			</Widget> 
+		</Widget>
+    <Widget type="ImageBox" skin="RotatingSkin" position="640 5 150 20" name="Resource_Oilamount">
+			<Widget type="ImageBox" skin="RotatingSkin" position="2 3 136 14" name="UserPanel_Oilamount_Bg">
+				<Property key="ImageTexture" value="c_expkuangdi.png"/>
+				<Property key="bTextureSet"	value="true"/>
+			</Widget>
+			<Widget type="ProgressBar" skin="ProgressBar" position="4 4 134 12" name="UserPanel_Oilamount_Bar">
+				<Property key="Begin" value="0 0"/>
+				<Property key="End" value="1 0"/>
+				<Property key="ImageTexture" value="plan_fover.png"/>
+				<Property key="bTextureSet"	value="true"/>
+			</Widget>
+			<Widget type="ImageBox" skin="RotatingSkin" position="5 4 133 8" name="UserPanel_Oilamount_Frame">
+				<Property key="ImageTexture" value="c_expkuang.png"/>
+				<Property key="bTextureSet"	value="true"/>
+			</Widget>		
+			<Widget type="TextBox" skin="TextBox" position="2 0 146 18" name="UserPanel_Oilamount_Text">
+				<Property key="FontHeight" value="14"/>
+				<Property key="TextAlign" value="Center"/>
+			</Widget> 
+		</Widget>
+        <Widget type="TextBox" skin="TextBox" position="195 2 70 26" name="Resource_Manamount_Text">
+            <Property key="FontHeight" value="14"/>
+            <Property key="TextAlign" value="Center"/>
+        </Widget>
+        <Widget type="Button" skin="Button" position="135 27 40 40" name="ResourceBar_Buy_Button">
+            <Property key="NormalImage" value="UIImage/u_chongzhi.png"/>
+            <Property key="SelectedImage" value="UIImage/u_chongzhi.png"/>
+            <Property key="DisabledImage" value="UIImage/u_chongzhi.png"/>
+            <Property key="TouchIntercept" value="true"/>
+            <Property key="TouchOrder" value="6"/>
+            <Event name="Clicked" Function="ResourceBar_Buy();"/>
+        </Widget>	
+        <Widget type="TextBox" skin="TextBox" position="55 2 115 26" name="UserPanel_UserName_Text">
+            <Property key="FontHeight" value="14"/>
+            <Property key="TextAlign" value="Center"/>
+        </Widget>       
+        <Widget type="ImageBox" skin="RotatingSkin" position="2 69 136 14" name="UserPanel_ExpFrame_Bg">
+   			<Property key="ImageTexture" value="c_expkuangdi.png"/>
+            <Property key="bTextureSet"	value="true"/>
+		 		</Widget>
+				<Widget type="ProgressBar" skin="ProgressBar" position="3 70 134 12" name="UserPanel_ExpBar">
+					<Property key="Begin" value="0 0"/>
+					<Property key="End" value="1 0"/>
+					<Property key="ImageTexture" value="plan_fover.png"/>
+					<Property key="bTextureSet"	value="true"/>
+				</Widget>
+				<Widget type="ImageBox" skin="RotatingSkin" position="5 72 128 4" name="UserPanel_ExpBar_Frame">
+					<Property key="ImageTexture" value="c_expkuang.png"/>
+					<Property key="bTextureSet"	value="true"/>
+				</Widget>						
+        <Widget type="TextBox" skin="TextBox" position="2 66 146 18" name="UserPanel_Exp_Text">
+            <Property key="FontHeight" value="14"/>
+        </Widget>     		    
+        <Widget type="ImageBox" skin="RotatingSkin" position="2 90 136 14" name="UserPanel_PhyStr_Bg">
+   			<Property key="ImageTexture" value="c_expkuangdi.png"/>
+            <Property key="bTextureSet"	value="true"/>
+ 		    </Widget>
+		    <Widget type="ProgressBar" skin="ProgressBar" position="3 91 134 12" name="UserPanel_PhyStrBar">
+  		      <Property key="Begin" value="0 0"/>
+		        <Property key="End" value="1 0"/>
+  		      <Property key="ImageTexture" value="power_man.png"/>
+			  <Property key="bTextureSet"	value="true"/>
+  		  </Widget>
+  		  <Widget type="ImageBox" skin="RotatingSkin" position="5 93 128 4" name="UserPanel_PhyStrBar_Frame">
+       		  <Property key="ImageTexture" value="c_expkuang.png"/>
+       		  <Property key="bTextureSet"	value="true"/>
+    		</Widget>		
+        <Widget type="TextBox" skin="TextBox" position="2 87 146 18" name="UserPanel_PhyStr_Text">
+            <Property key="FontHeight" value="14"/>
+        </Widget>     		
+    	  <Widget type="ImageBox" skin="ImageBox" position="140 61 30 30" name="UserPanel_Class_Image">
+            <Property key="ImageTexture" value="di_level.png"/>
+            <Property key="bTextureSet"	value="true"/>
+            <Property key="b9Patch" value="true"/>
+        </Widget>        
+        <Widget type="TextBox" skin="TextBox" position="145 66 20 20" name="UserPanel_Class_Text">
+            <Property key="FontHeight" value="16"/>
+            <Property key="TextAlign" value="Center"/>
+        </Widget>             
+    </Widget>
+</MyGUI>

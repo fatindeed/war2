@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Widget" skin="PanelEmpty" position="0 0 800 480" name="Login_Window">
+        <Property key="TouchIntercept" value="true"/>
+        <Property key="TouchOrder" value="9"/>
+        <Widget type="ImageBox" skin="RotatingSkin" position="0 0 800 480" name="Login_BG_Image">
+            <Property key="ImageTexture" value="UIImage/theme_cover.png"/>   
+						<Widget type="ImageBox" skin="RotationSkin" position="100 0 602 202" name="Login_Logo">
+							<Property key="ImageTexture" value="UIImage/uiimage_logo.png"/>
+						</Widget>                     
+            <Widget type="TextBox" skin="TextBox" position="565 10 225 25" name="Login_TextBox_Version">
+		            <Property key="TextColour" value="0 255 255"/>
+		            <Property key="TextAlign" value="Right Top"/>
+		            <Property key="FontHeight" value="18"/>
+       			</Widget>
+			
+
+			<Widget type="Button9Patch" skin="Button" position="5 10 120 50" name="Login_Luntan_Button">
+				<Property key="NormalImage" value="uidenglu_denglu.png"/>
+				<Property key="SelectedImage" value="uidenglu_dengluanxia.png"/>
+				<Property key="DisabledImage" value="uidenglu_dengluanxia.png"/>   
+                <Property key="TouchIntercept" value="true"/>
+                <Property key="TouchOrder" value="8"/>
+				<Event name="Clicked" Function="Login_Luntan()"/>    
+					<Widget type="TextBox" skin="TextBox" position="0 0 120 50" name="Login_Luntan_Text">
+						<Property key="TextColour" value="113 249 249"/>
+					    <Property key="FontHeight" value="24"/>
+						<Property key="TextAlign" value="Center"/>							          
+				     </Widget>  								                    
+			</Widget>
+				
+				
+			<Widget type="Button9Patch" skin="Button" position="650 65 120 50" name="Login_Help_Button">
+				<Property key="NormalImage" value="uidenglu_denglu.png"/>
+				<Property key="SelectedImage" value="uidenglu_dengluanxia.png"/>
+				<Property key="DisabledImage" value="uidenglu_dengluanxia.png"/>   
+                <Property key="TouchIntercept" value="true"/>
+                <Property key="TouchOrder" value="8"/>
+				<Event name="Clicked" Function="Login_Help()"/>    
+					<Widget type="TextBox" skin="TextBox" position="0 0 120 50" name="Login_Help_Text">
+						<Property key="TextColour" value="113 249 249"/>
+					    <Property key="FontHeight" value="24"/>
+						<Property key="TextAlign" value="Center"/>							          
+				     </Widget>  								                    
+			</Widget> 
+			<Widget type="Button9Patch" skin="Button" position="650 125 120 50" name="Login_Set_Button">
+				<Property key="NormalImage" value="uidenglu_denglu.png"/>
+				<Property key="SelectedImage" value="uidenglu_dengluanxia.png"/>
+				<Property key="DisabledImage" value="uidenglu_dengluanxia.png"/>   
+                <Property key="TouchIntercept" value="true"/>
+                <Property key="TouchOrder" value="8"/>
+				<Event name="Clicked" Function="Login_Set()"/>    
+					<Widget type="TextBox" skin="TextBox" position="0 0 120 50" name="Login_Set_Text">
+						<Property key="TextColour" value="113 249 249"/>
+					    <Property key="FontHeight" value="24"/>
+						<Property key="TextAlign" value="Center"/>							          
+				     </Widget>  								                    
+			</Widget>	
+				
+				
+         	  <Widget type="Button9Patch" skin="Button" position="650 185 120 50" name="Login_About_Button">
+            		<Property key="NormalImage" value="uidenglu_denglu.png"/>
+								<Property key="SelectedImage" value="uidenglu_dengluanxia.png"/>
+								<Property key="DisabledImage" value="uidenglu_dengluanxia.png"/>   
+                <Property key="TouchIntercept" value="true"/>
+                <Property key="TouchOrder" value="8"/>
+								<Event name="Clicked" Function="Login_About()"/>    
+				        <Widget type="TextBox" skin="TextBox" position="0 0 120 50" name="Login_About_Text">
+					          <Property key="TextColour" value="113 249 249"/>
+					          <Property key="FontHeight" value="24"/>
+										<Property key="TextAlign" value="Center"/>							          
+				     		</Widget>  								                    
+          	 </Widget>       	
+	         	  <Widget type="Button9Patch" skin="Button" position="650 245 120 50" name="Login_More_Button">
+	            		<Property key="NormalImage" value="uidenglu_denglu.png"/>
+									<Property key="SelectedImage" value="uidenglu_dengluanxia.png"/>
+									<Property key="DisabledImage" value="uidenglu_dengluanxia.png"/>   
+	                <Property key="TouchIntercept" value="true"/>
+	                <Property key="TouchOrder" value="8"/>
+									<Event name="Clicked" Function="Login_More()"/>    
+					        <Widget type="TextBox" skin="TextBox" position="0 0 120 50" name="Login_More_Text">
+						          <Property key="TextColour" value="113 249 249"/>
+						          <Property key="FontHeight" value="24"/>
+											<Property key="TextAlign" value="Center"/>							          
+					     		</Widget>  								                    
+	          	 </Widget>                	        	 		
+            <Widget type="Button9Patch" skin="Button" position="212 232 376 65" name="Login_SwitchServer">				
+            		<Property key="NormalImage" value="uidenglu_xuanfu.png"/>
+								<Property key="SelectedImage" value="uidenglu_xuanfuanxia.png"/>
+								<Property key="DisabledImage" value="uidenglu_xuanfuanxia.png"/>                    
+                <Property key="TouchIntercept" value="true"/>
+                <Property key="TouchOrder" value="8"/>                
+                <Event 		name="Clicked" Function="Login_OnClickSwitchServer()"/>  
+		            <Widget type="TextBox" skin="TextBox" position="0 0 376 65" name="Login_Confirm_ServerNameState">
+		                <Property key="FontHeight" value="24"/>
+		                <Property key="TextAlign" value="Center"/>
+		            </Widget>				     		              
+           	 </Widget>   
+	           <Widget type="Button9Patch" skin="Button" position="58 385 172 63" name="Login_Register_Btn">
+            		<Property key="NormalImage" value="uidenglu_denglu.png"/>
+								<Property key="SelectedImage" value="uidenglu_dengluanxia.png"/>
+								<Property key="DisabledImage" value="uidenglu_dengluanxia.png"/>  
+	              <Property key="TouchIntercept" value="true"/>
+	              <Property key="TouchOrder" value="8"/> 
+	              <Event name="Clicked" Function="Login_OnRegisterEvent()"/> 
+					      <Widget type="TextBox" skin="TextBox" position="0 0 172 63" name="Login_Register_Btn_Text">
+					          <Property key="TextColour" value="113 249 249"/>
+					          <Property key="FontHeight" value="24"/>		
+										<Property key="TextAlign" value="Center"/>														          			          
+					     	</Widget>  								                    
+	           </Widget>             	          
+           	 <Widget type="Button9Patch" skin="Button" position="571 385 172 63" name="Login_Login_Button">
+            		<Property key="NormalImage" value="uidenglu_denglu.png"/>
+								<Property key="SelectedImage" value="uidenglu_dengluanxia.png"/>
+								<Property key="DisabledImage" value="uidenglu_dengluanxia.png"/>   
+                <Property key="TouchIntercept" value="true"/>
+                <Property key="TouchOrder" value="8"/>
+								<Event name="Clicked" Function="Login_Login()"/>    
+				        <Widget type="TextBox" skin="TextBox" position="0 0 172 63" name="Login_Login_Text">
+					          <Property key="TextColour" value="113 249 249"/>
+					          <Property key="FontHeight" value="24"/>
+										<Property key="TextAlign" value="Center"/>							          
+				     		</Widget>  								                    
+            </Widget>
+            <Widget type="ImageBox" skin="RotatingSkin" position="212 58 374 391" name="Login_ServerList_BG">
+                <Property key="ImageTexture" value="uidenglu_xuanfudikuang.png"/>
+                <Property key="bTextureSet" value="true"/>             
+		           	<Widget type="Button9Patch" skin="Button" position="319 24 38 38" name="Login_CloseChooseServerList_Btn">
+										<Property key="NormalImage" value="uidenglu_tuichu.png"/>
+										<Property key="SelectedImage" value="uidenglu_tuichuanxia.png"/>
+										<Property key="DisabledImage" value="uidenglu_tuichuanxia.png"/>  
+		                <Property key="TouchIntercept" value="true"/>
+		                <Property key="TouchOrder" value="8"/>
+										<Event name="Clicked" Function="Login_OnCloseServerListEvent()"/>      								                    
+		            </Widget>  
+				        <Widget type="TextBox" skin="TextBox" position="0 29 374 34" name="Login_ServerList_CurServerDesc">
+					          <Property key="FontHeight" value="24"/>
+										<Property key="TextAlign" value="Center"/>							          
+				     		</Widget>			            
+           		  <Widget type="ImageBox" skin="RotatingSkin" position="48 71 276 34" name="Login_ServerList_CurServerBg">
+		                <Property key="ImageTexture" value="uidenglu_fuwuqibiankuang.png"/>
+		                <Property key="bTextureSet" value="true"/>   
+						        <Widget type="TextBox" skin="TextBox" position="0 0 276 34" name="Login_ServerList_CurServerText">
+							          <Property key="FontHeight" value="20"/>
+												<Property key="TextAlign" value="Center"/>							          
+						     		</Widget>		                
+ 				     		</Widget>  	               		                
+				        <Widget type="TextBox" skin="TextBox" position="0 124 374 34" name="Login_ServerList_Desc">
+					          <Property key="FontHeight" value="24"/>
+										<Property key="TextAlign" value="Center"/>							          
+				     		</Widget>  		                         
+		            <Widget type="ScrollView" skin="ScrollView" position="48 169 278 184" name="Login_Scroll_ServerList">
+		                <Property key="VisibleVScroll" value="true"/>
+		                <Property key="TouchIntercept" value="true"/>
+		                <Property key="TouchOrder" value="7"/>
+		            </Widget>               
+            </Widget>       
+        </Widget>
+		
+		<Widget type="Time" skin="Time" position="0 0 0 0" name="Login_AboutShow_Timer">		
+			      <Event name="TimeEnd" Function="Login_AboutShowEvent()"/>	
+        </Widget>
+		
+		<Widget type="ImageBox" skin="RotatingSkin" position="212 58 374 391" name="Login_Help_BG">
+            <Property key="ImageTexture" value="uidenglu_xuanfudikuang.png"/>
+            <Property key="bTextureSet" value="true"/>             
+           	<Widget type="Button9Patch" skin="Button" position="319 24 38 38" name="Login_Help_CloseBtn">
+				<Property key="NormalImage" value="uidenglu_tuichu.png"/>
+				<Property key="SelectedImage" value="uidenglu_tuichuanxia.png"/>
+				<Property key="DisabledImage" value="uidenglu_tuichuanxia.png"/>  
+                <Property key="TouchIntercept" value="true"/>
+                <Property key="TouchOrder" value="8"/>
+				<Event name="Clicked" Function="Login_OnCloseHelptEvent()"/>      								                    
+            </Widget> 
+			<Widget type="TextBox" skin="TextBox" position="0 26 374 30" name="Login_Help_Tile">
+				<Property key="TextColour" value="113 249 249"/>
+				<Property key="FontHeight" value="24"/>
+				<Property key="TextAlign" value="Center"/>
+			</Widget>      
+            <Widget type="ScrollView" skin="ScrollView" position="18 65 340 290" name="Login_Help_Info">
+                <Property key="VisibleVScroll" value="true"/>
+                <Property key="TouchIntercept" value="true"/>
+                <Property key="TouchOrder" value="7"/>
+				<Widget type="TextBox" skin="TextBox" position="0 -400 340 700" name="Login_Help_Detil">
+					<Property key="TextColour" value="113 249 249"/>
+					<Property key="FontHeight" value="20"/>
+				</Widget>
+            </Widget> 							        					          
+        </Widget>
+		
+		
+		
+		
+		
+		
+		
+    </Widget>
+</MyGUI>

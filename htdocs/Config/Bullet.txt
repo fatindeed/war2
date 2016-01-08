@@ -1,0 +1,16 @@
+INT	INT	STRING	STRING	FLOAT	STRING	STRING
+ID	轨迹类型(0：普通攻击)1：有抛物线	飞行特效	飞行音效	速度	击中特效绑定点	击中音效
+0	0	Effect/role/bullet_shine_blue.plist	-1	1000	hitpoint	-1
+1	0	Effect/role/bullet_shine_purple.plist	-1	1000	hitpoint	-1
+2	0	Effect/role/attack_bullet_blue.plist	-1	1000	hitpoint	-1
+3	0	Effect/role/attack_bullet_purple.plist	-1	1000	hitpoint	-1
+4	0	Effect/role/trajectory_orange.plist	-1	700	hitpoint	-1
+5	1	Effect/role/trajectory_blue.plist	-1	500	hitpoint	-1
+6	1	Effect/role/trajectory_purple.plist	-1	500	hitpoint	-1
+7	2	Effect/role/trajectory_orange.plist	-1	500	hitpoint	-1
+8	0	Effect/role/attack_thunder_blue.plist	-1	700	hitpoint	-1
+9	0	Effect/role/attack_thunder_purple.plist	-1	700	hitpoint	-1
+10	0	Effect/role/attack_noise_blue.plist	-1	500	hitpoint	-1
+11	0	Effect/role/attack_noise_purple.plist	-1	500	hitpoint	-1
+12	0	Effect/role/attack_fire_blue.plist	-1	500	hitpoint	-1
+13	0	Effect/role/attack_fire_purple.plist	-1	500	hitpoint	-1

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Widget" skin="RotatingSkin" position="0 0 800 480" name="Guide_Window">
+        <Property key="zOrder" value="7"/>
+     		<Property key="TouchIntercept" value="true"/>
+				<Property key="TouchOrder" value="1"/>   				     
+        <Widget type="ImageBox" skin="ImageBox" position="390 230 20 20" name="Guide_ImageBox_GreyBG">
+            <Property key="ImageTexture" value="UIImage/logo_hd.png"/>
+        </Widget>
+        <Widget type="Button9Patch" skin="Button" position="0 0 60 60" name="Guide_Button_NextStep">
+            <Property key="DisabledImage" value="empty.png"/>
+            <Property key="NormalImage" value="empty.png"/>
+            <Property key="SelectedImage" value="empty.png"/>     
+            <Property key="TouchIntercept" value="true"/>
+            <Property key="TouchOrder" value="0"/>
+            <Property key="IsActionScale" value="false"/>
+            <Event name="Clicked" Function="Guide_ClickOK()"/>
+        </Widget> 
+        <Widget type="ImageBox" skin="ImageBox" position="0 438 103 42" name="Guide_ImageBox_arrow">
+            <Property key="ImageTexture" value="UIImage/guide_arrow.png"/>
+        </Widget>    
+ 				<Widget type="ImageBox" skin="RotatingSkin" position="144 339 656 141" name="Guide_DetailPanel">
+            <Property key="ImageTexture" value="npc_dialog_content_bg.png"/>
+						<Property key="bTextureSet" value="true"/>
+		        <Widget type="TextBox" skin="TextBox" position="145 30 470 305" name="Guide_TextDetail">
+		            <Property key="FontHeight" value="20"/>
+		        </Widget>    															
+        </Widget>        
+        <Widget type="Widget" skin="RotatingSkin" position="0 0 800 480" name="Guide_NpcPanel">
+	       		<Property key="TouchIntercept" value="true"/>
+				<Property key="TouchOrder" value="0"/>
+        		<Event name="Clicked" Function="Guide_OnClickNPC()"/>	
+            <Widget type="ImageBox" skin="RotatingSkin" position="0 132 288 348" name="Guide_ImageBox_RightNPC">
+                <Property key="ImageTexture" value="UIImage/npc_8.png"/>
+            </Widget>
+        </Widget>
+    </Widget>
+</MyGUI>

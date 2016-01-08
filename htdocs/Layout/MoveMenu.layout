@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Widget" skin="PanelEmpty" position="0 405 186 75" name="MoveMenu_Window">
+    		<Property key="TouchOrder" value="9"/>
+        <Property key="TouchIntercept" value="true"/>
+        <Property key="zOrder" value="1"/>
+        <Widget type="ImageBox" skin="RotatingSkin" position="0 0 186 75" name="MoveMenu_Background">
+            <Property key="ImageTexture" value="UIImage/yd_dk.png"/>
+            <Widget type="Button9Patch" skin="Button" position="12 11 52 52" name="MoveMenu_OnCancel">
+                <Event name="Clicked" Function="MoveMenu_NO();"/>
+                <Property key="NormalImage" value="yd_cx.png"/>
+                <Property key="SelectedImage" value="yd_cx.png"/>
+                <Property key="DisabledImage" value="yd_cx.png"/>
+                <Property key="IsActionScale" value="false"/>
+								<Property key="TouchOrder" value="8"/>
+                <Property key="TouchIntercept" value="true"/>
+	    			</Widget>
+            <Widget type="Button9Patch" skin="Button" position="67 11 52 52" name="MoveMenu_OnSell">
+                <Event name="Clicked" Function="MoveMenu_Sell();"/>
+                <Property key="NormalImage" value="yd_cs.png"/>
+                <Property key="SelectedImage" value="yd_cs.png"/>
+                <Property key="DisabledImage" value="yd_uncs.png"/>
+                <Property key="IsActionScale" value="false"/>
+								<Property key="TouchOrder" value="8"/>
+                <Property key="TouchIntercept" value="true"/>
+	    			</Widget>
+            <Widget type="Button9Patch" skin="Button" position="122 11 52 52" name="MoveMenu_OnOk">
+                <Event name="Clicked" Function="MoveMenu_YES();"/>
+                <Property key="NormalImage" value="yd_qr.png"/>
+                <Property key="SelectedImage" value="yd_qr.png"/>
+                <Property key="DisabledImage" value="yd_unqr.png"/>
+                <Property key="IsActionScale" value="false"/>
+								<Property key="TouchOrder" value="8"/>
+                <Property key="TouchIntercept" value="true"/>
+            </Widget>
+        </Widget>
+    </Widget>
+</MyGUI>

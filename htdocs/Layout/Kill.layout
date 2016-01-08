@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Widget" skin="RotatingSkin" position="0 0 800 480" name="Kill_Window">
+        <Property key="TouchIntercept" value="false"/>
+        <Property key="zOrder" value="4"/>
+        <Property key="TouchOrder" value="5"/>
+        <Widget type="ImageBox" skin="ImageBox" position="230 135 125 161" name="Kill_Value">
+			<Property key="ImageTexture" value="ms_1.png"/>
+			<Property key="bTextureSet"	value="true"/>
+		</Widget>
+		<Widget type="ImageBox" skin="ImageBox" position="100 135 416 164" name="Kill_Godkill">
+			<Property key="ImageTexture" value="ms_god.png"/>
+			<Property key="bTextureSet"	value="true"/>
+		</Widget>
+		<Widget type="ImageBox" skin="ImageBox" position="320 135 323 161" name="Kill_Image">
+			<Property key="ImageTexture" value="ms_kill.png"/>
+			<Property key="bTextureSet"	value="true"/>
+		</Widget>
+		<Widget type="Time" skin="Time" position="0 0 0 0" name="Kill_TimeMich">
+			<Event name="Update" Function="Kill_Update();"/>
+		</Widget>
+    </Widget>
+</MyGUI>

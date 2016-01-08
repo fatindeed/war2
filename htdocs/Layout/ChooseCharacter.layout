@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Widget" skin="PanelEmpty" position="0 0 800 480" name="ChooseCharacter_Window">
+        <Property key="zOrder" value="4"/>
+        <Property key="TouchIntercept" value="true"/>
+        <Property key="TouchOrder" value="5"/>
+		<Widget type="ImageBox" skin="RotationSkin" position="390 230 20 20" name="ChooseCharacter_BackGround">
+			<Property key="ImageTexture" value="Logo/touxiang_xuanze.png"/> 
+		</Widget>
+		<Widget type="TextBox" skin="TextBox" position="0 45 800 35" name="ChooseCharacter_PortraitSelect">
+	        <Property key="FontHeight" value="25"/>
+			<Property key="TextColour" value="0 255 0"/>
+			<Property key="TextAlign" value="Center"/>
+     	</Widget>
+        <Widget type="ScrollView" skin="ScrollView" position="65 80 672 118" name="ChooseCharacter_PortraitList">
+        	<Property key="TouchIntercept" value="true"/>
+		    <Property key="TouchOrder" value="4"/>
+            <Property key="VisibleHScroll" value="true"/>		         
+        </Widget>
+		<!--增加头像描述-->
+		<Widget type="TextBox" skin="TextBox" position="52 198 155 35" name="ChooseCharacter_PortraitDescript1">
+	        <Property key="FontHeight" value="20"/>
+			<Property key="TextAlign" value="Center"/>
+     	</Widget>
+		<Widget type="TextBox" skin="TextBox" position="228 198 155 35" name="ChooseCharacter_PortraitDescript2">
+	        <Property key="FontHeight" value="20"/>
+			<Property key="TextAlign" value="Center"/>
+     	</Widget>
+		<Widget type="TextBox" skin="TextBox" position="413 198 155 35" name="ChooseCharacter_PortraitDescript3">
+	        <Property key="FontHeight" value="20"/>
+			<Property key="TextAlign" value="Center"/>
+     	</Widget>
+		<Widget type="TextBox" skin="TextBox" position="588 198 155 35" name="ChooseCharacter_PortraitDescript4">
+	        <Property key="FontHeight" value="20"/>
+			<Property key="TextAlign" value="Center"/>
+     	</Widget>
+		
+		
+		
+		
+        <Widget type="TextBox" skin="TextBox" position="0 267 800 30" name="ChooseCharacter_InputNickName_Desc">
+	        <Property key="FontHeight" value="24"/>
+			<Property key="TextColour" value="113 249 249"/>	          
+			<Property key="TextAlign" value="Center"/>												          
+     	</Widget>					
+		<Widget type="ImageBox" skin="RotationSkin" position="262 308 276 34" name="ChooseCharacter_NickName_EditBg">
+			<Property key="ImageTexture" value="uidenglu_fuwuqibiankuang.png"/>
+			<Property key="bTextureSet" value="true"/>  
+			<Widget type="EditBox" skin="EditBox" position="20 0 220 34" name="ChooseCharacter_Input_NickName_Text">
+				<Property key="FontHeight" value="24"/>
+				<Property key="MaxTextLength" value="220"/>
+			</Widget>		       					
+		</Widget>       
+        <Widget type="TextBox" skin="TextBox" position="0 346 800 30" name="ChooseCharacter_NickNameHint_Desc">
+			<Property key="FontHeight" value="20"/>          
+			<Property key="TextAlign" value="Center"/>												          
+     	</Widget>	  	
+		<Widget type="Button9Patch" skin="Button" position="318 385 172 63" name="ChooseCharacter_Continue_Btn">
+			<Property key="NormalImage" value="uidenglu_denglu.png"/>
+			<Property key="SelectedImage" value="uidenglu_dengluanxia.png"/>
+			<Property key="DisabledImage" value="uidenglu_dengluanxia.png"/>  
+			<Event name="Clicked" Function="ChooseCharacter_OnContinueEvent()"/>
+			<Widget type="TextBox" skin="TextBox" position="0 0 172 63" name="ChooseCharacter_Continue_Btn_Text">
+				<Property key="TextColour" value="113 249 249"/>
+				<Property key="FontHeight" value="24"/>		
+				<Property key="TextAlign" value="Center"/>														          			          
+			</Widget>  								                    
+		</Widget> 							  
+    </Widget>
+</MyGUI>
+

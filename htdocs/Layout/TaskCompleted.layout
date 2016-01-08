@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Widget" skin="PanelEmpty" position="0 0 800 480" name="TaskCompleted_Window">
+        <Property key="TouchIntercept" value="true"/>
+        <Property key="TouchOrder" value="1"/>
+		<Property key="zOrder" value="9"/>
+            <Widget type="SkeletonView" skin="RotatingSkin" position="400 140 100 100" name="Task_Completed_Skeleton">
+                <Property key="SkeletonDataFile" value="UIImage/skeleton_effect/anime_renwuwancheng.json"/>
+                <Property key="AtlasFile" value="UIImage/skeleton_effect/anime_renwuwancheng.txt"/>
+				<Event name="TimeEnd" Function="TaskCompleted_SkeletonAnimationEnd()"/>    
+            </Widget>
+    </Widget>
+</MyGUI>

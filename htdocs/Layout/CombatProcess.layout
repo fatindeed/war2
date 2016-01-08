@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+	<Widget type="Widget" skin="PanelEmpty" position="0 0 800 480" name="CombatProcess_Window">
+		<Widget type="Widget" skin="PanelEmpty" position="0 0 800 480" name="CombatProcess_ReadyGoTipWindow">
+				<Property key="TouchIntercept" value="false"/>
+				<Property key="TouchOrder" value="9"/>
+				<Widget type="SkeletonView" skin="RotatingSkin" position="400 140 100 100" name="CombatProcess_Image_ReadyTip">
+						<Property key="SkeletonDataFile" value="UIImage/skeleton_effect/anime_zhunbeizhandu.json"/>
+            <Property key="AtlasFile" value="UIImage/skeleton_effect/anime_zhunbeizhandu.txt"/>
+				    <Event name="TimeEnd" Function="CombatProcess_Ready_SkeletonAnimationEnd()"/>    
+				</Widget>
+				<Widget type="SkeletonView" skin="RotatingSkin" position="400 140 100 100" name="CombatProcess_Image_StartTip">
+						<Property key="SkeletonDataFile" value="UIImage/skeleton_effect/anime_kaishizhandu.json"/>
+            <Property key="AtlasFile" value="UIImage/skeleton_effect/anime_kaishizhandu.txt"/>
+				    <Event name="TimeEnd" Function="CombatProcess_Start_SkeletonAnimationEnd()"/>    
+				</Widget>				
+		</Widget>
+		<Widget type="ImageBox" skin="ImageBox" position="0 0 330 60" name="CombatProcess_UserWindow">
+			<Widget type="ImageBox" skin="ImageBox" position="58 5 230 16" name="CombatProcess_UserHPDi">
+				<Property key="ImageTexture" value="di_fadlz.png"/>
+				<Property key="bTextureSet"	value="true"/>
+				<Property key="b9Patch" value="true"/>
+				<Property key="9PatchCapWidth" value="2"/>
+			</Widget>
+			<Widget type="ImageBox" skin="ImageBox" position="288 5 30 16" name="CombatProcess_UserHPDi2">
+				<Property key="ImageTexture" value="di_fadr.png"/>
+				<Property key="bTextureSet"	value="true"/> 
+			</Widget>
+			<Widget type="ProgressBar" skin="ProgressBar" position="54 5 264 16" name="CombatProcess_UserHPBar">
+				<Property key="Begin" value="0 0"/>
+				<Property key="End" value="1 0"/>
+				<Property key="ImageTexture" value="hp_green.png"/>
+				<Property key="bTextureSet"	value="true"/>
+			</Widget>
+			<Widget type="TextBox" skin="TextBox" position="100 4 110 20" name="CombatProcess_MyHpText">
+				<Property key="TextAlign" value="Center"/>
+				<Property key="FontHeight" value="12"/>
+			</Widget>
+			<Widget type="ImageBox" skin="ImageBox" position="59 2 230 21" name="CombatProcess_UserQK">
+				<Property key="ImageTexture" value="di_faz.png"/>
+				<Property key="bTextureSet"	value="true"/>
+				<Property key="b9Patch" value="true"/>
+				<Property key="9PatchCapWidth" value="2"/>
+			</Widget>
+			<Widget type="ImageBox" skin="ImageBox" position="289 2 28 21" name="CombatProcess_UserQK2">
+				<Property key="ImageTexture" value="di_far.png"/>
+				<Property key="bTextureSet"	value="true"/>
+			</Widget>
+			<Widget type="ImageBox" skin="ImageBox" position="56 26 140 30" name="CombatProcess_UserNameDi">
+				<Property key="ImageTexture" value="name_di.png"/>
+				<Property key="bTextureSet"	value="true"/>
+				<Property key="b9Patch" value="true"/>
+				<Property key="9PatchCapWidth" value="4"/>
+				<Widget type="ImageBox" skin="ImageBox" position="1 1 138 28" name="CombatProcess_UserNameNei">
+					<Property key="ImageTexture" value="c_ilight.png"/>
+					<Property key="bTextureSet"	value="true"/>
+					<Property key="b9Patch" value="true"/>
+					<Property key="9PatchCapWidth" value="2"/>
+				</Widget>
+				<Widget type="TextBox" skin="TextBox" position="33 5 110 20" name="CombatProcess_UserNameText">
+					<Property key="TextAlign" value="Center"/>
+					<Property key="FontHeight" value="14"/>
+				</Widget>
+				<Widget type="ImageBox" skin="RotatingSkin" position="2 0 31 31" name="CombatProcess_UserClass_Image">
+					<Property key="ImageTexture" value="di_level.png"/>
+					<Property key="bTextureSet"	value="true"/>
+					<Widget type="TextBox" skin="TextBox" position="3 6 25 20" name="CombatProcess_UserClass_Text">
+						<Property key="FontHeight" value="16"/>
+						<Property key="TextAlign" value="Center"/>
+					</Widget>
+				</Widget>
+			</Widget>
+			<Widget type="ImageBox" skin="RotatingSkin" position="4 5 50 50" name="CombatProcess_UserHead">
+          <Property key="ImageTexture" value="uidenglu_touxiang1.png"/>
+          <Property key="bTextureSet"	value="true"/>        
+          <Property key="b9Patch" value="true"/>    
+			</Widget>
+			<Widget type="ImageBox" skin="RotatingSkin" position="0 0 59 60" name="CombatProcess_UserHeadWK">
+				<Property key="ImageTexture" value="c_hkuang.png"/>
+				<Property key="bTextureSet"	value="true"/>
+			</Widget> 			
+		</Widget>
+		<Widget type="ImageBox" skin="ImageBox" position="470 0 330 60" name="CombatProcess_FoeWindow">
+			<Widget type="ImageBox" skin="ImageBox" position="43 5 230 16" name="CombatProcess_FoeHPDi">
+				<Property key="ImageTexture" value="di_fadlz.png"/>
+				<Property key="bTextureSet"	value="true"/>
+				<Property key="b9Patch" value="true"/>
+				<Property key="9PatchCapWidth" value="2"/>
+			</Widget>
+			<Widget type="ImageBox" skin="ImageBox" position="13 5 30 16" name="CombatProcess_FoeHPDi2">
+				<Property key="ImageTexture" value="di_fadrf.png"/>
+				<Property key="bTextureSet"	value="true"/>
+				<Property key="b9Patch" value="true"/>
+				<Property key="9PatchCapWidth" value="2"/>
+			</Widget>
+			<Widget type="ProgressBar" skin="ProgressBar" position="13 5 264 16" name="CombatProcess_FoeHPBar">
+				<Property key="Begin" value="1 0"/>
+				<Property key="End" value="1 0"/>
+				<Property key="ImageTexture" value="hp_greenf.png"/>
+				<Property key="bTextureSet"	value="true"/>			
+			</Widget>
+			<Widget type="ImageBox" skin="ImageBox" position="41 2 230 21" name="CombatProcess_FoeQK">
+				<Property key="ImageTexture" value="di_faz.png"/>
+				<Property key="bTextureSet"	value="true"/>
+				<Property key="b9Patch" value="true"/>
+				<Property key="9PatchCapWidth" value="2"/>
+			</Widget>
+			<Widget type="ImageBox" skin="ImageBox" position="13 2 28 21" name="CombatProcess_FoeQK2">
+				<Property key="ImageTexture" value="di_farf.png"/>
+				<Property key="bTextureSet"	value="true"/>
+				<Property key="b9Patch" value="true"/>
+				<Property key="9PatchCapWidth" value="2"/>
+			</Widget>
+			<Widget type="TextBox" skin="TextBox" position="100 4 110 20" name="CombatProcess_EnmyHpText">
+				<Property key="TextAlign" value="Center"/>
+				<Property key="FontHeight" value="12"/>
+			</Widget>
+			<Widget type="ImageBox" skin="ImageBox" position="132 25 140 30" name="CombatProcess_FoeNameDi">
+				<Property key="ImageTexture" value="name_di.png"/>
+				<Property key="bTextureSet"	value="true"/>
+				<Property key="b9Patch" value="true"/>
+				<Property key="9PatchCapWidth" value="4"/>
+				<Widget type="ImageBox" skin="ImageBox" position="1 1 138 28" name="CombatProcess_FoeNameNei">
+					<Property key="ImageTexture" value="c_ilight.png"/>
+					<Property key="bTextureSet"	value="true"/>
+					<Property key="b9Patch" value="true"/>
+					<Property key="9PatchCapWidth" value="2"/>
+				</Widget>
+				<Widget type="TextBox" skin="TextBox" position="0 5 110 20" name="CombatProcess_FoeNameText">
+					<Property key="TextAlign" value="Center"/>
+					<Property key="FontHeight" value="14"/>
+				</Widget>
+				<Widget type="ImageBox" skin="RotatingSkin" position="109 0 31 31" name="CombatProcess_FoeClass_Image">
+					<Property key="ImageTexture" value="di_level.png"/>
+					<Property key="bTextureSet"	value="true"/>
+					<Widget type="TextBox" skin="TextBox" position="3 6 25 20" name="CombatProcess_FoeClass_Text">
+						<Property key="FontHeight" value="16"/>
+						<Property key="TextAlign" value="Center"/>
+					</Widget>
+				</Widget>
+			</Widget>
+			<Widget type="ImageBox" skin="RotatingSkin" position="274 5 50 50" name="CombatProcess_FoeHead">
+          <Property key="ImageTexture" value="uidenglu_touxiang1.png"/>
+          <Property key="bTextureSet"	value="true"/>        
+          <Property key="b9Patch" value="true"/>    
+			</Widget>
+			<Widget type="ImageBox" skin="RotatingSkin" position="271 0 59 60" name="CombatProcess_FoeHeadWK">
+				<Property key="ImageTexture" value="c_hkuang.png"/>
+				<Property key="bTextureSet"	value="true"/>
+			</Widget>
+		</Widget>
+		<Widget type="ImageBox" skin="ImageBox" position="0 0 200 480" name="CombatProcess_LeftMenu">
+			<Widget type="Button9Patch" skin="Button" position="3 101 98 40" name="CombatProcess_Retreat_Button">
+					<Property key="NormalImage" value="uitianti_chetui.png"/>
+					<Property key="SelectedImage" value="uitianti_chetui.png"/>
+					<Property key="DisabledImage" value="uitianti_chetui.png"/>
+					<Property key="TouchIntercept" value="true"/>
+					<Property key="TouchOrder" value="6"/>
+					<Event name="Clicked" Function="CombatProcess_RetreatOnEvent()"/>             
+			</Widget>		
+			<Widget type="Button9Patch" skin="Button" position="3 161 98 40" name="CombatProcess_Kzan_Button">
+					<Property key="NormalImage" value="button_start.png"/>
+					<Property key="SelectedImage" value="button_start.png"/>
+					<Property key="DisabledImage" value="button_start.png"/>
+					<Property key="TouchIntercept" value="true"/>
+					<Property key="TouchOrder" value="6"/>
+					<Event name="Clicked" Function="CombatProcess_StartBattle()"/>             
+			</Widget>		
+		</Widget>
+    <Widget type="Time" skin="Time" position="0 0 0 0" name="CombatProcess_MatchCountDown_Timer">
+        <Event name="Update" Function="CombatProcess_Update_MatchingTime()"/>
+        <Event name="TimeEnd" Function="CombatProcess_Restart_MatchingTime()"/>
+    </Widget>		
+		<Widget type="TextBox" skin="TextBox" position="0 111 800 25" name="CombatProcess_MatchCountDown_Desc">
+				<Property key="FontHeight" value="20"/>
+				<Property key="TextColour" value="0 222 255"/>				
+				<Property key="TextAlign" value="Center"/>
+		</Widget>     
+		<Widget type="ImageBox" skin="RotatingSkin" position="151 141 497 16" name="CombatProcess_MatchCountDown_BarBg">
+				<Property key="ImageTexture" value="uitianti_dise.png"/>
+				<Property key="bTextureSet"	value="true"/>
+		</Widget>
+		<Widget type="ProgressBar" skin="ProgressBar" position="151 141 497 16" name="CombatProcess_MatchCountDown_Bar">
+				<Property key="Begin" value="0 0"/>
+				<Property key="End" value="1 0"/>
+				<Property key="ImageTexture" value="uitianti_jinduman.png"/>
+				<Property key="bTextureSet"	value="true"/>
+		</Widget>
+		<Widget type="ImageBox" skin="RotatingSkin" position="151 141 497 16" name="CombatProcess_MatchCountDown_Frame">
+				<Property key="ImageTexture" value="uitianti_gaoguang.png"/>
+				<Property key="bTextureSet"	value="true"/>
+		</Widget>		
+		<Widget type="TextBox" skin="TextBox" position="151 139 497 16" name="CombatProcess_MatchCountDown_Text">
+				<Property key="FontHeight" value="14"/>
+				<Property key="TextAlign" value="Center"/>
+		</Widget> 		
+		<Widget type="TextBox" skin="TextBox" position="0 300 800 25" name="CombatProcess_PvPArrangeCoord_Text">
+			 <Property key="FontHeight" value="20"/>
+			 <Property key="TextColour" value="0 222 255"/>
+			 <Property key="TextAlign" value="Center"/>
+		</Widget>		
+		<Widget type="ImageBox" skin="ImageBox" position="0 359 800 127" name="CombatProcess_DownMenuWindow">
+			<Widget type="Button9Patch" skin="Button" position="360 56 98 40" name="CombatProcess_Shift_Button">
+				<Property key="NormalImage" value="button_speed.png"/>
+				<Property key="SelectedImage" value="button_speed.png"/>
+				<Property key="DisabledImage" value="button_speed.png"/>
+				<Property key="TouchIntercept" value="true"/>
+				<Property key="TouchOrder" value="6"/>
+				<Property key="b9Patch" value="false"/>
+				<Event name="Clicked" Function="CombatProcess_ShiftOnEvent()"/>            
+				<Widget type="ImageBox" skin="RotatingSkin" position="5 6 63 27" name="ComnatProcess_Shift_ButtonOne">
+						<Property key="ImageTexture" value="ms_sudux.png"/>
+						<Property key="bTextureSet"	value="true"/>
+				</Widget>
+				<Widget type="Button9Patch" skin="Button" position="70 9 10 21" name="ComnatProcess_Shift_ButtonTwo">
+						<Property key="NormalImage" value="ms_sudu1.png"/>
+						<Property key="SelectedImage" value="ms_sudu1.png"/>
+						<Property key="DisabledImage" value="ms_sudu1.png"/>
+						<Property key="bTextureSet"	value="true"/>
+						<Property key="b9Patch" value="true"/>
+				</Widget>
+			</Widget>
+			<Widget type="Button9Patch" skin="Button" position="360 63 102 48" name="CombatProcess_Cure_Button">
+					<Property key="NormalImage" value="button_pay.png"/>
+					<Property key="SelectedImage" value="button_pay.png"/>
+					<Property key="DisabledImage" value="button_pay.png"/>
+					<Property key="TouchOrder" value="6"/>
+					<Property key="TouchIntercept" value="true"/>
+					<Property key="bTextureSet"	value="true"/>
+					<Property key="b9Patch" value="false"/>
+					<Event name="Clicked" Function="CombatProcess_CureOnEvent()"/>					
+					<Widget type="TextBox" skin="TextBox" position="91 22 30 30" name="CombatProcess_Number_Text">
+						 <Property key="FontHeight" value="18"/>
+						 <Property key="TextAlign" value="Center"/>
+					</Widget>
+					<Widget type="TextBox" skin="TextBox" position="20 7 60 30" name="CombatProcess_Content_Text">
+						 <Property key="FontHeight" value="24"/>
+						 <Property key="TextAlign" value="Center"/>
+					</Widget>
+			</Widget>	
+			<Widget type="Button9Patch" skin="Button" position="684 56 98 40" name="CombatProcess_Handup_Button">
+				 <Property key="NormalImage" value="button_deposit.png"/>
+				 <Property key="DisabledImage" value="button_deposit.png"/>            
+				 <Property key="SelectedImage" value="button_deposit.png"/>
+				 <Property key="TouchIntercept" value="true"/>
+				 <Property key="TouchOrder" value="6"/>
+				 <Property key="b9Patch" value="false"/>
+				 <Event name="Clicked" Function="CombatProcess_Delegate()"/> 
+				 <Widget type="ImageBox" skin="RotatingSkin" position="20 3 56 33" name="CombatProcess_Handup_ButtonOne">
+					  <Property key="ImageTexture" value="ms_tuoguan.png"/>
+					  <Property key="bTextureSet"	value="true"/>
+				 </Widget>
+				 <Widget type="ImageBox" skin="RotatingSkin" position="20 3 56 33" name="CombatProcess_Handup_ButtonTwo">
+					  <Property key="ImageTexture" value="ms_quxiao.png"/>
+					  <Property key="bTextureSet"	value="true"/>
+				 </Widget>
+		  </Widget>			
+			<Widget type="ImageBox" skin="ImageBox" position="0 0 800 127" name="CombatProcess_DownSubMenuWindow">
+				 <Widget type="ImageBox" skin="RotatingSkin" position="0 0 20 44" name="CombatProcess_NamePanel">
+					  <Property key="ImageTexture" value="di_bdownl.png"/>
+					  <Property key="bTextureSet"	value="true"/>
+				 </Widget>
+				 <Widget type="ImageBox" skin="RotatingSkin" position="20 0 210 44" name="CombatProcess_NamePanel">
+						<Property key="ImageTexture" value="di_bdownlz.png"/>
+						<Property key="bTextureSet"	value="true"/>
+						<Property key="b9Patch" value="true"/>
+						<Property key="9PatchCapWidth" value="2"/>
+				 </Widget>
+				 <Widget type="ImageBox" skin="RotatingSkin" position="230 0 20 44" name="CombatProcess_NamePanel">
+						<Property key="ImageTexture" value="di_bdownz.png"/>
+						<Property key="bTextureSet"	value="true"/>
+				 </Widget>
+				 <Widget type="ImageBox" skin="RotatingSkin" position="250 15 550 29" name="CombatProcess_NamePanel">
+						<Property key="ImageTexture" value="di_bdownr.png"/>
+						<Property key="bTextureSet"	value="true"/>
+						<Property key="b9Patch" value="true"/>
+						<Property key="9PatchCapWidth" value="2"/>
+						<Widget type="TextBox" skin="TextBox" position="350 5 200 20" name="ComnatProcess_Unit_Text">
+							<Property key="TextAlign" value="Left Center"/>
+							<Property key="FontHeight" value="14"/>
+						</Widget>
+				 </Widget>
+				 <Widget type="ImageBox" skin="RotatingSkin" position="0 40 800 82" name="CombatProcess_NamePanel">
+						<Property key="ImageTexture" value="di_aabkuang.png"/>
+						<Property key="bTextureSet"	value="true"/>
+						<Property key="b9Patch" value="true"/>
+						<Property key="9PatchCapWidth" value="10"/>
+						<Widget type="ScrollView" skin="ScrollView" position="30 6 740 70" name="ComnatProcess_ScrollView">
+							 <Property key="VisibleHScroll" value="true"/>
+							 <Property key="TouchIntercept" value="false"/>
+							 <Property key="TouchOrder" value="4"/>
+						</Widget>
+				 </Widget>
+				 <Widget type="Button9Patch" skin="Button" position="10 5 104 32" name="ComnatProcess_ArmyButtonOne">
+						<Property key="NormalImage" value="button_arrmy.png"/>
+						<Property key="DisabledImage" value="button_arrmy.png"/>            
+						<Property key="SelectedImage" value="button_arrmy.png"/>
+						<Property key="TouchIntercept" value="true"/>
+						<Property key="TouchOrder" value="6"/>
+						<Property key="b9Patch" value="false"/>
+						<Event name="Clicked" Function=""/>            
+				 </Widget>
+			</Widget>
+		</Widget>
+		<Widget type="Button9Patch" skin="Button" position="433 102 189 148" name="CombatProcess_NextRound">
+        <Property key="DisabledImage" value="copy_next.png"/>
+        <Property key="NormalImage" value="copy_next.png"/>
+        <Property key="SelectedImage" value="copy_next.png"/>
+				<Property key="TouchIntercept" value="true"/>
+				<Property key="TouchOrder" value="6"/>
+        <Event name="Clicked" Function="CombatProcess_NextRoundOnEvent()"/>            
+    </Widget>
+		<Widget type="ImageBox" skin="RotatingSkin" position="374 0 58 37" name="CombatProcess_VS">
+        <Property key="ImageTexture" value="ms_vs.png"/>
+        <Property key="bTextureSet"	value="true"/>
+    </Widget>
+		<Widget type="TextBox" skin="TextBox" position="320 0 165 37" name="CombatProcess_AttackRamainTimeText">
+        <Property key="TextAlign"	value="Center"/>
+        <Property key="TextColour" value="255 255 0"/>           
+        <Property key="FontHeight" value="32"/>
+    </Widget>   
+    <Widget type="Time" skin="Time" position="0 0 0 0" name="CombatProcess_AttackRamainTime_Timer">
+        <Event name="Update" Function="CombatProcess_Update_TakeTurnTime()"/>   
+        <Event name="TimeEnd" Function="CombatProcess_End_TakeTurnTime()"/>
+    </Widget>  		           
+		<Widget type="TextBox" skin="TextBox" position="0 37 800 32" name="CombatProcess_AttackTakeTurnDesc">
+        <Property key="TextAlign"	value="Center"/>
+        <Property key="TextColour" value="0 222 255"/>     
+        <Property key="FontHeight" value="24"/>           
+    </Widget>
+    <Widget type="Time" skin="Time" position="0 0 0 0" name="CombatProcess_DelayData_Timer">
+        <Event name="TimeEnd" Function="CombatProcess_End_ListenDelayTime()"/>
+    </Widget>	          	    
+	</Widget>
+</MyGUI>
+
+

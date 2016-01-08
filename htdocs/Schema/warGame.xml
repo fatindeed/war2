@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="List">
+	<List file="Schema/font_png.plist"/>
+	<List file="Schema/special_btn_set1.plist"/>
+	<List file="Schema/special_btn_set2.plist"/>
+	<List file="Schema/main_window_frame01.plist"/>
+	<List file="Schema/main_window_frame02.plist"/>
+	<List file="Schema/main_window_frame03.plist"/>
+	<List file="Schema/main_window_frame04.plist"/>
+	<List file="Schema/main_window_frame05.plist"/>
+	<List file="Schema/dengluzhuce_ui.plist"/>
+	<List file="Schema/ui_tianti.plist"/>
+	<List file="Schema/uishijie.plist"/>
+	<List file="Schema/ui_denglu.plist"/>
+	<List file="Schema/ui_touxiang.plist"/>
+	<List file="Schema/uishangcheng_all.plist"/>
+	<List file="Schema/uishangcheng_shangpin.plist"/>
+</MyGUI>

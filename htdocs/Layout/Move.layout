@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Widget" skin="PanelEmpty" position="0 0 800 45" name="Move_Window">
+        <Property key="TouchIntercept" value="true"/>
+        <Property key="TouchOrder" value="8"/>
+        <Property key="zOrder" value="1"/>
+		    <Widget type="ImageBox" skin="RotatingSkin" position="0 0 800 45" name="Move_Background">
+		        <Property key="ImageTexture" value="UIImage/yd_tbdt.png"/>
+		        <Widget type="TextBox" skin="TextBox" position="190 0 424 45" name="Move_Content">
+		            <Property key="FontHeight" value="24"/>
+		            <Property key="TextAlign" value="Center"/>
+		        </Widget>
+		        <Widget type="Button9Patch" skin="Button" position="640 390 118 42" name="Move_MoveFinisn">
+		            <Property key="NormalImage" value="c_button.png"/>
+			    			<Property key="TouchOrder" value="7"/>
+			    			<Property key="TouchIntercept" value="true"/>
+		            <Event name="Clicked" Function="Move_MoveFinish();"/>		
+		            <Widget type="TextBox" skin="TextBox" position="15 5 95 34" name="Move_MoveFinisn_Text"> 	
+		            		<Property key="FontName" value="fonts/common.fnt"/>
+			    					<Property key="TextType" value="3"/>
+		            </Widget>    			
+						</Widget>
+		    </Widget>
+    </Widget>
+</MyGUI>

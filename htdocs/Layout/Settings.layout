@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Widget" skin="RotatingSkin" position="0 0 800 480" name="Settings_Window">
+        <Property key="TouchIntercept" value="true"/>
+        <Property key="zOrder" value="4"/>
+        <Property key="TouchOrder" value="5"/>
+		    <Widget type="ImageBox" skin="ImageBox" position="390 230 20 20" name="Settings_Mask">
+		        <Property key="ImageTexture" value="UIImage/logo_hd.png"/> 
+		    </Widget>		        
+		    <Widget type="ImageBox" skin="RotatingSkin" position="278 97 242 254" name="Settings_LeftBG">
+						<Property key="ImageTexture" value="ui_shezhi.png"/>
+						<Property key="bTextureSet" value="true"/>				
+				</Widget>	
+									        
+				<Widget type="Button9Patch" skin="Button" position="527 136 38 38" name="Settings_Button_Close">
+						<Property key="NormalImage" value="uidenglu_tuichu.png"/>
+						<Property key="SelectedImage" value="uidenglu_tuichuanxia.png"/>
+						<Property key="DisabledImage" value="uidenglu_tuichuanxia.png"/>
+						<Property key="TouchIntercept" value="true"/>
+						<Property key="TouchOrder" value="4"/>
+						<Event name="Clicked" Function="Settings_OnCloseEvent()"/>					
+				</Widget>		
+				<Widget type="TextBox" skin="TextBox" position="202 140 397 40" name="Settings_Title_Text">
+	          <Property key="FontHeight" value="27"/>
+			  <Property key="TextColour" value="150 255 0"/>
+	          <Property key="TextAlign" value="Center"/>				          
+	      </Widget>			
+				<Widget type="TextBox" skin="TextBox" position="300 208 58 35" name="Settings_Music_Text">
+				<Property key="TextColour" value="150 255 0"/>
+	          <Property key="FontHeight" value="24"/>
+	          <Property key="TextAlign" value="Center"/>				          
+	      </Widget>	
+				<Widget type="Button9Patch" skin="Button" position="471 211 26 26" name="Settings_Button_Music">
+						<Property key="NormalImage" value="uishezhi_none.png"/>
+						<Property key="SelectedImage" value="uishezhi_none.png"/>
+						<Property key="DisabledImage" value="uishezhi_none.png"/>
+						<Property key="TouchIntercept" value="true"/>
+						<Property key="TouchOrder" value="4"/>
+						<Event name="Clicked" Function="Settings_OnMusicSwitchEvent()"/>		
+				    <Widget type="ImageBox" skin="RotatingSkin" position="0 0 30 30" name="Settings_Music_Img">
+								<Property key="ImageTexture" value="uishezhi_chose.png"/>
+								<Property key="bTextureSet" value="true"/>
+						</Widget>			     											
+				</Widget>			      		
+	     	<Widget type="TextBox" skin="TextBox" position="300 244 58 35" name="Settings_Effect_Text">
+	          <Property key="FontHeight" value="24"/>
+			  <Property key="TextColour" value="150 255 0"/>
+	          <Property key="TextAlign" value="Center"/>	          
+	      </Widget>	   
+				<Widget type="Button9Patch" skin="Button" position="471 251 26 26" name="Settings_Button_Effect">
+						<Property key="NormalImage" value="uishezhi_none.png"/>
+						<Property key="SelectedImage" value="uishezhi_none.png"/>
+						<Property key="DisabledImage" value="uishezhi_none.png"/>
+						<Property key="TouchIntercept" value="true"/>
+						<Property key="TouchOrder" value="4"/>					
+						<Event name="Clicked" Function="Settings_OnEffectSwitchEvent()"/>			
+				    <Widget type="ImageBox" skin="RotatingSkin" position="0 0 30 30" name="Settings_Effect_Img">
+								<Property key="ImageTexture" value="uishezhi_chose.png"/>
+								<Property key="bTextureSet" value="true"/>
+						</Widget>										
+				</Widget>			         					
+		</Widget>
+</MyGUI>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Widget" skin="PanelEmpty" position="0 0 800 480" name="LoadingWidget_Window">
+        <Property key="zOrder" value="7"/>
+				<Property key="TouchIntercept" value="true"/>
+        <Property key="TouchOrder" value="1"/>      
+        <Widget type="Time" skin="Time" position="0 0 0 0" name="LoadingWidget_Time">
+            <Event name="Clicked" Function="LoadingWidget_Update();"/>
+        </Widget>
+        <Widget type="ImageBox" skin="RotatingSkin" position="0 0 800 480" name="LoadingWidget_Bg">
+            <Property key="ImageTexture" value="UIImage/theme_cover.png"/>
+            <Widget type="ImageBox" skin="RotatingSkin" position="390 440 20 20" name="LoadingWidget_PromptBg_Image">
+                <Property key="ImageTexture" value="UIImage/logo_hd.png"/>
+            </Widget>
+            <Widget type="ImageBox" skin="RotatingSkin" position="305 100 179 231" name="LoadingWidget_Meinv">
+				<Property key="ImageTexture" value="UIImage/loading_meinv.png"/>
+			</Widget>
+			<Widget type="ImageBox" skin="RotatingSkin" position="740 415 35 36" name="LoadingWidget_little">
+				<Property key="ImageTexture" value="UIImage/loading_big.png"/>
+			</Widget>
+			<Widget type="ImageBox" skin="RotatingSkin" position="726 402 62 62" name="LoadingWidget_big">
+				<Property key="ImageTexture" value="UIImage/loading_little.png"/>
+			</Widget>
+			<Widget type="ImageBox" skin="RotatingSkin" position="30 345 745 50" name="UserMainPanel_Portrait">
+				<Property key="ImageTexture" value="uidenglu_xuanfu.png"/>
+				<Property key="bTextureSet"	value="true"/>        
+				<Property key="b9Patch" value="true"/>                
+			</Widget>
+			<Widget type="TextBox" skin="TextBox" position="30 350 745 40" name="LoadingWidget_Prompt_Text">
+	              <Property key="FontHeight" value="24"/>
+	              <Property key="FontName" value="arial"/>
+	              <Property key="TextAlign" value="Center"/>
+	              <Property key="TextColour" value="113 249 249"/>
+            </Widget>
+        </Widget>
+    </Widget>
+</MyGUI>

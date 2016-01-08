@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Widget" skin="PanelEmpty" position="0 0 800 480" name="WareHouse_Window">
+        <Property key="zOrder" value="4"/>
+        <Property key="TouchIntercept" value="true"/>
+        <Property key="TouchOrder" value="5"/>
+        <Widget type="ImageBox" skin="RotatingSkin" position="190 80 420 321" name="WareHouse_BG">
+            <Property key="ImageTexture" value="c_di1.png"/>
+						<Property key="bTextureSet" value="true"/>
+            <Property key="b9Patch" value="true"/>
+            <Property key="9PatchCapWidth" value="30"/>            
+            <Widget type="ImageBox" skin="ImageBox" position="6 10 20 20" name="WareHouse_People_Img">
+                <Property key="ImageTexture" value="UIIcon/u_zymbrk.png"/>
+            </Widget>        		
+            <Widget type="TextBox" skin="TextBox" position="25 10 80 30" name="WareHouse_Population_Value">
+                <Property key="FontHeight" value="18"/>
+            </Widget>                
+            <Widget type="TextBox" skin="TextBox" position="145 2 145 45" name="WareHouse_Title_Text">
+                <Property key="TextAlign" value="Center"/>
+								<Property key="TextColour" value="125	250	255"/>
+                <Property key="FontHeight" value="24"/>
+            </Widget>            
+            <Widget type="Button9Patch" skin="Button" position="378 3 38 38" name="WareHouse_Close_Button">
+                <Property key="NormalImage" value="c_cbutton.png"/>
+                <Property key="SelectedImage" value="c_cbutton.png"/>
+                <Property key="DisabledImage" value="c_cbutton.png"/>
+                <Property key="b9Patch" value="false"/>
+                <Event name="Clicked" Function="WareHouse_Close();"/>
+            </Widget>
+            <Widget type="ImageBox" skin="RotatingSkin" position="10 40 400 230" name="WareHouse_SubPanel">
+		            <Property key="ImageTexture" value="di_up.png"/>
+								<Property key="bTextureSet" value="true"/>
+		            <Property key="b9Patch" value="true"/>
+		            <Property key="9PatchCapWidth" value="12"/>            	
+            </Widget>            							
+            <Widget type="ImageBox" skin="RotatingSkin" position="18 45 385 220" name="WareHouse_HighLight">
+		            <Property key="ImageTexture" value="c_ilight.png"/>
+								<Property key="bTextureSet" value="true"/>
+		            <Property key="b9Patch" value="true"/>          	
+            </Widget>
+            <Widget type="ImageBox" skin="RotatingSkin" position="18 45 385 220" name="WareHouse_TableLine">
+		            <Property key="ImageTexture" value="c_tskuangdi.png"/>
+								<Property key="bTextureSet" value="true"/>
+		            <Property key="b9Patch" value="true"/>          	
+            </Widget>             
+         		<Widget type="ImageBox" skin="RotatingSkin" position="35 115 350 18" name="Home_Name_IronFrame_Bg">
+		   			    <Property key="ImageTexture" value="c_pdi.png"/>
+		            <Property key="bTextureSet"	value="true"/>
+		            <Property key="b9Patch" value="true"/>
+		 		    </Widget>
+				    <Widget type="ProgressBar" skin="ProgressBar" position="35 116 349 18" name="Home_Name_IronBar">
+		  		      <Property key="Begin" value="0 0"/>
+				        <Property key="End" value="1 0"/>
+		  		      <Property key="ImageTexture" value="c_pman.png"/>
+		  		      <Property key="bTextureSet"	value="true"/>
+		  		  </Widget>
+		  		  <Widget type="ImageBox" skin="RotatingSkin" position="35 115 350 20" name="Home_Name_IronBar_Frame">
+		       		  <Property key="ImageTexture" value="c_pkuang.png"/>
+		       		  <Property key="bTextureSet"	value="true"/>
+		       		  <Property key="b9Patch" value="true"/>
+		       		  <Property key="9PatchCapWidth" value="6"/>
+		    		</Widget>                        
+            <Widget type="ImageBox" skin="ImageBox" position="20 102 40 40" name="Home_Iron_Img">
+                <Property key="ImageTexture" value="UIIcon/t_zymbt.png"/>
+            </Widget>
+            <Widget type="TextBox" skin="TextBox" position="160 110 250 24" name="Home_Iron_Text">
+                <Property key="FontHeight" value="18"/>
+            </Widget>
+                     	
+         		<Widget type="ImageBox" skin="RotatingSkin" position="35 172 350 18" name="Home_Name_OilFrame_Bg">
+		   			    <Property key="ImageTexture" value="c_pdi.png"/>
+		            <Property key="bTextureSet"	value="true"/>
+		            <Property key="b9Patch" value="true"/>
+		 		    </Widget>
+				    <Widget type="ProgressBar" skin="ProgressBar" position="35 173 349 18" name="Home_Name_OilBar">
+		  		      <Property key="Begin" value="0 0"/>
+				        <Property key="End" value="1 0"/>
+		  		      <Property key="ImageTexture" value="c_pman.png"/>
+		  		      <Property key="bTextureSet"	value="true"/>
+		  		  </Widget>
+		  		  <Widget type="ImageBox" skin="RotatingSkin" position="35 172 350 20" name="Home_Name_OilBar_Frame">
+		       		  <Property key="ImageTexture" value="c_pkuang.png"/>
+		       		  <Property key="bTextureSet"	value="true"/>
+		       		  <Property key="b9Patch" value="true"/>
+		       		  <Property key="9PatchCapWidth" value="6"/>
+		    		</Widget>                        
+            <Widget type="ImageBox" skin="ImageBox" position="20 160 40 40" name="Home_Oil_Img">
+                <Property key="ImageTexture" value="UIIcon/t_zymbsy.png"/>
+            </Widget>
+            <Widget type="TextBox" skin="TextBox" position="160 168 250 24" name="Home_Oil_Text">
+                <Property key="FontHeight" value="18"/>
+            </Widget>
+                        
+            <Widget type="TextBox" skin="TextBox" position="6 352 270 25" name="WareHouse_BuildDesc_Text">
+                <Property key="FontHeight" value="16"/>
+            </Widget>
+		        <Widget type="Button9Patch" skin="Button" position="292 274 116 42" name="WareHouse_Construct_Button">
+		            <Property key="NormalImage" value="c_button.png"/>
+		            <Property key="TouchOrder" value="4"/>
+							  <Property key="TouchIntercept" value="true"/>            
+							  <Event name="Clicked" Function="Home_Construct_Click();"/>
+		            <Widget type="TextBox" skin="TextBox" position="20 5 80 34" name="WareHouse_Construct_Button_Text">
+		             	 <Property key="FontName" value="fonts/common.fnt"/>
+		             	 <Property key="TextType" value="3"/>
+		     	  		</Widget>  					  
+		        </Widget>		
+        </Widget>
+    </Widget>
+</MyGUI>

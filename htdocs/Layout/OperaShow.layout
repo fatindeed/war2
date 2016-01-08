@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Widget" skin="PanelEmpty" position="0 0 800 480" name="OperaShow_Window">
+        <Property key="zOrder" value="9"/>
+        <Property key="TouchIntercept" value="true"/>
+        <Property key="TouchOrder" value="5"/>
+		    <Widget type="ImageBox" skin="RotatingSkin" position="0 0 800 480" name="OperaShow_ImageView">
+            <Property key="ImageTexture" value="UIImage/uidenglu_juqing1.png"/>                       
+        </Widget>  
+        <Widget type="ImageBox" skin="RotatingSkin" position="390 430 20 20" name="OperaShow_PromptBg_Image">
+            <Property key="ImageTexture" value="UIImage/logo_hd.png"/>
+        </Widget>         
+        <Widget type="TextBox" skin="TextBox" position="25 410 750 150" name="OperaShow_PromptBg_TextBox">
+            <Property key="FontHeight" value="20"/>
+   			</Widget>        
+	      <Widget type="Time" skin="Time" position="0 0 0 0" name="OperaShow_Timer">		
+			      <Event name="TimeEnd" Function="OperaShow_EndShowOperaFrameEvent()"/>	
+        </Widget> 
+	      <Widget type="Time" skin="Time" position="0 0 0 0" name="OperaMask_Timer">		
+			      <Event name="TimeEnd" Function="OperaShow_EndShowMaskEvent()"/>	
+        </Widget>  
+				<Widget type="Button9Patch" skin="Button" position="684 20 72 39" name="OperaShow_Skip_Button">
+						<Property key="NormalImage" value="uidenglu_tiaoguo.png"/>
+						<Property key="SelectedImage" value="uidenglu_tiaoguo.png"/>
+						<Property key="DisabledImage" value="uidenglu_tiaoguo.png"/>
+						<Property key="TouchIntercept" value="true"/>
+						<Property key="TouchOrder" value="4"/>
+						<Event name="Clicked" Function="OperaShow_OnSkipEvent()"/>		   
+    		</Widget>						            
+    </Widget>
+</MyGUI>
+
