@@ -15,7 +15,7 @@ Tomcat deployment on server
 Client deployment
 ```sh
 cd ProjectDir/assets
-set HtdocsDir=C:\Users\James\Documents\GitHub\war2\htdocs\
+set HtdocsDir=X:\path\to\war2\htdocs\
 mklink /J Actini %HtdocsDir%Actini
 mklink /J ActionSet %HtdocsDir%ActionSet
 mklink /J Building %HtdocsDir%Building
