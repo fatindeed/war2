@@ -67,43 +67,30 @@ local g_tableGiftItem_mm      =  								    -- Àñ°üÎïÆ·
 
 local g_tableGiftItem_EgameFee      =  								    -- Àñ°üÎïÆ·
 {
-	{ICON_ID = "sc_zdz.png",        NAME = "#{NAME_4000_028}", PRICE = 8, GOODS_SUB_ID = "30000765967701", DESC = "#{SHOP_1000_001}"},-- ÕðµØÕß			
-	{ICON_ID = "sc_tjzc.png",       NAME = "#{NAME_4000_030}", PRICE = 8, GOODS_SUB_ID = "30000765967702", DESC = "#{SHOP_1000_002}"},-- Í»»÷Õ½³µ 		
-	{ICON_ID = "sc_lfbbc.png",      NAME = "#{NAME_4000_027}", PRICE = 8, GOODS_SUB_ID = "30000765967703", DESC = "#{SHOP_1000_003}"},-- Á¬·¢²½±ø³µ	    
-	{ICON_ID = "sc_ys.png",         NAME = "#{NAME_4000_018}", PRICE = 10, GOODS_SUB_ID = "30000765967704", DESC = "#{SHOP_1000_004}"},-- Ó¥öÀ			
-	{ICON_ID = "sc_hsbd2.png",      NAME = "#{NAME_4000_021}", PRICE = 5, GOODS_SUB_ID = "30000765967705", DESC = "#{SHOP_1000_005}"},-- »ðÉ½²¿¶Ó		
-	{ICON_ID = "sc_qxtk.png",       NAME = "#{NAME_4000_022}", PRICE = 10, GOODS_SUB_ID = "30000765967706", DESC = "#{SHOP_1000_006}"},-- ÇáÐÍÌ¹¿Ë	
-	{ICON_ID = "sc_bbc.png",        NAME = "#{NAME_4000_024}", PRICE = 10, GOODS_SUB_ID = "30000765967707", DESC = "#{SHOP_1000_007}"},-- ²½±ø³µ		
-	{ICON_ID = "sc_jingkuang.png",  NAME = "#{TXSS_1000_028}", PRICE = 5, GOODS_SUB_ID = "30000765967709", DESC = "#{SHOP_1000_009}"},-- ºËÄÜ¾§¿ó
-	{ICON_ID = "sc_qikuang.png",    NAME = "#{TXSS_1000_029}", PRICE = 5, GOODS_SUB_ID = "30000765967708", DESC = "#{SHOP_1000_008}"},-- Æø¿ó	
-	{ICON_ID = "sc_jingkuang.png",  NAME = "#{ITEM_2000_014}", PRICE = 3, GOODS_SUB_ID = "30000765967717", DESC = "#{ITEM_2000_014}"},--  500Ä¾²Ä  
-	{ICON_ID = "sc_qikuang.png",  	NAME = "#{ITEM_2000_015}", PRICE = 3, GOODS_SUB_ID = "30000765967718", DESC = "#{ITEM_2000_015}"},--500¿óÊ¯
-	{ICON_ID = "sc_jingkuang.png",  NAME = "#{ITEM_2000_017}", PRICE = 4, GOODS_SUB_ID = "30000765967720", DESC = "#{ITEM_2000_017}"},-- 800Ä¾²Ä
-	{ICON_ID = "sc_qikuang.png",    NAME = "#{ITEM_2000_021}", PRICE = 4, GOODS_SUB_ID = "30000765967721", DESC = "#{ITEM_2000_021}"},--800¿óÊ¯	
-	{ICON_ID = "sc_jingkuang.png",  NAME = "#{ITEM_2000_022}", PRICE = 5, GOODS_SUB_ID = "30000765967722", DESC = "#{ITEM_2000_022}"},-- 1000Ä¾²Ä		
-	{ICON_ID = "sc_qikuang.png",    NAME = "#{ITEM_2000_023}", PRICE = 5, GOODS_SUB_ID = "30000765967723", DESC = "#{ITEM_2000_023}"},-- 1000¿óÊ¯
-	{ICON_ID = "sc_jingkuang.png",  NAME = "#{ITEM_2000_018}", PRICE = 20, GOODS_SUB_ID = "30000765967709", DESC = "#{ITEM_2000_018}"},-- 5000Ä¾²Ä
-	{ICON_ID = "sc_qikuang.png",    NAME = "#{ITEM_2000_019}", PRICE = 20, GOODS_SUB_ID = "30000765967708", DESC = "#{ITEM_2000_019}"},-- 5000¿óÊ¯
-	{ICON_ID = "sc_jingkuang.png",  NAME = "#{ITEM_2000_026}", PRICE = 30, GOODS_SUB_ID = "30000765967726", DESC = "#{ITEM_2000_026}"},-- 15000Ä¾²Ä
-	{ICON_ID = "sc_qikuang.png",    NAME = "#{ITEM_2000_027}", PRICE = 30, GOODS_SUB_ID = "30000765967727", DESC = "#{ITEM_2000_027}"}-- 15000¿óÊ¯		
+	{ICON_ID = "sc_zdz.png",        NAME = "#{NAME_4000_001}", PRICE = 5, GOODS_SUB_ID = "30000765967701", DESC = "#{SHOP_1000_001}"},-- ÕðµØÕß			
+	{ICON_ID = "sc_tjzc.png",       NAME = "#{NAME_4000_002}", PRICE = 5, GOODS_SUB_ID = "30000765967702", DESC = "#{SHOP_1000_002}"},-- Í»»÷Õ½³µ 		
+	{ICON_ID = "sc_lfbbc.png",      NAME = "#{NAME_4000_003}", PRICE = 8, GOODS_SUB_ID = "30000765967703", DESC = "#{SHOP_1000_003}"},-- Á¬·¢²½±ø³µ	    
+	{ICON_ID = "sc_ys.png",         NAME = "#{NAME_4000_004}", PRICE = 8, GOODS_SUB_ID = "30000765967704", DESC = "#{SHOP_1000_004}"},-- Ó¥öÀ			
+	{ICON_ID = "sc_hsbd2.png",      NAME = "#{NAME_4000_005}", PRICE = 10, GOODS_SUB_ID = "30000765967705", DESC = "#{SHOP_1000_005}"},-- »ðÉ½²¿¶Ó		
+	{ICON_ID = "sc_qxtk.png",       NAME = "#{NAME_4000_006}", PRICE = 12, GOODS_SUB_ID = "30000765967706", DESC = "#{SHOP_1000_006}"},-- ÇáÐÍÌ¹¿Ë	
+	{ICON_ID = "sc_bbc.png",        NAME = "#{NAME_4000_007}", PRICE = 14, GOODS_SUB_ID = "30000765967707", DESC = "#{SHOP_1000_007}"},-- ²½±ø³µ		
+	{ICON_ID = "sc_jingkuang.png",  NAME = "#{ITEM_2000_008}", PRICE = 1, GOODS_SUB_ID = "30000765967708", DESC = "#{ITEM_2000_008}"},-- 500Ä¾²Ä
+	{ICON_ID = "sc_qikuang.png",  	NAME = "#{ITEM_2000_009}", PRICE = 1, GOODS_SUB_ID = "30000765967709", DESC = "#{ITEM_2000_009}"},-- 500¿óÊ¯
+	{ICON_ID = "sc_jingkuang.png",  NAME = "#{ITEM_2000_010}", PRICE = 2, GOODS_SUB_ID = "30000765967710", DESC = "#{ITEM_2000_010}"},-- 1000Ä¾²Ä
+	{ICON_ID = "sc_qikuang.png",    NAME = "#{ITEM_2000_011}", PRICE = 2, GOODS_SUB_ID = "30000765967711", DESC = "#{ITEM_2000_011}"},-- 1000¿óÊ¯
+	{ICON_ID = "sc_jingkuang.png",  NAME = "#{ITEM_2000_012}", PRICE = 3, GOODS_SUB_ID = "30000765967712", DESC = "#{ITEM_2000_012}"},-- 1500Ä¾²Ä
+	{ICON_ID = "sc_qikuang.png",    NAME = "#{ITEM_2000_013}", PRICE = 3, GOODS_SUB_ID = "30000765967713", DESC = "#{ITEM_2000_013}"},-- 1500¿óÊ¯
+	{ICON_ID = "sc_jingkuang.png",  NAME = "#{ITEM_2000_014}", PRICE = 4, GOODS_SUB_ID = "30000765967714", DESC = "#{ITEM_2000_014}"},-- 2000Ä¾²Ä
+	{ICON_ID = "sc_qikuang.png",    NAME = "#{ITEM_2000_015}", PRICE = 4, GOODS_SUB_ID = "30000765967715", DESC = "#{ITEM_2000_015}"},-- 2000¿óÊ¯
+	{ICON_ID = "sc_jingkuang.png",  NAME = "#{ITEM_2000_016}", PRICE = 6, GOODS_SUB_ID = "30000765967716", DESC = "#{ITEM_2000_016}"},-- 3000Ä¾²Ä
+	{ICON_ID = "sc_qikuang.png",    NAME = "#{ITEM_2000_017}", PRICE = 6, GOODS_SUB_ID = "30000765967717", DESC = "#{ITEM_2000_017}"},-- 3000¿óÊ¯
+	{ICON_ID = "sc_jingkuang.png",  NAME = "#{ITEM_2000_018}", PRICE = 20, GOODS_SUB_ID = "30000765967718", DESC = "#{ITEM_2000_018}"},-- 10000Ä¾²Ä
+	{ICON_ID = "sc_qikuang.png",    NAME = "#{ITEM_2000_019}", PRICE = 20, GOODS_SUB_ID = "30000765967719", DESC = "#{ITEM_2000_019}"},-- 10000¿óÊ¯
+	{ICON_ID = "sc_jingkuang.png",  NAME = "#{ITEM_2000_020}", PRICE = 30, GOODS_SUB_ID = "30000765967720", DESC = "#{ITEM_2000_020}"},-- 15000Ä¾²Ä
+	{ICON_ID = "sc_qikuang.png",    NAME = "#{ITEM_2000_021}", PRICE = 30, GOODS_SUB_ID = "30000765967721", DESC = "#{ITEM_2000_021}"}-- 15000¿óÊ¯
 }
 
 local g_nGiftCount 	 = 0									-- Àñ°üÊýÁ¿
-
-local g_nShopTopupItemPurchaseInfo_mm =			-- ÉÌµê³äÖµÎïÆ·¹ºÂòÐÅÏ¢		  ¡¾¸ù¾ÝË÷ÒýÅÅÐò¡¿ 
-{	-- Æ½Ì¨±Ò       ÄÜÁ¿±Ò  	ÔùËÍÖµ
-	{MONEY = 15,  POWER = 300,  GIFT = 30, GOODS_SUB_ID = "30000765967710", DESC = "#{TXSS_2000_063}"},
-	-- {MONEY = 0.01,  POWER = 1,  GIFT = 0, GOODS_SUB_ID = "30000765967711", DESC = "#{TXSS_2000_063}"},
-	{MONEY = 0.1,  POWER = 10,  GIFT = 0, GOODS_SUB_ID = "30000765967712", DESC = "#{TXSS_2000_063}"},
-	{MONEY = 1,  POWER = 16,  GIFT = 0, GOODS_SUB_ID = "30000765967715", DESC = "#{TXSS_2000_063}"},
-	{MONEY = 2,  POWER = 30,  GIFT = 0, GOODS_SUB_ID = "30000765967716", DESC = "#{TXSS_2000_063}"},
-	{MONEY = 4,  POWER = 50,  GIFT = 0, GOODS_SUB_ID = "30000765967719", DESC = "#{TXSS_2000_063}"},
-	{MONEY = 12,  POWER = 150,  GIFT = 0, GOODS_SUB_ID = "30000765967724", DESC = "#{TXSS_2000_063}"},
-	{MONEY = 14,  POWER = 200,  GIFT = 0, GOODS_SUB_ID = "30000765967725", DESC = "#{TXSS_2000_063}"},
-	{MONEY = 15,  POWER = 400,  GIFT = 0, GOODS_SUB_ID = "30000765967728", DESC = "#{TXSS_2000_063}"},
-	{MONEY = 20,  POWER = 600,  GIFT = 0, GOODS_SUB_ID = "30000765967729", DESC = "#{TXSS_2000_063}"},
-	{MONEY = 25,  POWER = 900,  GIFT = 0, GOODS_SUB_ID = "30000765967730", DESC = "#{TXSS_2000_063}"}
-}
 
 local g_nShopTopupItemPurchaseInfo_cmgame =			-- ÉÌµê³äÖµÎïÆ·¹ºÂòÐÅÏ¢		  ¡¾¸ù¾ÝË÷ÒýÅÅÐò¡¿ 
 {	-- Æ½Ì¨±Ò       ÄÜÁ¿±Ò  	ÔùËÍÖµ
@@ -120,17 +107,32 @@ local g_nShopTopupItemPurchaseInfo_cmgame =			-- ÉÌµê³äÖµÎïÆ·¹ºÂòÐÅÏ¢		  ¡¾¸ù¾ÝË
 	{MONEY = 25,  POWER = 900,  GIFT = 0, GOODS_SUB_ID = "30000765967730", DESC = "#{TXSS_2000_063}"}
 }
 
+local g_nShopTopupItemPurchaseInfo_mm =			-- ÉÌµê³äÖµÎïÆ·¹ºÂòÐÅÏ¢		  ¡¾¸ù¾ÝË÷ÒýÅÅÐò¡¿ 
+{	-- Æ½Ì¨±Ò       ÄÜÁ¿±Ò  	ÔùËÍÖµ
+	{MONEY = 15,  POWER = 300,  GIFT = 30, GOODS_SUB_ID = "30000765967710", DESC = "#{TXSS_2000_063}"},
+	-- {MONEY = 0.01,  POWER = 1,  GIFT = 0, GOODS_SUB_ID = "30000765967711", DESC = "#{TXSS_2000_063}"},
+	{MONEY = 0.1,  POWER = 10,  GIFT = 0, GOODS_SUB_ID = "30000765967712", DESC = "#{TXSS_2000_063}"},
+	{MONEY = 1,  POWER = 16,  GIFT = 0, GOODS_SUB_ID = "30000765967715", DESC = "#{TXSS_2000_063}"},
+	{MONEY = 2,  POWER = 30,  GIFT = 0, GOODS_SUB_ID = "30000765967716", DESC = "#{TXSS_2000_063}"},
+	{MONEY = 4,  POWER = 50,  GIFT = 0, GOODS_SUB_ID = "30000765967719", DESC = "#{TXSS_2000_063}"},
+	{MONEY = 12,  POWER = 150,  GIFT = 0, GOODS_SUB_ID = "30000765967724", DESC = "#{TXSS_2000_063}"},
+	{MONEY = 14,  POWER = 200,  GIFT = 0, GOODS_SUB_ID = "30000765967725", DESC = "#{TXSS_2000_063}"},
+	{MONEY = 15,  POWER = 400,  GIFT = 0, GOODS_SUB_ID = "30000765967728", DESC = "#{TXSS_2000_063}"},
+	{MONEY = 20,  POWER = 600,  GIFT = 0, GOODS_SUB_ID = "30000765967729", DESC = "#{TXSS_2000_063}"},
+	{MONEY = 25,  POWER = 900,  GIFT = 0, GOODS_SUB_ID = "30000765967730", DESC = "#{TXSS_2000_063}"}
+}
+
 local g_nShopTopupItemPurchaseInfo_EgameFee =			-- ÉÌµê³äÖµÎïÆ·¹ºÂòÐÅÏ¢		  ¡¾¸ù¾ÝË÷ÒýÅÅÐò¡¿ 
 {	-- Æ½Ì¨±Ò       ÄÜÁ¿±Ò  	ÔùËÍÖµ
-	{MONEY = 0.1,  POWER = 1,  GIFT = 0, GOODS_SUB_ID = "30000765967711", DESC = "#{TXSS_2000_063}"},
-	{MONEY = 0.5,  POWER = 5,  GIFT = 0, GOODS_SUB_ID = "30000765967712", DESC = "#{TXSS_2000_063}"},
-	{MONEY = 1,  POWER = 10,  GIFT = 2, GOODS_SUB_ID = "30000765967715", DESC = "#{TXSS_2000_063}"},
-	{MONEY = 5,  POWER = 50,  GIFT = 20, GOODS_SUB_ID = "30000765967719", DESC = "#{TXSS_2000_063}"},
-	{MONEY = 10,  POWER = 100,  GIFT = 50, GOODS_SUB_ID = "30000765967724", DESC = "#{TXSS_2000_063}"},
-	{MONEY = 15,  POWER = 150,  GIFT = 90, GOODS_SUB_ID = "30000765967725", DESC = "#{TXSS_2000_063}"},
-	{MONEY = 20,  POWER = 200,  GIFT = 140, GOODS_SUB_ID = "30000765967728", DESC = "#{TXSS_2000_063}"},
-	{MONEY = 25,  POWER = 250,  GIFT = 200, GOODS_SUB_ID = "30000765967729", DESC = "#{TXSS_2000_063}"},
-	{MONEY = 30,  POWER = 300,  GIFT = 300, GOODS_SUB_ID = "30000765967730", DESC = "#{TXSS_2000_063}"}
+	{MONEY = 0.1,  POWER = 1,  GIFT = 0, GOODS_SUB_ID = "30000765967722", DESC = "#{TXSS_2000_063}"},
+	{MONEY = 0.5,  POWER = 5,  GIFT = 0, GOODS_SUB_ID = "30000765967723", DESC = "#{TXSS_2000_063}"},
+	{MONEY = 1,  POWER = 10,  GIFT = 1, GOODS_SUB_ID = "30000765967724", DESC = "#{TXSS_2000_063}"},
+	{MONEY = 5,  POWER = 50,  GIFT = 5, GOODS_SUB_ID = "30000765967725", DESC = "#{TXSS_2000_063}"},
+	{MONEY = 10,  POWER = 100,  GIFT = 20, GOODS_SUB_ID = "30000765967726", DESC = "#{TXSS_2000_063}"},
+	{MONEY = 15,  POWER = 150,  GIFT = 30, GOODS_SUB_ID = "30000765967727", DESC = "#{TXSS_2000_063}"},
+	{MONEY = 20,  POWER = 200,  GIFT = 60, GOODS_SUB_ID = "30000765967728", DESC = "#{TXSS_2000_063}"},
+	{MONEY = 25,  POWER = 250,  GIFT = 100, GOODS_SUB_ID = "30000765967729", DESC = "#{TXSS_2000_063}"},
+	{MONEY = 30,  POWER = 300,  GIFT = 150, GOODS_SUB_ID = "30000765967730", DESC = "#{TXSS_2000_063}"}
 }
 
 function	Shop_PreLoad()
