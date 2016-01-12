@@ -2,7 +2,7 @@
 
 Apache deployment on server
 ```sh
-cd ApacheDir
+cd X:/path/to/ApacheDir
 git init
 git config core.sparseCheckout true
 git remote add -f origin https://github.com/fatindeed/war2.git
@@ -14,7 +14,7 @@ Tomcat deployment on server
 
 Client deployment
 ```sh
-cd ProjectDir/assets
+cd X:\path\to\ProjectDir\assets
 set HtdocsDir=X:\path\to\war2\htdocs\
 mklink /J Actini %HtdocsDir%Actini
 mklink /J ActionSet %HtdocsDir%ActionSet
